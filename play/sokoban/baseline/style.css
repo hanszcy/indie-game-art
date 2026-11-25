@@ -1,0 +1,71 @@
+:root{color-scheme:light;--ink:#263e43;--muted:#5b6e6e;--paper:#f6f3eb;--edge:#d5d8cc;--green:#276e60;--pad:46px;font-family:"DM Sans","PingFang SC","Microsoft YaHei",system-ui,sans-serif;color:var(--ink)}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:var(--paper);background-image:radial-gradient(#d9d7cc 0.6px,transparent 0.7px);background-size:7px 7px}
+button{font:inherit;color:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+button:focus-visible,canvas:focus-visible{outline:3px solid #b26c23;outline-offset:4px}
+button:disabled{opacity:.45;cursor:default}
+button[hidden]{display:none}
+.station{max-width:956px;width:calc(100% - 48px);margin:auto;padding:30px 0 34px}
+.mast{display:flex;justify-content:space-between;align-items:center;padding-bottom:22px;border-bottom:1px solid #bac2b7}
+.brand{display:flex;align-items:center;gap:12px}
+h1,h2,h3,p{margin:0}
+h1{font-size:23px;letter-spacing:.055em;line-height:1.25;font-weight:800}
+.carton{position:relative;display:grid;place-items:center;width:37px;height:37px;border-radius:10px;background:#2e5555}
+.carton::before{content:"";width:19px;height:15px;border:2px solid #f6d593;border-radius:2px;transform:rotate(-8deg)}
+.carton i{position:absolute;left:16px;top:10px;width:5px;height:7px;transform:rotate(-8deg);background:#f6d593}
+.help-button{background:transparent;border:0;padding:9px 4px;font-weight:650;color:var(--muted)}
+.help-button span{display:inline-grid;place-items:center;border:1.5px solid currentColor;width:17px;height:17px;border-radius:50%;font:bold 12px system-ui}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 238px;gap:32px;align-items:center;margin:36px auto 0}
+.play{min-width:0}
+.board-head{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:17px;gap:12px}
+.level-number{color:var(--green);font-size:12px;letter-spacing:.065em;font-weight:750}
+h2{font-size:clamp(26px,3vw,34px);line-height:1.26;font-weight:800;letter-spacing:.035em}
+.board-head h2{margin-top:4px}
+.counter-group{display:flex;align-items:center;gap:15px;padding-bottom:3px;font-variant-numeric:tabular-nums}
+.counter-group>div+div{padding-left:15px;border-left:1px solid #cbd1c5}
+.counter-group small,.counter-group strong{display:block}
+.counter-group small{font-size:12px;color:var(--muted);font-weight:600}
+.counter-group strong{font-size:20px;line-height:1.25;margin-top:2px}
+.board-frame{background:#263d40;border:1px solid #1e373c;border-radius:16px;padding:10px;box-shadow:0 4px 0 #bdc5ba,0 9px 18px #34433311}
+canvas{display:block;width:100%;height:auto;aspect-ratio:7/6;border-radius:7px;touch-action:none;user-select:none}
+.control-panel{background:#fbfaf4;border:1px solid var(--edge);border-radius:15px;padding:20px;box-shadow:0 3px 0 #daddd1}
+.task{display:flex;align-items:center;gap:10px}
+.goal-mark{background:#e6efe2;color:var(--green);width:34px;height:34px;display:grid;place-items:center;font-size:26px;line-height:1;border:1px solid #b9cfbd;border-radius:9px}
+.task h3{font-size:16px;line-height:1.4}
+.task p{font-size:13px;line-height:1.6;color:var(--muted)}
+.control-body{display:flex;flex-direction:column;align-items:center;gap:16px}
+.pad{display:grid;grid-template:repeat(3,var(--pad)) / repeat(3,var(--pad));gap:4px;margin-top:18px;align-items:center;justify-items:center}
+.pad button{height:var(--pad);width:var(--pad);display:grid;place-items:center;border:1px solid #bdc9bc;border-radius:10px;background:#e9eee3;box-shadow:0 2px 0 #aebfae}
+.pad button::before{content:"";display:block;width:9px;height:9px;border-top:3px solid #405e59;border-right:3px solid #405e59;transform:rotate(-45deg) translate(-1px,1px)}
+.pad button[data-dir="up"]{grid-area:1/2}
+.pad button[data-dir="left"]{grid-area:2/1}
+.pad button[data-dir="right"]{grid-area:2/3}
+.pad button[data-dir="down"]{grid-area:3/2}
+.pad button[data-dir="left"]::before{transform:rotate(-135deg) translate(0px,1px)}
+.pad button[data-dir="right"]::before{transform:rotate(45deg) translate(-1px,0px)}
+.pad button[data-dir="down"]::before{transform:rotate(135deg) translate(-1px,1px)}
+.pad-center{grid-area:2/2;width:9px;height:9px;border-radius:50%;background:#b5c5b7}
+.actions{display:flex;gap:8px;width:100%}
+.actions button{flex:1;min-height:42px;border:1px solid #cbd2c4;background:#fbfbf5;border-radius:8px;font-weight:650;font-size:14px;white-space:nowrap}
+.actions button span{font-size:19px;vertical-align:-1px;font-weight:500}
+.actions button:active:not(:disabled),.pad button:active{transform:translateY(2px);box-shadow:none}
+.input-hint{text-align:center;color:var(--muted);font-size:12px;margin-top:13px}
+.next{border:0;background:var(--green);color:white;width:100%;padding:11px 15px;border-radius:8px;font-weight:700;margin-top:14px}
+.control-panel.complete{border-color:#9bb6a3}
+dialog{background:#fbfaf4;color:var(--ink);border:1px solid var(--edge);border-radius:15px;padding:24px;width:min(370px,90vw);box-shadow:0 12px 40px #142f352e}
+dialog h2{font-size:23px}
+dialog p{font-size:15px;line-height:1.7;margin-top:12px}
+dialog::backdrop{background:#203a3e80}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+@media(min-width:701px) and (max-height:770px){.station{max-width:854px;padding-top:18px}.layout{margin-top:22px}.mast{padding-bottom:15px}}
+@media(max-width:700px){
+ .station{width:calc(100% - 28px);max-width:510px;padding:16px 0 max(18px,env(safe-area-inset-bottom))}
+ .mast{padding-bottom:12px}.brand{gap:9px}h1{font-size:19px}.carton{width:33px;height:33px}.carton i{left:14px;top:8px}
+ .layout{display:flex;flex-direction:column;align-items:stretch;gap:14px;margin-top:18px}
+ .board-head{margin-bottom:12px}.board-head h2{margin-top:2px}.board-frame{padding:6px;border-radius:12px}.counter-group strong{font-size:18px}
+ .control-panel{padding:12px 16px}.task h3{font-size:15px}.task p{font-size:12px}.task .goal-mark{height:31px;width:31px}
+ .control-body{flex-direction:row;align-items:center;justify-content:space-between;gap:16px;margin-top:9px}
+ .pad{margin:0}.actions{width:85px;flex-direction:column;gap:7px}
+ .input-hint{display:none}
+}
+@media(max-width:355px){.station{width:calc(100% - 20px)}.control-panel{padding:10px}.counter-group{gap:7px}.counter-group>div+div{padding-left:7px}}
