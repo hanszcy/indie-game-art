@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover"><meta name="theme-color" content="#dce5ea"><title>风口下山 · 高山滑雪</title><link rel="stylesheet" href="style.css"></head>
+<body><main id="stage" aria-label="风口下山滑雪游戏">
+<canvas aria-hidden="true"></canvas>
+<div class="top">
+  <div class="top-left">
+    <div class="station"><i aria-hidden="true"></i> 北脊滑雪场</div>
+    <div class="odometer"><b id="distance">0</b><span>米</span></div>
+  </div>
+  <div class="top-right"><span class="collect"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 2h16l-3 7H7z" fill="#d7633e"/><path d="m12 7 7 5v8l-7 3-7-3v-8z" fill="#f3b24b" stroke="#85552c"/><path d="m12 10 3 7h-6z" fill="#fff2ce"/></svg><b id="pickups">0</b></span>
+  <button id="pause" data-act="pause" aria-label="暂停" title="暂停 (P)"><span></span><span></span></button></div>
+</div>
+<div id="progress" aria-label="雪道进度"><i></i></div>
+<div class="lower" id="live" hidden>
+  <div class="notice" id="notice"></div>
+  <div class="avalanche"><div class="risk-label"><span><svg viewBox="0 0 28 18" aria-hidden="true"><path d="m2 15 8-12 6 8 3-5 7 9M8 7l2 2 2-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> 雪崩距离</span><b id="gap">31 米</b></div><div class="gauge"><i></i></div></div>
+</div>
+<section class="panel" id="panel" aria-labelledby="title">
+ <div class="route"><span class="route-mark"></span><span id="sub">云杉线 · 全长 460 米</span></div>
+ <h1 id="title">风口下山</h1>
+ <p id="desc">越过岩石，收集山徽，在雪崩赶上前抵达山屋。</p>
+ <div class="commands" id="commands"><span class="touch-copy">轻点跳跃，长按空翻</span><span class="key-copy"><kbd>空格</kbd> 跳跃，长按空翻</span></div>
+ <button class="primary" id="primary" data-act="start"><span>出发</span><svg viewBox="0 0 22 18" aria-hidden="true"><path d="M2 9h17m-7-7 7 7-7 7" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+</section>
+</main><script type="module" src="main.mjs"></script></body></html>
