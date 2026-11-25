@@ -22,4 +22,4 @@
 npx skills add hanszcy/indie-game-art --skill indie-game-art
 ```
 
-To install manually, copy the repository into your tool’s skills directory as `indie-game-art`. The entry point is [SKILL.md](SKILL.md).
+For manual installation, copy the [indie-game-art folder](skills/indie-game-art) into your tool’s skills directory. The entry point is [SKILL.md](skills/indie-game-art/SKILL.md).

@@ -22,4 +22,4 @@
 npx skills add hanszcy/indie-game-art --skill indie-game-art
 ```
 
-手動で導入するには、お使いのツールのスキル用ディレクトリに、このリポジトリを `indie-game-art` という名前でコピーします。入口は [SKILL.md](SKILL.md) です。
+手動で導入するには、[indie-game-art フォルダー](skills/indie-game-art)をお使いのツールのスキル用ディレクトリにコピーします。入口は [SKILL.md](skills/indie-game-art/SKILL.md) です。

@@ -22,4 +22,4 @@
 npx skills add hanszcy/indie-game-art --skill indie-game-art
 ```
 
-手动安装时，把这个仓库复制到开发工具的技能目录中，文件夹取名为 `indie-game-art`，入口文件是 [SKILL.md](SKILL.md)。
+手动安装时，把 [indie-game-art 文件夹](skills/indie-game-art)复制到开发工具的技能目录即可。入口是 [SKILL.md](skills/indie-game-art/SKILL.md)。
