@@ -4,7 +4,7 @@
 
 プレイできる試作に、そのゲームらしい表情を与える Codex スキルです。指で触れた瞬間、どこを見てほしいか。何がどう応えれば、次にすることが伝わるか。スマートフォンの画面で試しながら決めていきます。
 
-[マッチ3で遊ぶ](https://indie-game-art-biscuits.vercel.app/kissaten/) · [タワーディフェンスで遊ぶ](https://indie-game-art-biscuits.vercel.app/watch/lantern/?lang=ja) · [導入](#導入)
+[マッチ3で遊ぶ](https://indie-game-art-biscuits.vercel.app/kissaten/) · [タワーディフェンスで遊ぶ](https://indie-game-art-biscuits.vercel.app/watch/lantern/?lang=ja) · [スキーで遊ぶ](https://indie-game-art-biscuits.vercel.app/ski/alpenglow/) · [導入](#導入)
 
 ## 美術の作業机
 
@@ -35,6 +35,16 @@
 [通常版で遊ぶ](https://indie-game-art-biscuits.vercel.app/watch/classic/?lang=ja) · [灯港の防衛隊で遊ぶ](https://indie-game-art-biscuits.vercel.app/watch/lantern/?lang=ja) · [ルールとソース](examples/night-watch/)
 
 どの動画も実際のゲーム画面を収録しています。防衛の二版は戦闘の処理を共有し、召喚・敵・強化にそれぞれ同じシードの乱数列を使っています。
+
+## 03 · 312 メートル地点、同じジャンプの一瞬
+
+二枚の画面は、同じ速度で滑り、同じ瞬間に指を離して四つ目の雪の割れ目を越えたところです。『First Light』では、曲げた膝と後ろになびく赤いマフラーが遠くの山を背景に浮かびます。画面を長押しして、赤い旗のそばで指を離してみてください。着地すると板の後ろに粉雪が上がります。ゲーム内の表記は中国語です。
+
+| [通常版で遊ぶ](https://indie-game-art-biscuits.vercel.app/ski/classic/) | [First Light で遊ぶ](https://indie-game-art-biscuits.vercel.app/ski/alpenglow/) |
+| --- | --- |
+| ![通常版のスキーヤーが312メートル地点で四つ目の割れ目を越える。](showcase/ski-classic.webp) | ![同じジャンプ。First Light の赤いマフラーが雪の縁の上でなびく。](showcase/ski-alpenglow.webp) |
+
+[共通のコース、ジャンプの処理、アート素材](examples/ski/)
 
 ## 導入
 

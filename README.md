@@ -4,7 +4,7 @@
 
 Give a playable prototype its own visual language. This Codex skill helps you decide what a player should see, which object should react to a tap, and how that reaction reads on a phone.
 
-[Play the match-3](https://indie-game-art-biscuits.vercel.app/kissaten/) · [Play the tower defense](https://indie-game-art-biscuits.vercel.app/watch/lantern/?lang=en) · [Install](#install)
+[Play the match-3](https://indie-game-art-biscuits.vercel.app/kissaten/) · [Play the tower defense](https://indie-game-art-biscuits.vercel.app/watch/lantern/?lang=en) · [Play First Light](https://indie-game-art-biscuits.vercel.app/ski/alpenglow/) · [Install](#install)
 
 ## The art desk
 
@@ -35,6 +35,16 @@ The paired capture uses the same recruits, spending and attackers. The classic e
 [Play the baseline](https://indie-game-art-biscuits.vercel.app/watch/classic/?lang=en) · [Play Harbor Hands](https://indie-game-art-biscuits.vercel.app/watch/lantern/?lang=en) · [Rules and source](examples/night-watch/)
 
 Both case studies are captured from playable builds. The two defense editions share a simulation, with separate seeded draws for recruiting, enemies and training.
+
+## 03 · Catch the fourth jump at 312 metres
+
+Both skiers reach this frame with the same speed and the same jump input. In First Light, the skier's bent knees and trailing scarf show the tuck against the distant mountain. Watch the skis on landing to catch the brief spray of powder. Hold the screen to charge and release beside a red flag. Both editions have Chinese controls.
+
+| [Baseline · play](https://indie-game-art-biscuits.vercel.app/ski/classic/) | [First Light · play](https://indie-game-art-biscuits.vercel.app/ski/alpenglow/) |
+| --- | --- |
+| ![The baseline skier above the fourth gap at 312 metres.](showcase/ski-classic.webp) | ![The same jump in First Light, with the red scarf trailing over the snow lip.](showcase/ski-alpenglow.webp) |
+
+[Shared course, jump physics and artwork](examples/ski/)
 
 ## Install
 

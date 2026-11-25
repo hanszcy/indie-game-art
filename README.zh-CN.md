@@ -4,7 +4,7 @@
 
 这个 Codex Skill 帮你打磨已经能玩的游戏。从玩家的一次操作出发，决定美术细节该放在哪里、哪个物件应该动，以及缩到手机上一格还能不能看清。
 
-[玩美食消消乐](https://indie-game-art-biscuits.vercel.app/kissaten/) · [玩肉鸽塔防](https://indie-game-art-biscuits.vercel.app/watch/lantern/?lang=zh) · [安装方法](#安装)
+[玩美食消消乐](https://indie-game-art-biscuits.vercel.app/kissaten/) · [玩肉鸽塔防](https://indie-game-art-biscuits.vercel.app/watch/lantern/?lang=zh) · [玩雪线晨光](https://indie-game-art-biscuits.vercel.app/ski/alpenglow/) · [安装方法](#安装)
 
 ## 美术工作台
 
@@ -35,6 +35,16 @@
 [试玩基础版](https://indie-game-art-biscuits.vercel.app/watch/classic/?lang=zh) · [试玩灯港小队](https://indie-game-art-biscuits.vercel.app/watch/lantern/?lang=zh) · [玩法与源码](examples/night-watch/)
 
 两组动图都录自可玩的游戏。塔防两版共用战斗模拟，并分别用固定随机序列控制召唤、敌人和强化。
+
+## 03 · 312 米处，同一次起跳
+
+两张图定格在第四道雪沟上方，滑行速度和松手时刻完全相同。《雪线晨光》里，屈起的膝盖和向后飞的红围巾，让人一眼就能从远山前认出滑雪者的姿势。按住屏幕蓄力，在红旗旁松手。落地时留意雪板后扬起的那一小撮雪粉。
+
+| [试玩基础版](https://indie-game-art-biscuits.vercel.app/ski/classic/) | [试玩《雪线晨光》](https://indie-game-art-biscuits.vercel.app/ski/alpenglow/) |
+| --- | --- |
+| ![基础版中，滑雪者在 312 米处跃过第四道雪沟。](showcase/ski-classic.webp) | ![同一跳的美术版，红围巾掠过雪沿。](showcase/ski-alpenglow.webp) |
+
+[查看共用的雪道、跳跃代码和美术素材](examples/ski/)
 
 ## 安装
 
