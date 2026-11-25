@@ -1,11 +1,29 @@
 ---
 name: indie-game-art
-description: Establish and polish an indie game's distinctive art direction, visual craft and atmosphere. Use for look development, generic-looking assets or screens, reference-led art studies, and carrying a look through characters, scenery, UI materials, motion and endings.
+description: Art-direct and polish indie games. Use when a playable prototype needs a visual identity, game UI feels like a website, or finished art has weak motion and feedback. Grounds changes to scenery, characters, materials and controls in game design theory, developer studies and comparisons at play size.
 ---
 
 # Indie Game Art
 
-Turn the intended mood and the player’s current action into decisions about light, composition, silhouette, material and motion. For a new look, compare studies of one scene at the intended play size. For an existing build, find the moment where the mood or the action becomes hard to read, then carry the chosen treatment into the surrounding art and interface.
+Start with a moment you can point to. What is the player trying to do, what do they need to see or hear, and what should it feel like? Preserve the rules, camera and approved assets unless the brief changes them. Use the answer to direct one consequential edit, then judge it in the game.
+
+## Choose a starting point
+
+| What exists today | First piece of work | What would change the decision? |
+| --- | --- | --- |
+| **Playable rules, placeholder art** | Take the same playable frame through two treatments. For a climbing game, one could reveal the route through overlapping ridges, another through the wear left by previous climbers. Draw a real foothold and a decorative crack in both. Carry the stronger choice into the busiest view. [Depth, color and materials](references/indie-craft-studies.md#what-makes-distance-readable) | If the landscape feels vast but players step on the decorative crack, keep the distant treatment and redraw the local edge. |
+| **Finished screens that feel like a website** | Trace one transaction. Find where the player's hand or focus goes, which two things must be compared, and where the consequence belongs. Prototype that interaction inside the scene. [Two very different uses of a frame](references/indie-craft-studies.md#when-should-a-control-take-over-the-screen) | If the beautiful object conceals a value needed for the decision, keep the values together and give the object a smaller role. |
+| **Finished art, lifeless play** | Take one frequent action. Mark input, rule commit, first visible response and the next legal input on the same timeline. Animate the part that bears the force. Keep the final pose legible with sound and motion removed. [Character timing and event accents](references/indie-craft-studies.md#which-part-of-an-action-should-move) | If a second input is legal while the first effect is playing, try it. If players read the flourish as another success, shorten its tail or move the accent. |
+
+For a mixed brief, follow the break that affects a real decision first. For a still-only brief, return the visual comparison and identify the one behavior that needs a playable check. If the rules exist but the build is unavailable, a small interaction study can replay named outcomes. Keep the input request separate from the game-confirmed result and disclose which events the study supplies. [A tested example with cloth and a wooden peg](references/cloth-field-study.md)
+
+## Use theory to make a choice
+
+Choose the question that could change the art. MDA helps connect a desired feeling to something players actually do. Intention and perceivable consequence separate a confusing invitation from a confusing result. Perceptual grouping helps decide which marks belong together. Game Feel helps place feedback on the correct event. Each lens has a worked example and a way to disprove the proposed treatment. [Four lenses for art direction](references/design-lenses.md)
+
+Study a specific moment in a creator's account, frame sequence or build. Distinguish what the source shows from what you infer. When two works give opposite answers to a brief, say which condition in this game makes one answer fit. Deliver the changed frame or action where the available materials allow it. Use the references to guide execution and keep the research recap proportionate to the request.
+
+For a project that needs a broader visual vocabulary, the [TGA and Steam study guide](references/award-and-player-studies.md) indexes works by concrete decisions, from a single color added to a cloak to revealing an opponent's next move. Follow a creator source for the moment closest to the brief. Look beyond the selection when its cameras, production budgets or player activities do not fit.
 
 ## Pick the scale
 
