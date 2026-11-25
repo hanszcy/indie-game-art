@@ -6,9 +6,9 @@
 
 | What you're stuck on | What you can get |
 | --- | --- |
-| The mechanics work, but you haven't settled on a look. | Side-by-side sketches of the same scene. Choose the lighting, colors and character shapes you like, then use the chosen sketch as a guide for the next batch of assets. |
-| The buttons look like a website and the characters look pasted onto the background. | A playable scene with the characters, scenery, icons and controls drawn to fit together. Try a button and see how its face changes under your finger and when you release it. |
-| A tap changes a number, but it's hard to tell what happened. | An animation wired to the actual input. Replay the same move before and after the edit to see what reacts, when the action takes effect and where the result appears. |
+| The mechanics work. The game still uses placeholder art. | Choose a look for one playable scene, then replace its stand-ins with a first set of characters, scenery and controls. See how they fit together in the build. |
+| The game has artwork, but its interface still feels like a website. | Rework the screen players use most. Arrange information around what they need to see and do next, then draw buttons, icons and panels using shapes and materials from the game world. |
+| The still frames look right, but the game barely reacts to input. | Tie motion to the events players trigger. Let a button respond on contact, give a hit a brief pause, and hold the final pose for an extra beat on a win. |
 
 ## Playable comparisons
 
