@@ -14,32 +14,9 @@
 
 ## 遊んで比べる
 
-| ブラウザーで遊ぶ | スキルを使わない版 | Indie Game Art 版 |
-| --- | --- | --- |
-| スキージャンプ | [標準版で遊ぶ](https://indie-game-art-biscuits.vercel.app/ski/classic/) | [First Light で遊ぶ](https://indie-game-art-biscuits.vercel.app/ski/alpenglow/) |
-| 料理のマッチ3 | [標準版で遊ぶ](https://indie-game-art-biscuits.vercel.app/classic/) | [小満洋食屋で遊ぶ](https://indie-game-art-biscuits.vercel.app/kissaten/) |
+[![First Light で遊ぶ。同じジャンプの実機比較](showcase/ski-jump.webp)](https://indie-game-art-biscuits.vercel.app/ski/alpenglow/)
 
-[デモ一覧](https://indie-game-art-biscuits.vercel.app/play/?lang=ja) · [スキルの導入](#導入)。ゲーム内の表示は中国語です。
-
-### First Light · シルエットで読むジャンプ
-
-![同じ入力で四つ目の割れ目を越えるところ。両画面で踏み切り、空中姿勢、着地がそろう。](showcase/ski-jump.webp)
-
-**一度跳んでみる。** 画面か下のボタンを長押しし、赤い旗のそばで指を離します。キーボードではスペースキーを使います。全長782メートル、十か所の割れ目、速度、ジャンプの軌道、着地判定は両版で共通です。映像では同じ入力で四つ目の割れ目を跳んでいます。
-
-**膝から板へ視線を移す。** 標準版では青い人影が尾根を越えます。First Light では黄土色の上着と赤いマフラーが版画調の山並みに映えます。空中では膝が上がり、板が傾く。着地の瞬間には体が沈み、板の後ろで粉雪がはねます。
-
-[標準版で遊ぶ](https://indie-game-art-biscuits.vercel.app/ski/classic/) · [First Light で遊ぶ](https://indie-game-art-biscuits.vercel.app/ski/alpenglow/) · [縦画面全体](showcase/ski-alpenglow.webp) · [コースと描画のソース](examples/ski/)
-
-### 小満洋食屋 · 消えたオムライスの行き先
-
-![同じ一手で三皿のオムライスが消え、喫茶店版では一皿が注文票に飛び込む。](showcase/lunch.gif)
-
-**最初の一手を試す。** 一番上のランチを選んで開始し、「提示」で示された二品を入れ替えます。両版とも同じ6×6の盤面で、持ち手は14。最初の一手でオムライスを三皿届けると、注文票は3/4、残りは13手になります。
-
-**皿の行方を見る。** 標準版では消去とともに注文の数字が変わります。小満洋食屋ではオムライスが木のトレーから浮き、小さくなりながら紙の注文票の同じ料理の欄に届きます。木のカウンターやお品書きが店の雰囲気をつくり、皿の軌道が盤面と注文を結びます。
-
-[標準版で遊ぶ](https://indie-game-art-biscuits.vercel.app/classic/) · [小満洋食屋で遊ぶ](https://indie-game-art-biscuits.vercel.app/kissaten/)
+[![小満洋食屋で遊ぶ。同じ手の実機比較](showcase/lunch.gif)](https://indie-game-art-biscuits.vercel.app/kissaten/)
 
 ## 導入
 

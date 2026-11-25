@@ -14,32 +14,9 @@ A screenshot is enough to start a review. Mark the most useful changes and compa
 
 ## Playable comparisons
 
-| Play in your browser | Without the skill | With Indie Game Art |
-| --- | --- | --- |
-| Ski jumping | [Play the baseline](https://indie-game-art-biscuits.vercel.app/ski/classic/) | [Play First Light](https://indie-game-art-biscuits.vercel.app/ski/alpenglow/) |
-| Food match-3 | [Play the baseline](https://indie-game-art-biscuits.vercel.app/classic/) | [Play Komaru Kissaten](https://indie-game-art-biscuits.vercel.app/kissaten/) |
+[![Play First Light · ski jump with and without the skill](showcase/ski-jump.webp)](https://indie-game-art-biscuits.vercel.app/ski/alpenglow/)
 
-[Open the demo shelf](https://indie-game-art-biscuits.vercel.app/play/?lang=en) · [Install the skill](#install). Both games have Chinese controls.
-
-### First Light · Read a jump in silhouette
-
-![The fourth gap, captured from both playable builds. The skier charges, tucks and lands.](showcase/ski-jump.webp)
-
-**Try it.** Hold the slope or the bottom control, then release beside a red flag. On a keyboard, hold and release Space. Both editions share the 782-metre course, all ten gaps, speed, jump arc and landing checks. The clip replays identical input at the fourth gap.
-
-**Watch the knees, then the skis.** In the baseline a blue figure crosses a simple ridge. In First Light an ochre jacket and red scarf pick the rider out against a printed mountain landscape. As the skier tucks, the knees rise and the skis tilt. On contact the body compresses and a short burst of powder marks the landing.
-
-[Play baseline](https://indie-game-art-biscuits.vercel.app/ski/classic/) · [Play First Light](https://indie-game-art-biscuits.vercel.app/ski/alpenglow/) · [Full frame](showcase/ski-alpenglow.webp) · [Course and renderer](examples/ski/)
-
-### Komaru Kissaten · Follow an omelet to the order ticket
-
-![The same first swap at two counters. Three omelets clear and one serving travels up to the paper ticket in the kissaten.](showcase/lunch.gif)
-
-**Try it.** Pick the first lunch order, tap Start, then Hint (提示). Swap the outlined pair. Both editions start with the same six-by-six board and 14 moves. In both, this swap serves three of the four omelets and leaves 13 moves.
-
-**Follow the dish after it clears.** In the baseline, the counter changes to 3/4. In the kissaten, an illustrated omelet lifts from its tray and shrinks into the omelet line on the paper ticket. The wooden counter and printed menu establish the café, and the path of that one dish explains which part of the order you filled.
-
-[Play baseline](https://indie-game-art-biscuits.vercel.app/classic/) · [Play Komaru Kissaten](https://indie-game-art-biscuits.vercel.app/kissaten/)
+[![Play Komaru Kissaten · match-3 with and without the skill](showcase/lunch.gif)](https://indie-game-art-biscuits.vercel.app/kissaten/)
 
 ## Install
 

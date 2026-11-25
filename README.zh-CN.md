@@ -14,32 +14,9 @@
 
 ## 实机对照与试玩
 
-| 浏览器试玩 | 未使用 Skill | 使用 Indie Game Art |
-| --- | --- | --- |
-| 滑雪跳跃 | [玩基础版](https://indie-game-art-biscuits.vercel.app/ski/classic/) | [玩《雪线晨光》](https://indie-game-art-biscuits.vercel.app/ski/alpenglow/) |
-| 美食消消乐 | [玩基础版](https://indie-game-art-biscuits.vercel.app/classic/) | [玩《小满洋食屋》](https://indie-game-art-biscuits.vercel.app/kissaten/) |
+[![试玩《雪线晨光》：同一次跳跃的两版实机画面](showcase/ski-jump.webp)](https://indie-game-art-biscuits.vercel.app/ski/alpenglow/)
 
-[打开试玩合集](https://indie-game-art-biscuits.vercel.app/play/?lang=zh) · [安装 Skill](#安装)
-
-### 雪线晨光 · 腾空看姿势，落地看雪板
-
-![两版实机用相同输入越过第四道雪沟，依次呈现蓄力、腾空和落地。](showcase/ski-jump.webp)
-
-**自己试一跳。** 按住雪坡或底部按钮蓄力，在红旗旁松手。电脑上可以用空格键。两版共用 782 米雪道、10 道雪沟，以及同一套速度、跳跃弧线和落地判定。上图录的是同一组输入经过第四道雪沟。
-
-**盯住膝盖，再看板尾。** 基础版里，蓝色小人越过浅色山脊。《雪线晨光》用赭黄色外套和红围巾把人从版画般的群山里挑出来。腾空时双膝收起、雪板倾斜，触地那一下身体压低，板尾扬起一小撮雪粉。
-
-[玩基础版](https://indie-game-art-biscuits.vercel.app/ski/classic/) · [玩《雪线晨光》](https://indie-game-art-biscuits.vercel.app/ski/alpenglow/) · [看完整竖屏画面](showcase/ski-alpenglow.webp) · [雪道与绘制源码](examples/ski/)
-
-### 小满洋食屋 · 消掉的蛋包饭去了哪里？
-
-![两版交换同一对餐点，三份蛋包饭消除，洋食屋里有一盘飞向对应的订单行。](showcase/lunch.gif)
-
-**试试第一手。** 选第一单「午间双人餐」，开始后点「提示」，交换亮起的两格。两版共用同一张 6×6 棋盘，开局都是 14 步。这一手都会交付三份蛋包饭，订单变为 3/4，剩下 13 步。
-
-**顺着盘子看。** 基础版里，订单数字随消除更新。《小满洋食屋》里，一盘蛋包饭从木托盘上飞起，缩小，落进纸质订单上对应的那一行。木柜台和菜单交代了小店的气氛，这一小段飞行则把棋盘上的操作和出餐结果连了起来。
-
-[玩基础版](https://indie-game-art-biscuits.vercel.app/classic/) · [玩《小满洋食屋》](https://indie-game-art-biscuits.vercel.app/kissaten/)
+[![试玩《小满洋食屋》：同一次消除的两版实机画面](showcase/lunch.gif)](https://indie-game-art-biscuits.vercel.app/kissaten/)
 
 ## 安装
 
