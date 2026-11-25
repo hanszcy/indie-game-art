@@ -10,11 +10,27 @@
 | 絵はあるけれど、操作画面がウェブページのように見える。 | いちばんよく使う画面から手を入れます。次に何を見てどこを押すかに合わせて情報を配置し、ボタンやアイコン、パネルにゲームの世界で使われている形や質感を取り入れます。 |
 | 静止画は気に入っているのに、操作しても手応えが薄い。 | 操作に合わせて動きをつけます。ボタンは押した瞬間に反応し、命中の瞬間には短い間を置き、勝利したら最後のポーズを一拍長く見せます。 |
 
-## 遊んで比べる
+## 遊べる比較
 
-[![First Light で遊ぶ。同じジャンプの実機比較](showcase/ski-jump.webp)](https://indie-game-art-biscuits.vercel.app/ski/alpenglow/)
+[ゲームを選ぶ](https://hanszcy.github.io/indie-game-art/play/?lang=ja)
 
-[![小満洋食屋で遊ぶ。同じ手の実機比較](showcase/lunch.gif)](https://indie-game-art-biscuits.vercel.app/kissaten/)
+### 箱押しパズル
+
+| [通常版を遊ぶ](https://hanszcy.github.io/indie-game-art/play/sokoban/baseline/) | [Skill 版を遊ぶ](https://hanszcy.github.io/indie-game-art/play/sokoban/skill/) |
+| :---: | :---: |
+| [![箱押しパズル · 通常版を遊ぶ](play/previews/sokoban-baseline-play.webp)](https://hanszcy.github.io/indie-game-art/play/sokoban/baseline/) | [![箱押しパズル · Skill 版を遊ぶ](play/previews/sokoban-skill-play.webp)](https://hanszcy.github.io/indie-game-art/play/sokoban/skill/) |
+
+### フードマッチ3
+
+| [通常版を遊ぶ](https://hanszcy.github.io/indie-game-art/play/match/baseline/) | [Skill 版を遊ぶ](https://hanszcy.github.io/indie-game-art/play/match/skill/) |
+| :---: | :---: |
+| [![フードマッチ3 · 通常版を遊ぶ](play/previews/match-baseline-play.webp)](https://hanszcy.github.io/indie-game-art/play/match/baseline/) | [![フードマッチ3 · Skill 版を遊ぶ](play/previews/match-skill-play.webp)](https://hanszcy.github.io/indie-game-art/play/match/skill/) |
+
+### スキーアドベンチャー
+
+| [通常版を遊ぶ](https://hanszcy.github.io/indie-game-art/play/ski/baseline/) | [Skill 版を遊ぶ](https://hanszcy.github.io/indie-game-art/play/ski/skill/) |
+| :---: | :---: |
+| [![スキーアドベンチャー · 通常版を遊ぶ](play/previews/ski-baseline-play.webp)](https://hanszcy.github.io/indie-game-art/play/ski/baseline/) | [![スキーアドベンチャー · Skill 版を遊ぶ](play/previews/ski-skill-play.webp)](https://hanszcy.github.io/indie-game-art/play/ski/skill/) |
 
 ## 導入
 

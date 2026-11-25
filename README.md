@@ -12,9 +12,25 @@
 
 ## Playable comparisons
 
-[![Play First Light · ski jump with and without the skill](showcase/ski-jump.webp)](https://indie-game-art-biscuits.vercel.app/ski/alpenglow/)
+[Play all three](https://hanszcy.github.io/indie-game-art/play/?lang=en)
 
-[![Play Komaru Kissaten · match-3 with and without the skill](showcase/lunch.gif)](https://indie-game-art-biscuits.vercel.app/kissaten/)
+### Sokoban
+
+| [Play baseline](https://hanszcy.github.io/indie-game-art/play/sokoban/baseline/) | [Play with Skill](https://hanszcy.github.io/indie-game-art/play/sokoban/skill/) |
+| :---: | :---: |
+| [![Sokoban · Play baseline](play/previews/sokoban-baseline-play.webp)](https://hanszcy.github.io/indie-game-art/play/sokoban/baseline/) | [![Sokoban · Play with Skill](play/previews/sokoban-skill-play.webp)](https://hanszcy.github.io/indie-game-art/play/sokoban/skill/) |
+
+### Food Match-3
+
+| [Play baseline](https://hanszcy.github.io/indie-game-art/play/match/baseline/) | [Play with Skill](https://hanszcy.github.io/indie-game-art/play/match/skill/) |
+| :---: | :---: |
+| [![Food Match-3 · Play baseline](play/previews/match-baseline-play.webp)](https://hanszcy.github.io/indie-game-art/play/match/baseline/) | [![Food Match-3 · Play with Skill](play/previews/match-skill-play.webp)](https://hanszcy.github.io/indie-game-art/play/match/skill/) |
+
+### Ski Adventure
+
+| [Play baseline](https://hanszcy.github.io/indie-game-art/play/ski/baseline/) | [Play with Skill](https://hanszcy.github.io/indie-game-art/play/ski/skill/) |
+| :---: | :---: |
+| [![Ski Adventure · Play baseline](play/previews/ski-baseline-play.webp)](https://hanszcy.github.io/indie-game-art/play/ski/baseline/) | [![Ski Adventure · Play with Skill](play/previews/ski-skill-play.webp)](https://hanszcy.github.io/indie-game-art/play/ski/skill/) |
 
 ## Install
 

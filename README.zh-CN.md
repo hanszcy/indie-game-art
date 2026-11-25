@@ -12,9 +12,25 @@
 
 ## 实机对照与试玩
 
-[![试玩《雪线晨光》：同一次跳跃的两版实机画面](showcase/ski-jump.webp)](https://indie-game-art-biscuits.vercel.app/ski/alpenglow/)
+[进入试玩页](https://hanszcy.github.io/indie-game-art/play/?lang=zh)
 
-[![试玩《小满洋食屋》：同一次消除的两版实机画面](showcase/lunch.gif)](https://indie-game-art-biscuits.vercel.app/kissaten/)
+### 推箱子
+
+| [试玩基础版](https://hanszcy.github.io/indie-game-art/play/sokoban/baseline/) | [试玩 Skill 版](https://hanszcy.github.io/indie-game-art/play/sokoban/skill/) |
+| :---: | :---: |
+| [![推箱子 · 试玩基础版](play/previews/sokoban-baseline-play.webp)](https://hanszcy.github.io/indie-game-art/play/sokoban/baseline/) | [![推箱子 · 试玩 Skill 版](play/previews/sokoban-skill-play.webp)](https://hanszcy.github.io/indie-game-art/play/sokoban/skill/) |
+
+### 美食消消乐
+
+| [试玩基础版](https://hanszcy.github.io/indie-game-art/play/match/baseline/) | [试玩 Skill 版](https://hanszcy.github.io/indie-game-art/play/match/skill/) |
+| :---: | :---: |
+| [![美食消消乐 · 试玩基础版](play/previews/match-baseline-play.webp)](https://hanszcy.github.io/indie-game-art/play/match/baseline/) | [![美食消消乐 · 试玩 Skill 版](play/previews/match-skill-play.webp)](https://hanszcy.github.io/indie-game-art/play/match/skill/) |
+
+### 滑雪大冒险
+
+| [试玩基础版](https://hanszcy.github.io/indie-game-art/play/ski/baseline/) | [试玩 Skill 版](https://hanszcy.github.io/indie-game-art/play/ski/skill/) |
+| :---: | :---: |
+| [![滑雪大冒险 · 试玩基础版](play/previews/ski-baseline-play.webp)](https://hanszcy.github.io/indie-game-art/play/ski/baseline/) | [![滑雪大冒险 · 试玩 Skill 版](play/previews/ski-skill-play.webp)](https://hanszcy.github.io/indie-game-art/play/ski/skill/) |
 
 ## 安装
 
