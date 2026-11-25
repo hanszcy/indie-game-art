@@ -1,525 +1,266 @@
-// The static map is painted once at its native pixel resolution.
 const art = document.body.dataset.edition === "lantern";
 const canvas = document.querySelector("#map"),
   ctx = canvas.getContext("2d");
-const terrain = document.createElement("canvas");
-terrain.width = 384;
-terrain.height = 228;
-const pen = terrain.getContext("2d");
-function rect(c, x, y, w, h, ink) {
-  c.fillStyle = ink;
-  c.fillRect(Math.round(x), Math.round(y), w, h);
-}
-function poly(c, points, ink) {
-  c.fillStyle = ink;
-  c.beginPath();
-  points.forEach(([x, y], i) => (i ? c.lineTo(x, y) : c.moveTo(x, y)));
-  c.closePath();
-  c.fill();
-}
-function line(c, points, color, width = 1) {
-  c.strokeStyle = color;
-  c.lineWidth = width;
-  c.beginPath();
-  points.forEach(([x, y], i) => (i ? c.lineTo(x, y) : c.moveTo(x, y)));
-  c.stroke();
-}
-function oval(c, x, y, rx, ry, ink) {
-  c.fillStyle = ink;
-  c.beginPath();
-  c.ellipse(x, y, rx, ry, 0, 0, 2 * Math.PI);
-  c.fill();
-}
-function noise(i) {
-  const n = Math.sin(i * 132.17 + 18.7) * 43289.73;
-  return n - Math.floor(n);
-}
-const land = [
-  [10, 115],
-  [26, 99],
-  [44, 90],
-  [47, 66],
-  [59, 51],
-  [74, 47],
-  [86, 35],
-  [112, 28],
-  [125, 18],
-  [151, 18],
-  [166, 29],
-  [188, 33],
-  [199, 53],
-  [189, 68],
-  [198, 79],
-  [194, 94],
-  [207, 99],
-  [222, 111],
-  [243, 109],
-  [247, 83],
-  [260, 75],
-  [273, 51],
-  [293, 44],
-  [307, 34],
-  [335, 40],
-  [343, 55],
-  [363, 61],
-  [377, 87],
-  [370, 107],
-  [378, 120],
-  [366, 134],
-  [343, 138],
-  [332, 146],
-  [308, 142],
-  [295, 151],
-  [281, 169],
-  [268, 178],
-  [249, 180],
-  [232, 197],
-  [215, 199],
-  [202, 192],
-  [182, 192],
-  [178, 180],
-  [158, 169],
-  [151, 150],
-  [140, 147],
-  [149, 131],
-  [143, 119],
-  [134, 110],
-  [135, 100],
-  [113, 93],
-  [104, 103],
-  [94, 111],
-  [86, 132],
-  [72, 136],
-  [66, 149],
-  [43, 153],
-  [18, 148],
-];
-function displaced(points, y) {
-  return points.map(([x, v]) => [x, v + y]);
-}
-function pine(x, y, h) {
-  oval(pen, x + 2, y + 1, h * 0.44, 2, "#455449");
-  rect(pen, x - 1, y - 4, 3, 5, "#553f38");
-  for (let j = 0; j < 2; j++) {
-    const top = y - h + j * h * 0.31,
-      bottom = y - h * 0.32 + j * h * 0.23,
-      w = h * (0.27 + j * 0.09);
-    poly(
-      pen,
-      [
-        [x, top],
-        [x + w, bottom],
-        [x - w, bottom],
-      ],
-      "#214947",
-    );
-    poly(
-      pen,
-      [
-        [x, top],
-        [x + 1, bottom],
-        [x - w, bottom],
-      ],
-      "#41806a",
-    );
-  }
-}
-function lighthouse(c, x, y) {
-  oval(c, x + 2, y + 1, 15, 5, "#465747");
-  poly(
-    c,
-    [
-      [x - 7, y],
-      [x - 4, y - 26],
-      [x + 4, y - 26],
-      [x + 9, y],
-    ],
-    "#ffdf9b",
+const backdrop = new Image();
+if (art) backdrop.src = "../harbor.webp";
+const ink = "#273c47",
+  palette = ["#cd7350", "#4a9dae", "#b85347"];
+const oval = (x, y, rx, ry, c) =>
+  '<ellipse cx="' +
+  x +
+  '" cy="' +
+  y +
+  '" rx="' +
+  rx +
+  '" ry="' +
+  ry +
+  '" fill="' +
+  c +
+  '"/>';
+const path = (d, c) => '<path d="' + d + '" fill="' + c + '"/>';
+function mark(d, c, w) {
+  return (
+    '<path d="' +
+    d +
+    '" fill="none" stroke="' +
+    c +
+    '" stroke-width="' +
+    w +
+    '" stroke-linecap="round" stroke-linejoin="round"/>'
   );
-  poly(
-    c,
-    [
-      [x + 2, y - 26],
-      [x + 5, y - 26],
-      [x + 9, y],
-      [x + 4, y],
-    ],
-    "#b17b66",
-  );
-  poly(
-    c,
-    [
-      [x - 6, y - 10],
-      [x + 7, y - 14],
-      [x + 7, y - 9],
-      [x - 6, y - 5],
-    ],
-    "#b65344",
-  );
-  rect(c, x - 6, y - 31, 12, 7, "#493e4c");
-  rect(c, x - 4, y - 30, 8, 5, "#ffd46e");
-  rect(c, x, y - 30, 1, 5, "#9b6753");
-  rect(c, x - 8, y - 25, 16, 2, "#35494a");
-  poly(
-    c,
-    [
-      [x - 8, y - 31],
-      [x, y - 37],
-      [x + 8, y - 31],
-    ],
-    "#c15e47",
-  );
-  rect(c, x - 1, y - 39, 2, 3, "#f7c781");
-  rect(c, x - 2, y - 5, 4, 6, "#594749");
 }
-function renderGround() {
-  const c = pen;
-  if (!art) {
-    rect(c, 0, 0, 384, 228, "#e6eee5");
-    for (let x = 0; x < 384; x += 19)
-      line(
-        c,
+const eye = (x, y) => oval(x, y, 1.8, 2, ink);
+function portrait(type, pretty = art) {
+  let artbody = "";
+  if (!pretty) {
+    const shapes = [
+      "M14 41 30 10 47 41Z",
+      "M31 8 51 29 31 49 11 29Z",
+      "M12 14h37v31H12Z",
+    ];
+    artbody =
+      path(shapes[type], palette[type]) +
+      mark(
         [
-          [x, 0],
-          [x, 228],
-        ],
-        "#d9e3d8",
+          "M22 35 38 20m-5 0h5v5",
+          "M31 18v23m-9-17 18 12m-18 0 18-12",
+          "M22 36 40 21m-10 1 8 9",
+        ][type],
+        "#f8f3de",
+        3,
       );
-    for (let y = 0; y < 228; y += 19)
-      line(
-        c,
-        [
-          [0, y],
-          [384, y],
-        ],
-        "#d9e3d8",
-      );
-    line(c, route, "#bdc9b7", 14);
-    line(c, route, "#f8f8ee", 9);
-    rect(c, 348, 86, 15, 19, "#519472");
-    rect(c, 352, 81, 7, 5, "#519472");
-    return;
+  } else if (type === 0) {
+    artbody =
+      oval(30, 50, 18, 4, "#594d4c33") +
+      path("M12 45q2-13 16-13 15 0 20 13l-5 4H17z", "#237e80") +
+      oval(17, 18, 6, 6, "#97583c") +
+      oval(43, 18, 6, 6, "#97583c") +
+      oval(30, 28, 19, 16, "#bc7950") +
+      path("M13 26q7-13 16-11 12-3 20 10l-7-1-2 3-8-4-11 4z", "#df9d65") +
+      oval(24, 33, 8, 5, "#ffdda0") +
+      oval(35, 33, 8, 5, "#ffdda0") +
+      eye(22, 26) +
+      eye(37, 26) +
+      oval(30, 30, 3, 2, ink) +
+      mark("M30 32v2m-12 1-6 1m28-2 6 1", ink, 1.1) +
+      path("M14 18q-1-10 13-11 15-3 16 7l-8 3z", "#1c5c69") +
+      path("M12 17q16-7 31-4l3 3-31 5z", "#efb85a") +
+      path("M23 42l8 3-3 6-6-5z", "#d7553d") +
+      mark("M41 45 53 15", ink, 3) +
+      path("m51 18 3-10 3 8-3-1-3 4z", "#c1d1c8");
+  } else if (type === 1) {
+    artbody =
+      oval(30, 50, 17, 4, "#594d4c33") +
+      path(
+        "M12 44q7-8 5-22 1-14 14-14 14 0 16 13l3 22-8 3-6-2-8 2-6-2z",
+        "#264a61",
+      ) +
+      oval(30, 30, 13, 14, "#fff2cd") +
+      path("M17 23q3-9 14-4 8-5 14 4l-6-12-14-1z", "#31566a") +
+      eye(24, 25) +
+      eye(37, 25) +
+      path("m27 29 8-1-5 5z", "#e6a34f") +
+      path("M14 36q16 6 32-3l1 6-13 4-1 8-6-2 1-6-12-2z", "#68b9be") +
+      mark("M43 42 51 18", "#785b45", 3) +
+      path("m51 8 5 8-6 9-5-7z", "#a2e5e2") +
+      mark("m51 10-1 10", "#eefffd", 1.4) +
+      path("m19 14 5-8 2 2 7-5 6 9z", "#e2d6ae");
+  } else {
+    artbody =
+      oval(31, 49, 24, 5, "#594d4c33") +
+      mark("M17 38 9 45m14-6-5 9m23-9 7 7m-13-6 5 8", "#913d3c", 3) +
+      path("M12 33Q9 25 5 24q-5-6-2-12l6 5 4-7q9 7 1 15l5 8z", "#d96d4c") +
+      path("M40 32q7-2 10-8-4-7 2-13l2 7 7-4q1 11-6 13l-9 12z", "#d96d4c") +
+      oval(30, 34, 19, 12, "#be5642") +
+      oval(28, 32, 14, 8, "#e79465") +
+      mark("M23 27v-6m15 6v-6", "#a4533f", 3) +
+      eye(23, 21) +
+      eye(38, 21) +
+      mark("m27 35 4 1 3-1", ink, 1.3) +
+      path("m31 36 11-15 9 5-12 15z", "#384d55") +
+      path("m40 22 3-4 12 6-3 5z", "#c9b17d") +
+      oval(48, 23, 4, 2, "#33444a") +
+      path("M18 17q3-8 11-7l7 4-2 3z", "#435e64");
   }
-  rect(c, 0, 0, 384, 228, "#183743");
-  for (let i = 0; i < 680; i++) {
-    const x = noise(i + 23) * 384,
-      y = noise(i + 923) * 228,
-      len = 1 + noise(i + 723) * 9;
-    rect(c, x, y, Math.ceil(len), 1, i % 4 ? "#214754" : "#326070");
-  }
-  poly(c, displaced(land, 9), "#5b9290");
-  poly(c, displaced(land, 7), "#33586a");
-  poly(c, displaced(land, 4), "#914f47");
-  poly(c, land, "#ae935c");
-  poly(
-    c,
-    land.map(([x, y]) => [194 + (x - 194) * 0.975, 110 + (y - 110) * 0.96]),
-    "#75835c",
+  return (
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 55">' +
+    artbody +
+    "</svg>"
   );
-  for (let i = 0; i < 1250; i++) {
-    const x = Math.floor(noise(3310 + i) * 384),
-      y = Math.floor(noise(6420 + i) * 228);
-    const pix = c.getImageData(x, y, 1, 1).data;
-    if (pix[0] !== 117) continue;
-    rect(c, x, y, i % 7 ? 2 : 4, 1, i % 6 ? "#839064" : "#566e54");
-    if (i % 13 === 0) rect(c, x, y - 2, 1, 2, "#a4ac71");
-  }
-  c.lineJoin = "round";
-  line(c, route, "#515d4a", 14);
-  line(c, route, "#aa8864", 12);
-  line(c, route, "#ddbd82", 8);
-  for (let d = 5; d < length - 3; d += 9) {
-    const [x, y] = position(d);
-    rect(c, x - 1, y + 1, 2, 1, "#c7a371");
-  }
-  for (let i = 0; i < 12; i++) {
-    rect(c, i * 3, 125, 2, 12, "#8f6850");
-    rect(c, i * 3, 125, 2, 1, "#d6ab73");
-  }
-  rect(c, 0, 123, 34, 2, "#6a4d41");
-  rect(c, 0, 137, 34, 2, "#6a4d41");
-  for (const [x, y, h] of [
-    [52, 69, 11],
-    [61, 61, 16],
-    [83, 50, 12],
-    [109, 43, 10],
-    [166, 47, 16],
-    [184, 61, 11],
-    [157, 119, 12],
-    [168, 154, 13],
-    [179, 168, 18],
-    [194, 175, 13],
-    [208, 187, 14],
-    [250, 172, 10],
-    [281, 74, 13],
-    [304, 57, 15],
-    [321, 59, 10],
-    [333, 62, 15],
-    [343, 131, 11],
-    [309, 134, 14],
-    [365, 114, 11],
-    [58, 144, 9],
-  ])
-    pine(x, y, h);
-  for (const [x, y] of [
-    [25, 112],
-    [84, 122],
-    [115, 76],
-    [206, 131],
-    [253, 143],
-    [277, 106],
-    [331, 82],
-  ]) {
-    rect(c, x, y - 4, 2, 5, "#5b5143");
-    rect(c, x - 1, y - 6, 4, 3, "#f9d387");
-  }
-  for (const [x, y, s] of [
-    [35, 47, 6],
-    [115, 170, 7],
-    [135, 182, 3],
-    [305, 188, 7],
-    [340, 151, 4],
-    [215, 60, 6],
-    [229, 55, 3],
-    [43, 188, 6],
-    [353, 20, 5],
-  ]) {
-    oval(c, x, y + 1, s + 3, 2, "#4c7a7d");
-    poly(
-      c,
-      [
-        [x - s, y],
-        [x - 2, y - s],
-        [x + 2, y - s + 1],
-        [x + s, y],
-      ],
-      "#737b72",
-    );
-    poly(
-      c,
-      [
-        [x - s, y],
-        [x - 2, y - s],
-        [x, y - 2],
-      ],
-      "#b2ac8c",
-    );
-  }
-  // Tidal pools, mooring posts and fishing floats at the quiet edges of the map.
-  for (const [x, y] of [
-    [88, 163],
-    [29, 62],
-    [343, 175],
-    [213, 69],
-  ]) {
-    rect(c, x - 4, y + 1, 10, 1, "#4c8187");
-    rect(c, x - 2, y - 1, 5, 2, "#c7b190");
-    rect(c, x, y - 5, 2, 4, "#d27b5b");
-    rect(c, x, y - 6, 2, 1, "#f4d99b");
-  }
-  for (const [x, y] of [
-    [133, 66],
-    [276, 148],
-    [65, 123],
-    [187, 147],
-    [229, 150],
-    [317, 66],
-  ]) {
-    rect(c, x, y, 4, 1, "#597155");
-    rect(c, x + 1, y - 2, 1, 2, "#e2bc81");
-    rect(c, x + 3, y - 3, 1, 2, "#dec99a");
-  }
-  lighthouse(c, 357, 102);
 }
-function drawGun(c, x, y, type, active) {
-  if (!art) {
-    const colors = ["#db8c39", "#258bb0", "#ac5e83"];
-    rect(c, x - 5, y - 5, 10, 10, colors[type]);
-    rect(c, x - 1, y - 8, 3, 7, "#364938");
-    return;
-  }
-  const tones = [
-    ["#b65142", "#ffcb70"],
-    ["#528f99", "#a6f7f3"],
-    ["#7c687f", "#f3c1ab"],
-  ][type];
-  oval(c, x, y + 3, 9, 3, "#475648");
-  rect(c, x - 6, y - 1, 12, 4, "#534c48");
-  rect(c, x - 5, y - 3, 10, 3, "#bca476");
-  if (type === 2) {
-    poly(
-      c,
-      [
-        [x - 5, y - 4],
-        [x - 6, y - 9],
-        [x + 3, y - 12],
-        [x + 6, y - 7],
-        [x + 2, y - 3],
-      ],
-      tones[0],
-    );
-    line(
-      c,
-      [
-        [x - 5, y - 8],
-        [x + 3, y - 11],
-      ],
-      tones[1],
-      2,
-    );
-    return;
-  }
-  rect(c, x - 3, y - 12, 6, 10, tones[0]);
-  rect(c, x - 4, y - 11, 8, 4, tones[1]);
-  if (type === 0)
-    poly(
-      c,
-      [
-        [x - 6, y - 12],
-        [x, y - 17],
-        [x + 6, y - 12],
-      ],
-      "#ad5142",
-    );
-  else {
-    poly(
-      c,
-      [
-        [x, y - 21],
-        [x + 4, y - 16],
-        [x, y - 10],
-        [x - 4, y - 15],
-      ],
-      tones[1],
-    );
-    rect(c, x - 4, y - 10, 8, 2, "#526f7b");
-  }
-  if (active) {
-    rect(c, x - 1, y - 12, 2, 3, "#fff9c6");
-  }
+function spriteImage(svg) {
+  const img = new Image();
+  img.src = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svg);
+  return img;
 }
-function enemy(c, e, time) {
-  const [x, y] = e.pos;
-  const k = e.kind;
-  if (!art) {
-    oval(c, x, y, 3 + k, 3 + k, ["#be604d", "#c09d33", "#71475d"][k]);
-    return;
-  }
-  c.save();
-  c.translate(x, y);
-  c.scale(1.3, 1.3);
-  c.translate(-x, -y);
-  const t = Math.sin(time * 12 + e.id),
-    wing = t > 0 ? 5 : 3,
-    body = ["#f9cc86", "#fff4ae", "#e2a4a2"][k],
-    outer = ["#ad544b", "#a38c42", "#855268"][k];
-  oval(c, x + 1, y + 2, 5 + k, 2, "#826e54");
-  for (const s of [-1, 1]) {
-    poly(
-      c,
-      [
-        [x, y - 2],
-        [x + s * (wing + 2 + k), y - 3 - wing * 0.65],
-        [x + s * (5 + k), y],
-        [x + s * 2, y + 1],
-      ],
-      outer,
+const crewIcons = [0, 1, 2].map((k) => spriteImage(portrait(k)));
+function raider(k) {
+  if (!art)
+    return (
+      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 54">' +
+      ["#dc8a5f", "#82b7a4", "#947593", "#bc424e"]
+        .map((c, i) => (i === k ? oval(30, 28, 13 + k * 2, 12 + k, c) : ""))
+        .join("") +
+      "</svg>"
     );
-    rect(c, x + s * (3 + k) - 1, y - 3, 2, 2, body);
+  let v = oval(30, 46, 18, 3, "#173d5238");
+  if (k === 3) {
+    v +=
+      path("m3 30 8-3 2-14 8 6 10-12 6 12 10-7 1 15 9 4-12 13H15z", "#884655") +
+      path("m8 31 42-1-9 12H19z", "#cc745a") +
+      mark("M19 29q10 5 21 0", ink, 2) +
+      path("M29 24V4l13 5-13 5z", "#f2c568") +
+      eye(20, 32) +
+      eye(39, 32);
+  } else if (k === 0) {
+    v +=
+      path(
+        "M9 36q-8 1-5-10l6 2 2-7q8 2 7 9l4 6 15-1 4-4q-1-10 8-11l1 6 5-2q5 11-9 13l-7 4-20-1z",
+        "#c17073",
+      ) +
+      oval(30, 30, 17, 12, "#9d6276") +
+      path("M16 28q1-16 12-18l12 2 4 11-11-4-4 5z", "#dfab91") +
+      eye(24, 30) +
+      eye(36, 30) +
+      mark("m23 37 11-1", "#593f55", 1.5);
+  } else if (k === 1) {
+    v +=
+      mark(
+        "M17 30q-5 7-1 14m8-13q-3 8 2 15m7-16q-1 8 3 13m6-14q5 7 3 12",
+        "#78a9ae",
+        3,
+      ) +
+      path("M10 31q3-24 19-25 18-1 21 24l-8 1-5-3-7 4-7-3-7 3z", "#83c3c5") +
+      path("M16 24q4-14 17-14l6 2-14 5z", "#c4e7d7") +
+      eye(24, 24) +
+      eye(36, 24);
+  } else {
+    v +=
+      path(
+        "M8 33q-7-11 0-16l5 5 6-10 5 5 10-10 3 8 11-3-1 10 8 2-4 7 2 6-14 3-20-1z",
+        "#756987",
+      ) +
+      oval(31, 32, 19, 11, "#aa92a9") +
+      path("m16 25 7-9 9 5 6-4 9 9-13-3-3 3-7-2z", "#d4bbc0") +
+      eye(24, 31) +
+      eye(38, 31) +
+      mark("m23 37 11 1", "#655666", 2);
   }
-  rect(c, x - 1, y - 4, 3, 6, k === 2 ? "#624557" : "#593f48");
-  rect(c, x, y - 4, 2, 1, body);
-  if (e.chill > 0) rect(c, x - 3, y + 2, 6, 1, "#aef9ed");
-  c.restore();
+  return (
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 54">' +
+    v +
+    "</svg>"
+  );
 }
-function paintMap(w, time, focus, selected) {
+const monsters = [0, 1, 2, 3].map((k) => spriteImage(raider(k)));
+function paint(run, clock) {
   const c = ctx;
-  c.drawImage(terrain, 0, 0);
-  if (art) {
-    const sweep = 0.4 * Math.sin(time * 0.55);
-    poly(
-      c,
-      [
-        [357, 74],
-        [357 - 59, 74 + Math.sin(sweep - 0.13) * 64],
-        [357 - 62, 74 + Math.sin(sweep + 0.13) * 64],
-      ],
-      "#ffe09434",
-    );
+  c.setTransform(canvas.width / 320, 0, 0, canvas.height / 320, 0, 0);
+  c.fillStyle = art ? "#6eb7ba" : "#e1eced";
+  c.fillRect(0, 0, 320, 320);
+  if (art && backdrop.complete && backdrop.naturalWidth)
+    c.drawImage(backdrop, 0, 0, 320, 320);
+  else {
+    c.strokeStyle = "#b9d1d3";
+    c.lineWidth = 0.7;
+    for (let i = 40; i < 320; i += 37) {
+      c.beginPath();
+      c.moveTo(0, i);
+      c.lineTo(320, i);
+      c.stroke();
+    }
   }
-  sockets.forEach(([x, y], i) => {
-    if (i === focus) {
-      c.setLineDash([2, 3]);
-      c.strokeStyle = art ? "#fff4aab8" : "#597c65";
+  c.fillStyle = art ? "#506c68" : "#a0b3ad";
+  c.fillRect(0, WALL + 4, 320, 21);
+  c.fillStyle = art ? "#e3c596" : "#c4cec8";
+  c.fillRect(0, WALL + 5, 320, 9);
+  for (let x = 1; x < 320; x += 23) {
+    c.fillStyle = art ? "#ad9779" : "#93a69f";
+    c.fillRect(x, WALL + 5, 1, 8);
+    c.fillStyle = art ? "#fae6b7" : "#d8dfdb";
+    c.fillRect(x, WALL + 1, 14, 6);
+  }
+  for (const e of run.enemies) {
+    const size = e.kind === 3 ? 65 : 34,
+      bob = art ? Math.sin(clock * 6 + e.id) * 1.6 : 0;
+    const img = monsters[e.kind];
+    if (img.complete && img.naturalWidth)
+      c.drawImage(
+        img,
+        e.x - size / 2,
+        e.y - size * 0.7 + bob,
+        size,
+        size * 0.9,
+      );
+    if (e.hp < e.max || e.kind === 3) {
+      c.fillStyle = "#38545a";
+      c.fillRect(e.x - size * 0.34, e.y - size * 0.75, size * 0.68, 2.7);
+      c.fillStyle = e.chill ? "#a8f7ff" : "#ffda83";
+      c.fillRect(
+        e.x - size * 0.34,
+        e.y - size * 0.75,
+        (size * 0.68 * e.hp) / e.max,
+        2.7,
+      );
+    }
+  }
+  run.slots.forEach((hero, slot) => {
+    if (!hero) return;
+    const x = 40 + (slot % 4) * 80 + (slot >= 4 ? 9 : -9),
+      size = 24 + hero.rank * 2,
+      img = crewIcons[hero.type];
+    if (img.complete && img.naturalWidth)
+      c.drawImage(
+        img,
+        x - size / 2,
+        WALL - size + (slot >= 4 ? 9 : 3),
+        size,
+        size,
+      );
+  });
+  for (const f of run.fx) {
+    const t = Math.min(1, f.age / 0.14);
+    c.globalAlpha = 1 - Math.max(0, f.age - 0.16) * 8;
+    c.strokeStyle = ["#ffcf74", "#b7ffff", "#ffb181"][f.k];
+    c.lineWidth = art ? 2.6 : 1.6;
+    c.beginPath();
+    c.moveTo(
+      f.x + (f.tx - f.x) * Math.max(0, t - 0.23),
+      f.y + (f.ty - f.y) * Math.max(0, t - 0.23),
+    );
+    c.lineTo(f.x + (f.tx - f.x) * t, f.y + (f.ty - f.y) * t);
+    c.stroke();
+    if (t === 1) {
       c.beginPath();
       c.arc(
-        x,
-        y,
-        guns[w.towers[i]?.type ?? selected].range * w.range,
+        f.tx,
+        f.ty,
+        2 + (f.age - 0.14) * (f.k === 2 ? 110 : 50),
         0,
         Math.PI * 2,
       );
       c.stroke();
-      c.setLineDash([]);
-    }
-    if (w.towers[i]) {
-      c.save();
-      c.translate(x, y);
-      if (art) c.scale(1.22, 1.22);
-      drawGun(c, 0, 0, w.towers[i].type, w.phase === "fight");
-      c.restore();
-    } else if (art) {
-      poly(
-        c,
-        [
-          [x - 9, y],
-          [x - 5, y - 4],
-          [x + 6, y - 4],
-          [x + 9, y],
-          [x + 6, y + 4],
-          [x - 6, y + 4],
-        ],
-        "#515b50",
-      );
-      rect(c, x - 5, y - 3, 10, 5, "#ab9c72");
-      rect(c, x - 3, y - 1, 6, 1, "#fff0ae");
-      rect(c, x, y - 3, 1, 5, "#fff0ae");
-    } else {
-      rect(c, x - 5, y - 5, 10, 10, "#bbcaba");
-      rect(c, x - 3, y, 7, 1, "#546d58");
-      rect(c, x, y - 3, 1, 7, "#546d58");
-    }
-  });
-  for (const e of w.hostiles) {
-    enemy(c, e, time);
-    if (e.hp < e.max) {
-      const [x, y] = e.pos;
-      rect(c, x - 4, y - 10, 9, 1, "#634d47");
-      rect(
-        c,
-        x - 4,
-        y - 10,
-        Math.ceil((9 * e.hp) / e.max),
-        1,
-        art ? "#fff4ad" : "#4d845f",
-      );
-    }
-  }
-  for (const s of w.shots) {
-    const tint = (
-      art
-        ? ["#ffda78", "#c3fbff", "#ffc1a6"]
-        : ["#c67827", "#498db6", "#9c537d"]
-    )[s.type];
-    c.globalAlpha = 1 - s.age / 0.27;
-    line(c, [s.from, s.to], tint, art ? 1.8 : 1);
-    if (art) {
-      const [x, y] = s.to,
-        r = 1 + Math.floor(s.age * 20);
-      rect(c, x - r, y, 2 * r + 1, 1, tint);
-      rect(c, x, y - r, 1, 2 * r + 1, tint);
     }
     c.globalAlpha = 1;
   }
 }
-renderGround();

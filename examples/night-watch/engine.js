@@ -1,202 +1,206 @@
-// The two editions run this same fixed-step simulation. All lengths use map pixels.
-const route = [
-  [0, 132],
-  [48, 132],
-  [71, 110],
-  [71, 69],
-  [106, 52],
-  [153, 52],
-  [175, 74],
-  [175, 136],
-  [201, 156],
-  [244, 156],
-  [267, 133],
-  [267, 91],
-  [292, 73],
-  [331, 73],
-  [356, 98],
+// All gameplay values are shared by the classic and illustrated renderers.
+const WALL = 295,
+  WAVES = 4,
+  MAX_HP = 30,
+  MAX_RANK = 4;
+const heroes = [
+  { power: 6, delay: 0.85 },
+  { power: 4, delay: 1.06 },
+  { power: 9, delay: 1.68 },
 ];
-const sockets = [
-  [45, 105],
-  [95, 88],
-  [128, 34],
-  [150, 89],
-  [194, 113],
-  [226, 178],
-  [244, 108],
-  [296, 102],
-];
-const guns = [
-  { cost: 5, range: 50, pace: 0.62, hit: 3 },
-  { cost: 6, range: 52, pace: 1.04, hit: 2 },
-  { cost: 8, range: 59, pace: 1.58, hit: 6 },
-];
-const segments = route
-  .slice(1)
-  .map(([x, y], i) => Math.hypot(x - route[i][0], y - route[i][1]));
-const length = segments.reduce((a, b) => a + b, 0);
-function position(distance) {
-  for (let i = 0; i < segments.length; i++) {
-    if (distance <= segments[i]) {
-      const t = Math.max(0, distance) / segments[i];
-      return route[i].map((n, j) => n + (route[i + 1][j] - n) * t);
-    }
-    distance -= segments[i];
-  }
-  return route[route.length - 1];
+function roll(run, key) {
+  run[key] = (Math.imul(run[key], 1664525) + 1013904223) >>> 0;
+  return run[key] / 4294967296;
 }
-function newWatch(seed) {
+function newRun(seed) {
   return {
-    seed,
-    phase: "build",
-    wave: 0,
-    cleared: 0,
-    light: 7,
-    gold: 13,
-    towers: sockets.map((_, i) => (i === 1 ? { type: 0, timer: 0 } : null)),
-    hostiles: [],
-    shots: [],
-    spawn: 0,
-    clock: 0,
-    serial: 0,
-    kills: 0,
-    damage: 1,
-    range: 1,
-    rate: 1,
+    deck: seed,
+    sea: seed + 415,
+    gifts: seed + 829,
+    phase: "ready",
+    wave: 1,
+    hp: MAX_HP,
+    coins: 40,
+    summons: 0,
+    upgrades: 0,
+    slots: Array(8).fill(null),
+    levels: [0, 0, 0, 0, 0, 0],
     offer: [],
+    enemies: [],
+    fx: [],
+    kills: 0,
+    serial: 0,
+    spawned: 0,
+    clock: 0.35,
+    rest: 0,
+    time: 0,
   };
 }
-function random(w) {
-  w.seed = (Math.imul(w.seed, 1664525) + 1013904223) >>> 0;
-  return w.seed / 4294967296;
+const capacity = (run) => Math.min(8, 4 + Math.floor(run.summons / 5));
+const summonCost = (run) => 8 + Math.floor(run.summons / 3) * 2;
+const upgradeCost = (run) => 12 + run.upgrades * 5;
+const playable = (run) => run.phase === "ready" || run.phase === "battle";
+function summon(run) {
+  if (!playable(run)) return -1;
+  const empty = run.slots
+    .slice(0, capacity(run))
+    .map((h, i) => (h ? -1 : i))
+    .filter((i) => i >= 0);
+  if (!empty.length || run.coins < summonCost(run)) return -1;
+  const type = Math.floor(roll(run, "deck") * 3),
+    slot = empty[Math.floor(roll(run, "deck") * empty.length)];
+  run.coins -= summonCost(run);
+  run.summons++;
+  run.slots[slot] = { type, rank: 1, cd: 0.12 };
+  run.phase = "battle";
+  return slot;
 }
-function place(w, slot, type) {
-  if (!["build", "fight"].includes(w.phase)) return false;
-  if (w.towers[slot]) return "full";
-  if (w.gold < guns[type].cost) return "poor";
-  w.gold -= guns[type].cost;
-  w.towers[slot] = { type, timer: 0 };
-  return "placed";
+function compatible(a, b) {
+  return Boolean(
+    a && b && a.type === b.type && a.rank === b.rank && a.rank < MAX_RANK,
+  );
 }
-function startWave(w) {
-  if (w.phase !== "build") return;
-  w.wave++;
-  w.spawn = 6 + w.wave * 3;
-  w.clock = 0;
-  w.phase = "fight";
+function merge(run, from, to) {
+  if (
+    !playable(run) ||
+    from === to ||
+    !compatible(run.slots[from], run.slots[to])
+  )
+    return false;
+  run.slots[from] = null;
+  run.slots[to].rank++;
+  run.slots[to].cd = 0;
+  return true;
 }
-function draft(w) {
-  const pool = [0, 1, 2, 3, 4];
-  for (let i = 4; i > 0; i--) {
-    const j = Math.floor(random(w) * (i + 1));
+// Two distinct perks for each hero family, plus immediate wall repair and a shared attack bonus.
+function draft(run) {
+  if (run.phase !== "battle" || run.coins < upgradeCost(run)) return false;
+  const roster = new Set(run.slots.filter(Boolean).map((h) => h.type));
+  const pool = [...roster].flatMap((i) => [i * 2, i * 2 + 1]);
+  pool.push(6, 7);
+  for (let i = pool.length - 1; i > 0; i--) {
+    const j = Math.floor(roll(run, "gifts") * (i + 1));
     [pool[i], pool[j]] = [pool[j], pool[i]];
   }
-  w.offer = pool.slice(0, 3);
-  w.phase = "draft";
+  run.coins -= upgradeCost(run);
+  run.upgrades++;
+  run.offer = pool.slice(0, 3);
+  run.phase = "draft";
+  return true;
 }
-function choose(w, id) {
-  if (w.phase !== "draft" || !w.offer.includes(id)) return;
-  switch (id) {
-    case 0:
-      w.damage *= 1.25;
-      break;
-    case 1:
-      w.rate *= 0.85;
-      break;
-    case 2:
-      w.range *= 1.18;
-      break;
-    case 3:
-      w.gold += 9;
-      break;
-    case 4:
-      w.light = Math.min(7, w.light + 3);
-      break;
-  }
-  w.offer = [];
-  w.phase = "build";
+function choose(run, id) {
+  if (run.phase !== "draft" || !run.offer.includes(id)) return false;
+  if (id === 6) run.hp = Math.min(MAX_HP, run.hp + 9);
+  else if (id === 7) run.command = (run.command || 0) + 1;
+  else run.levels[id]++;
+  run.offer = [];
+  run.phase = "battle";
+  return true;
 }
-function advance(w, dt) {
-  if (w.phase !== "fight") return;
-  w.clock -= dt;
-  if (w.spawn && w.clock <= 0) {
-    const kind =
-      w.wave >= 2 && w.spawn % 4 === 0 ? 2 : w.spawn % 3 === 0 ? 1 : 0;
-    const hp = (4 + w.wave * 3) * [1, 0.7, 1.85][kind];
-    w.hostiles.push({
-      id: ++w.serial,
-      d: 0,
-      hp,
-      max: hp,
-      kind,
-      speed: (22 + w.wave * 2) * [1, 1.46, 0.72][kind],
-      chill: 0,
-      pos: route[0],
-    });
-    w.spawn--;
-    w.clock += 0.83 - w.wave * 0.035;
-  }
-  for (const e of w.hostiles) {
-    e.chill = Math.max(0, e.chill - dt);
-    e.d += dt * e.speed * (e.chill > 0 ? 0.53 : 1);
-    e.pos = position(e.d);
-  }
-  for (let i = 0; i < w.towers.length; i++) {
-    const tower = w.towers[i];
-    if (!tower) continue;
-    tower.timer = Math.max(0, tower.timer - dt);
-    if (tower.timer > 0) continue;
-    const stats = guns[tower.type],
-      [x, y] = sockets[i];
-    let target = null;
-    for (const e of w.hostiles)
-      if (
-        e.hp > 0 &&
-        Math.hypot(x - e.pos[0], y - e.pos[1]) <= stats.range * w.range &&
-        (!target || e.d > target.d)
-      )
-        target = e;
-    if (!target) continue;
-    const power = stats.hit * w.damage;
-    target.hp -= power;
-    if (tower.type === 1) target.chill = 1.8;
-    if (tower.type === 2)
-      for (const e of w.hostiles)
-        if (
-          e !== target &&
-          Math.hypot(e.pos[0] - target.pos[0], e.pos[1] - target.pos[1]) <= 21
-        )
-          e.hp -= power * 0.72;
-    w.shots.push({
-      from: [x, y - 5],
-      to: [...target.pos],
-      type: tower.type,
-      age: 0,
-    });
-    tower.timer = stats.pace * w.rate;
-  }
-  w.hostiles = w.hostiles.filter((e) => {
-    if (e.hp <= 0) {
-      w.gold++;
-      w.kills++;
-      return false;
-    }
-    if (e.d >= length) {
-      w.light = Math.max(0, w.light - 1);
-      return false;
-    }
-    return true;
+const countWave = (wave) => 5 + wave * 3;
+function spawn(run) {
+  const boss = run.wave === WAVES && run.spawned === countWave(run.wave) - 1;
+  const kind = boss
+    ? 3
+    : Math.floor(roll(run, "sea") * Math.min(3, run.wave + 1));
+  const x = 34 + roll(run, "sea") * 252;
+  const hp =
+    (6 + 2 * run.wave + 1.7 * run.wave ** 2) * [1, 0.72, 1.65, 10][kind];
+  run.enemies.push({
+    id: ++run.serial,
+    x,
+    y: 58,
+    kind,
+    hp,
+    max: hp,
+    chill: 0,
+    bite: 0.25,
+    speed: [22, 32, 16, 14][kind] + run.wave,
   });
-  w.shots.forEach((s) => (s.age += dt));
-  w.shots = w.shots.filter((s) => s.age < 0.25);
-  if (w.light === 0) {
-    w.phase = "loss";
+  run.spawned++;
+}
+function attack(run, h, slot) {
+  const origin = 40 + (slot % 4) * 80 + (slot >= 4 ? 9 : -9);
+  const targets = run.enemies
+    .filter((e) => e.hp > 0 && e.y >= 105)
+    .sort(
+      (a, b) =>
+        b.y - a.y + 0.1 * (Math.abs(a.x - origin) - Math.abs(b.x - origin)),
+    );
+  if (!targets.length) return;
+  const k = h.type,
+    amp = run.levels[k * 2],
+    special = run.levels[k * 2 + 1];
+  const damage =
+    heroes[k].power *
+    Math.pow(2.32, h.rank - 1) *
+    (1 + 0.35 * amp) *
+    (1 + 0.18 * (run.command || 0));
+  const target = targets[0],
+    hit = (e, p) => {
+      e.hp -= p;
+      if (k === 1) e.chill = 1.6 + 0.2 * amp;
+      run.fx.push({ x: origin, y: WALL - 7, tx: e.x, ty: e.y, k, age: 0 });
+    };
+  hit(target, damage);
+  if (k < 2 && special)
+    for (const e of targets.slice(1, 1 + special)) hit(e, damage * 0.65);
+  if (k === 2)
+    for (const e of targets.slice(1))
+      if (Math.hypot(e.x - target.x, e.y - target.y) <= 27 + special * 13)
+        e.hp -= damage * 0.72;
+  h.cd = heroes[k].delay / (1 + 0.1 * (h.rank - 1));
+}
+function advance(run, dt) {
+  if (run.phase !== "battle") return;
+  run.time += dt;
+  run.clock -= dt;
+  if (run.spawned < countWave(run.wave) && run.clock <= 0) {
+    spawn(run);
+    run.clock = 1.05 - run.wave * 0.06;
+  }
+  for (const e of run.enemies) {
+    e.chill = Math.max(0, e.chill - dt);
+    e.y = Math.min(WALL - 7, e.y + dt * e.speed * (e.chill ? 0.54 : 1));
+  }
+  run.slots.forEach((h, i) => {
+    if (h) {
+      h.cd = Math.max(0, h.cd - dt);
+      if (!h.cd) attack(run, h, i);
+    }
+  });
+  for (const e of run.enemies)
+    if (e.hp > 0 && e.y >= WALL - 7) {
+      e.bite -= dt;
+      if (e.bite <= 0) {
+        run.hp = Math.max(0, run.hp - (e.kind === 3 ? 4 : 2));
+        e.bite = 1.65;
+      }
+    }
+  run.enemies = run.enemies.filter((e) => {
+    if (e.hp > 0) return true;
+    run.kills++;
+    run.coins += e.kind === 3 ? 10 : 3;
+    return false;
+  });
+  run.fx.forEach((f) => (f.age += dt));
+  run.fx = run.fx.filter((f) => f.age < 0.26);
+  if (!run.hp) {
+    run.phase = "loss";
     return;
   }
-  if (!w.spawn && !w.hostiles.length) {
-    w.cleared = w.wave;
-    w.gold += 3;
-    if (w.wave === 4) w.phase = "win";
-    else draft(w);
+  if (run.spawned === countWave(run.wave) && !run.enemies.length) {
+    if (run.wave === WAVES) {
+      run.phase = "win";
+      return;
+    }
+    run.rest += dt;
+    if (run.rest >= 1.2) {
+      run.wave++;
+      run.spawned = 0;
+      run.clock = 0.25;
+      run.rest = 0;
+      run.coins += 5;
+    }
   }
 }

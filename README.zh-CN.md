@@ -14,15 +14,17 @@
 
 [试玩基础版](https://indie-game-art-biscuits.vercel.app/classic/) · [试玩小满洋食屋](https://indie-game-art-biscuits.vercel.app/kissaten/)
 
-## 02 · 同一波敌人，守住灯港
+## 02 · 当城墙只剩一个位置，召唤还是合成？
 
-**第一眼能看出是哪座塔开火了吗？** 基础版用线路图和色块表示塔位。到了《灯港守夜》，火花塔是一盏暖黄的灯，霜灯塔顶着细高的晶体，迫击塔有一根低矮的粗炮管。沿弹道看过去，命中位置会闪一下。可以先在前段转弯附近放座迫击塔，再点「迎接潮汐」。
+《灯港小队》是一局能用拇指玩的合成守城。银币可以买一位随机守卫，也可以买一次三选一强化。两位同类同星守卫能合成，留下高一星的守卫并腾出一个位置。敌人会从海面向下进攻，最后一波由旗舰领队压阵。
 
-![相同布阵抵御同一波敌人。左侧为线路图，右侧为夜间海岸、灯塔和沿路飞来的蛾群。](showcase/watch.gif)
+动图里两版花的钱、抽到的守卫和来袭的敌人都相同。基础版用几何图形标示职业；港口版里，鱼叉獭的斜长矛、企鹅的冰晶和螃蟹的粗炮管让人能认出合成对象。**试试连续召唤四次，把两位炮手蟹拖到一起，再用空位召唤。**
 
-[试玩基础版](https://indie-game-art-biscuits.vercel.app/watch/classic/?lang=zh) · [试玩灯港守夜](https://indie-game-art-biscuits.vercel.app/watch/lantern/?lang=zh) · [查看可运行源码](examples/night-watch/)
+![同一局竖屏守墙，两只炮手蟹合为两星，守卫继续射击。](showcase/watch.gif)
 
-每组对照都共享规则和开局。两版塔防还共用固定步长的模拟逻辑，相同局次和选择会抽到相同的遗物。两种美术方案均经过人工取舍，动图录自实际可玩的页面。
+[试玩基础版](https://indie-game-art-biscuits.vercel.app/watch/classic/?lang=zh) · [试玩灯港小队](https://indie-game-art-biscuits.vercel.app/watch/lantern/?lang=zh) · [玩法与源码](examples/night-watch/)
+
+两组动图都录自可玩的游戏。塔防两版共用战斗模拟，并分别用固定随机序列控制召唤、敌人和强化。
 
 ## 安装
 

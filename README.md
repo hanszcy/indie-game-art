@@ -14,15 +14,17 @@ Give a playable prototype its own visual language. This Codex skill helps you de
 
 [Play the baseline](https://indie-game-art-biscuits.vercel.app/classic/) · [Play Komaru Kissaten](https://indie-game-art-biscuits.vercel.app/kissaten/)
 
-## 02 · Hold the coast until dawn
+## 02 · A full seawall: recruit, merge or train?
 
-**Can you tell which tower just fired?** The baseline uses a route diagram and colored markers. Wickwatch gives the flare a brass lantern, the frost tower a tall crystal and the mortar a low, wide barrel. A flash at the target ends each shot. Try placing the mortar beside the first bend, then call the tide.
+Harbor Hands is a portrait merge defense game. Spend silver to recruit a random defender or draw three training options. Two matching defenders of the same star rank merge into a stronger one and free a berth. Four waves approach from offshore, ending with a flagship.
 
-![The same coastal defense encounter in both editions. A plain route diagram sits beside an illustrated island with a working lighthouse, moths and lantern towers.](showcase/watch.gif)
+The paired capture uses the same recruits, spending and attackers. The classic edition uses geometric class symbols. In the harbor edition, the otter’s harpoon, the penguin’s crystal and the crab’s broad cannon identify merge partners at thumb scale. **Recruit four times, drag the two gunner crabs together, then fill the berth you just opened.**
 
-[Play the baseline](https://indie-game-art-biscuits.vercel.app/watch/classic/?lang=en) · [Play Wickwatch](https://indie-game-art-biscuits.vercel.app/watch/lantern/?lang=en) · [Read the playable source](examples/night-watch/)
+![Identical runs in two portrait editions. A pair of gunner crabs merges into one two-star defender while the crew keeps firing.](showcase/watch.gif)
 
-Each pair shares its rules and opening state. Tower defense also shares its fixed-step simulation and relic draws for the same run and choices. These are authored comparisons of two art directions. The captures come from the playable builds.
+[Play the baseline](https://indie-game-art-biscuits.vercel.app/watch/classic/?lang=en) · [Play Harbor Hands](https://indie-game-art-biscuits.vercel.app/watch/lantern/?lang=en) · [Rules and source](examples/night-watch/)
+
+Both case studies are captured from playable builds. The two defense editions share a simulation, with separate seeded draws for recruiting, enemies and training.
 
 ## Install
 
