@@ -52,5 +52,3 @@ npx skills add hanszcy/indie-game-art --skill indie-game-art
 在项目里可以从这句话开始。
 
 > 请用 Indie Game Art 改我当前的游戏画面。保留玩法和主角，从最像网页的那个按钮入手，重做它的图标、按下去的样子和触发后的反馈，让我在项目里点一次试试。
-
-[中文使用指南](docs/guide.zh-CN.md) · [Skill 原文](SKILL.md) · [六个参考案例](references/research-and-direction.md) · [美术约定模板](assets/visual-contract.md) · [猫鼠游戏复盘](references/session-lessons.md)
