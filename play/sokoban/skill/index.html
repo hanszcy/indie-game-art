@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#18292b">
+<title>夜班行李站 · 东岭铁路</title>
+<link rel="stylesheet" href="./station.css">
+</head>
+<body>
+<svg class="symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+<symbol id="wheelmark" viewBox="0 0 80 36"><g fill="currentColor"><path d="M0 5h23l7 7h-6l-4-4H4zm7 7h16l6 6h-5l-4-3H10zm9 7h7l5 5h-7zM80 5H57l-7 7h6l4-4h16zm-7 7H57l-6 6h5l4-3h10zm-9 7h-7l-5 5h7z"/><circle cx="40" cy="18" r="13" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="40" cy="18" r="4"/><path d="M38.5 7h3v8h-3zm0 14h3v8h-3zM29 16.5h8v3h-8zm14 0h8v3h-8z" transform="rotate(36 40 18)"/></g></symbol>
+<symbol id="arrow" viewBox="0 0 24 24"><path d="M4 10h10l-3-5 10 7-10 7 3-5H4z" fill="currentColor"/></symbol>
+<symbol id="undo" viewBox="0 0 24 24"><path d="m9 5-6 6 6 5M4 11h9c5 0 6 4 6 8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="reset" viewBox="0 0 24 24"><path d="M5 10a7 7 0 1 1 .2 5M5 4v6h6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</defs></svg>
+<header class="mast"><div class="railway"><svg aria-hidden="true"><use href="#wheelmark"/></svg><span>东岭铁路</span><i></i><span lang="en">EASTERN RAILWAY</span></div><div class="departure">发车 <time id="departure">23:40</time></div></header>
+<main class="station">
+<aside class="poster">
+<div class="identity"><div class="eyebrow"><i></i>NIGHT BAGGAGE SERVICE</div><h1>夜班<span>行李站</span></h1><p>把行李推到地板上的菱形装车位。</p></div>
+<figure class="vignette"><img src="./art/night-mail.svg" alt="一列蒸汽机车沿月下的铁轨驶出东岭站"><figcaption><b>东岭站</b><span>DONG LING</span><i></i><span>夜行线</span></figcaption></figure>
+</aside>
+<section class="work" aria-label="站台行李装车">
+<div class="ledger"><div class="level-no"><small>站台</small><b id="level">01</b></div><div class="waybill"><small>装车单</small><h2 id="level-name">第一件货</h2></div>
+<dl class="counts"><div><dt>步数</dt><dd id="moves">00</dd></div><div><dt>推箱</dt><dd id="pushes">00</dd></div><div><dt>到位</dt><dd id="arrived">0/1</dd></div></dl></div>
+<div id="board" class="board" tabindex="0" role="group" aria-label="装车台，使用方向键或 WASD 移动，可滑动操作"><svg id="surface" aria-hidden="true" preserveAspectRatio="none"></svg><div id="pieces" aria-hidden="true"></div></div>
+<div class="dispatch" id="dispatch" hidden><b id="dispatch-label">本台装齐</b><button type="button" id="next">下一站台 <span aria-hidden="true">→</span></button></div>
+<div class="controlbar"><div class="operations"><button id="undo-btn" type="button" title="撤销（Z）"><svg aria-hidden="true"><use href="#undo"/></svg>撤销</button><button id="restart-btn" type="button" title="重开（R）"><svg aria-hidden="true"><use href="#reset"/></svg>重开</button></div><div class="pad" aria-label="移动方向"><button type="button" data-dir="left" aria-label="向左"><svg aria-hidden="true"><use href="#arrow"/></svg></button><button type="button" data-dir="up" aria-label="向上"><svg aria-hidden="true"><use href="#arrow"/></svg></button><button type="button" data-dir="down" aria-label="向下"><svg aria-hidden="true"><use href="#arrow"/></svg></button><button type="button" data-dir="right" aria-label="向右"><svg aria-hidden="true"><use href="#arrow"/></svg></button></div></div>
+<div class="instructions"><span class="key-hint">方向键 / WASD 移动</span><span class="touch-hint">滑动站台或轻触方向键移动</span><span>站台 <b id="progress">01 / 05</b></span></div>
+<p id="feedback" class="sr" role="status" aria-live="polite"></p></section></main>
+<script type="module" src="./station.js"></script></body></html>
