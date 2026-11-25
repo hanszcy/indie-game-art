@@ -2,11 +2,15 @@
 
 [English](README.md) · **简体中文** · [日本語](README.ja.md)
 
-**Indie Game Art 是面向独立游戏开发者的 Codex 美术指导 Skill。** 它把你希望玩家感受到的氛围，落实到画面的光线、角色的轮廓，以及一个动作最该被看清的瞬间。你可以用它探索一款新游戏的画风，也可以拿已有原型，只打磨一个动作。
+**Indie Game Art 帮你把游戏原型里的占位图、默认按钮和生硬的动作，改成一套画风一致、能在原项目里试玩的美术和动效。** 在开发工具里启用这个 Skill，给它一幕游戏画面，说明你想要的气氛和要保留的玩法。
 
-- **确定画风。** 把同一场景画成几张配色和光照不同的小稿，在实际游玩尺寸下比较，选出合适的色彩、轮廓和细节密度。
-- **统一视觉语言。** 让角色、场景、字体、图标和按钮共用一套造型与材质规则。把它们放回最热闹的一帧，检查玩家还能否分清背景、角色和可以操作的物件。
-- **打磨动作和反馈。** 从动作前的预备姿势，一直看到接触、停顿和恢复操作。用同一次输入回看修改前后，判断动作的重量、特效的位置和界面回应的节奏。
+| 你遇到的问题 | 你能拿到什么 |
+| --- | --- |
+| 有玩法，还没想好画风 | 同一场景的几张风格草图。你可以并排挑选喜欢的光线、配色和人物造型，再拿选中的一张指导后续素材。 |
+| 游戏能玩，但按钮像网页，角色和背景像两套素材 | 一幕改好、能玩的游戏画面。角色轮廓、场景光照、图标和按钮用同一套画法，按钮按下和松开也有各自的状态。 |
+| 玩家点了，画面只跳一个数字，很难看出发生了什么 | 一段接到真实操作上的动画。你可以在同一次输入下，对照修改前后，看清哪个物件动了、动作何时生效、结果落在哪里。 |
+
+只有一张截图也可以开始。先标出画面里最该改的地方，再画一版修改稿与原图并排比较。有了项目源码，就可以把选定的方案接进游戏。
 
 ## 实机对照与试玩
 
@@ -37,30 +41,16 @@
 
 [玩基础版](https://indie-game-art-biscuits.vercel.app/classic/) · [玩《小满洋食屋》](https://indie-game-art-biscuits.vercel.app/kissaten/)
 
-## 美术工作台
-
-同一个港口画三次：清晨、风暴将至、雨过天晴。保留送件员和渡船，改远岸屋顶消失在哪里、人物周围留下多少水面、潮湿码头哪一条边反光。再让这些选择延续到一枚按钮、角色的一个动作和最后的告别。
-
-![原创港口气氛稿，用三个时刻对照光线、空间层次与情绪。](assets/studies/harbor-color-script.webp)
-
-[画风与气氛工作手册](references/look-development.md) · [艺术家与工作室的一手案例](references/source-notebook.md) · [原创气氛稿与可编辑图例](assets/studies/README.md)
-
-具体打磨时可以只读一处：[角色与材质](references/visual-production.md)、[交互表面](references/control-craft.md)、[姿势、特效与环境节奏](references/motion-and-mix.md)，或[从最后一个可玩画面走到胜负结算](references/scene-handoffs.md)。用[带示例的研究表](assets/study-sheet.md)记下借鉴了什么，以及实际效果怎样。
-
 ## 安装
 
 ```sh
 npx skills add hanszcy/indie-game-art --skill indie-game-art
 ```
 
-也可以直接装进 Codex：
+手动安装时，把这个仓库复制到开发工具的技能目录中，文件夹取名为 `indie-game-art`，入口文件是 [SKILL.md](SKILL.md)。
 
-```sh
-git clone https://github.com/hanszcy/indie-game-art.git ~/.codex/skills/indie-game-art
-```
+在项目里可以从这句话开始。
 
-打开自己的游戏项目，先交给它一个具体的动作：
-
-> 用 $indie-game-art 打磨我的滑雪游戏里落地的那一下。保留跳跃物理，给我看手机尺寸下的收膝、雪板触地和恢复滑行。
+> 请用 Indie Game Art 改我当前的游戏画面。保留玩法和主角，从最像网页的那个按钮入手，重做它的图标、按下去的样子和触发后的反馈，让我在项目里点一次试试。
 
 [中文使用指南](docs/guide.zh-CN.md) · [Skill 原文](SKILL.md) · [六个参考案例](references/research-and-direction.md) · [美术约定模板](assets/visual-contract.md) · [猫鼠游戏复盘](references/session-lessons.md)

@@ -2,11 +2,15 @@
 
 **English** · [简体中文](README.zh-CN.md) · [日本語](README.ja.md)
 
-**Indie Game Art is an art direction skill for independent game developers working with Codex.** It helps you decide what the player should notice first, how a place should feel, and how that feeling carries through the controls and the characters in motion. Use it to explore a new game's look or to refine one interaction in a playable build.
+**Indie Game Art helps indie developers replace placeholder characters, scenery, controls and animations in a playable prototype.** Load the skill in your game project, pick a scene, and describe the mood you want and the rules you want to keep. Start with that scene and play the changes in the build.
 
-- **Find a visual identity.** Compare small color and lighting studies of the same scene. Choose a palette, a silhouette and a level of detail that hold up at play size.
-- **Carry the look through play.** Give characters, scenery, type, icons and control surfaces a shared vocabulary of shapes and materials. Keep interactive objects easy to pick out in a busy frame.
-- **Give actions weight and rhythm.** Work through anticipation, contact and recovery. Replay the same input on the target screen to judge the pose, effects and return of control together.
+| What you're stuck on | What you can get |
+| --- | --- |
+| The mechanics work, but you haven't settled on a look. | Side-by-side sketches of the same scene. Choose the lighting, colors and character shapes you like, then use the chosen sketch as a guide for the next batch of assets. |
+| The buttons look like a website and the characters look pasted onto the background. | A playable scene with the characters, scenery, icons and controls drawn to fit together. Try a button and see how its face changes under your finger and when you release it. |
+| A tap changes a number, but it's hard to tell what happened. | An animation wired to the actual input. Replay the same move before and after the edit to see what reacts, when the action takes effect and where the result appears. |
+
+A screenshot is enough to start a review. Mark the most useful changes and compare a redrawn frame with the original. With access to the project source, the chosen treatment can go into the game.
 
 ## Playable comparisons
 
@@ -37,30 +41,16 @@
 
 [Play baseline](https://indie-game-art-biscuits.vercel.app/classic/) · [Play Komaru Kissaten](https://indie-game-art-biscuits.vercel.app/kissaten/)
 
-## The art desk
-
-Paint the same harbor at first light, before a squall, and just after rain. Keep the clerk and the boat. Change where a roofline disappears, how much open water surrounds the figure, and where the wet pier catches the light. Use those decisions again on a button, a character gesture and a farewell.
-
-![Original harbor color keys for a fictional delivery game, comparing light, depth and atmosphere across three moments.](assets/studies/harbor-color-script.webp)
-
-[Look-development workshop](references/look-development.md) · [Studio and artist field notes](references/source-notebook.md) · [Original studies](assets/studies/README.md)
-
-For a closer craft pass, explore [character and material families](references/visual-production.md), [control surfaces](references/control-craft.md), [pose, FX and ambience](references/motion-and-mix.md) or [the last playable frame and its ending](references/scene-handoffs.md). Save a source, an edit and a judgment in the [worked study sheet](assets/study-sheet.md).
-
 ## Install
 
 ```sh
 npx skills add hanszcy/indie-game-art --skill indie-game-art
 ```
 
-Or install directly in Codex:
+To install manually, copy the repository into your tool’s skills directory as `indie-game-art`. The entry point is [SKILL.md](SKILL.md).
 
-```sh
-git clone https://github.com/hanszcy/indie-game-art.git ~/.codex/skills/indie-game-art
-```
+Try this in your game project.
 
-Open your playable project and try one specific interaction:
-
-> Use $indie-game-art to polish the landing in my ski prototype. Keep the jump physics fixed. Show the crouch, the instant the skis touch and the recovery at phone size.
+> Use Indie Game Art on the current game screen. Keep the rules and main character. Start with the button that looks most like a web control. Redraw its icon, its pressed state and the feedback when it activates so I can try it in the build.
 
 [Skill guide](SKILL.md) · [Six reference studies](references/research-and-direction.md) · [Visual contract template](assets/visual-contract.md) · [Cat-and-mouse case notes](references/session-lessons.md)
