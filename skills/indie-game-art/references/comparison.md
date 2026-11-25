@@ -10,3 +10,5 @@ A comparison should reveal what the skill changes, not reward a deliberately wea
 6. Explain concrete differences and costs: composition, actor silhouette, input feedback, art consistency, readability. Do not present taste as measured fact or a single pair as proof of general superiority.
 
 For iterative skill development, record what the new instructions caused the implementer to do differently. Reading the file, adding a badge, or using a tool is not evidence that the skill improved the result.
+
+Use the same acceptance run on each edition. Where state is deterministic, compare the underlying result after each input. Film the actual surfaces at equal scale and normal speed. Check the image and both public play links after publishing. Keep project-specific levels, edition names and capture code in the showcase, outside the installed skill.

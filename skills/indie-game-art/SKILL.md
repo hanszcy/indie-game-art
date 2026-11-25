@@ -2,7 +2,7 @@
 name: indie-game-art
 description: "Develop and implement an authored visual identity for playable indie games: distinctive worlds, production artwork, expressive action, and interfaces grounded in play. Use for game art direction, replacement of placeholder art, visual redesign, and critiques at actual play size."
 metadata:
-  version: "2.0.0"
+  version: "2.1.0"
 ---
 
 # Indie Game Art
@@ -18,7 +18,7 @@ Preserve the requested game, rules, player knowledge, camera constraints, and ap
 - **Critique:** inspect the actual picture or sequence, state the artistic problem and a concrete alternative. Do not manufacture an implementation the user did not request.
 - **Existing approved identity:** develop its vocabulary instead of replacing it with the skill's own preferred taste.
 
-Read [production.md](references/production.md) for a playable implementation or generated/raster asset work. For a requested with/without comparison, also read [comparison.md](references/comparison.md).
+When a complete build looks like a themed interface, use the [playfield edit](references/playfield-edit.md) on its busiest ordinary frame. Read [production.md](references/production.md) for a playable implementation or generated/raster asset work. For a requested with/without comparison, also read [comparison.md](references/comparison.md).
 
 ## 1. Write a direction that changes the image
 
@@ -42,7 +42,7 @@ Ask these questions of the actual capture:
 1. With the title hidden, what makes this recognizably this game? Point to a visible choice, not the art brief.
 2. Are foreground actor, interactable and surrounding art equally resolved? A painted backdrop with geometric stand-ins is unfinished unless that contrast has an intentional, demonstrated function.
 3. Can the player infer what can move, what is blocked, and what just changed? Does the atmosphere survive after fixing those reads?
-4. Does the action express its subject? A heavy parcel compresses and settles differently from a brittle shell breaking or a skier loading an edge.
+4. Does the action express its subject? A heavy parcel compresses and settles differently from a brittle shell breaking or a taut rope going slack.
 5. Would the image still have a voice with decorative particles and framing removed?
 
 If the answer rests only on palette, rounded corners, a mascot or a marketing wrapper, revise the central picture. Do not scale a failed slice into a complete batch.
