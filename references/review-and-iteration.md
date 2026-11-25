@@ -46,3 +46,9 @@ Compare before and after using the same viewport, game state, character and reso
 Keep an approved version for comparison. Record the observed problem, hypothesis, edit and outcome. Revisit silhouette, hierarchy or input if a surface treatment does not help. Respect requests to preserve older versions and unrelated work.
 
 Match the delivery description to the evidence. A concept supplies direction and studies. Production assets include masters, exports and technical checks. An implementation includes a runnable result and observed behavior. A published release needs an authorized deployment and a verified destination. Time spent, images generated and a successful build do not establish aesthetic acceptance.
+
+## Review at the size and tempo of play
+
+Pick the smallest crop that could disprove the edit. A still pair works for occlusion; an event log can establish a double charge; a slowed replay can expose a detached trail. An accelerated clear can test a terminal branch while concealing the very wait that frustrates a player. Repeat the changed beat once at ordinary speed. If a camera, audio device or physical input dominates the experience, record which parts have only been simulated.
+
+For a “rough everywhere” report, choose the first repeated loss of understanding or control, one high-impact authored moment and an inexpensive comparison. Defer additional variants until that sample holds up. For each accepted revision record the next fragile condition: first use after load, overlapping events, another language, a new input method, a narrower room or a repeated loss. Use that note to guide future review instead of reinstating an exhaustive checklist on every task.

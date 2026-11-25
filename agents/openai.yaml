@@ -1,4 +1,4 @@
 interface:
   display_name: "Indie Game Art"
-  short_description: "Shape a game's visual identity and test it in play"
-  default_prompt: "Use $indie-game-art to review this game's visual identity and polish a representative playable scene."
+  short_description: "Shape indie game art, visual identity and atmosphere"
+  default_prompt: "Use $indie-game-art to art-direct this scene and carry its mood through the interface and motion."

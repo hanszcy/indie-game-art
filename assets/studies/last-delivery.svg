@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="548" viewBox="0 0 920 548" role="img" aria-labelledby="title desc">
+  <title id="title">Two endings for one crossing</title>
+  <desc id="desc">Keep the cause in the world. Let the receipt answer what carries into the next attempt.</desc>
+  <rect x="0" y="0" width="920" height="548" rx="0" fill="#fcf4df" stroke="none"/>
+  <rect x="0" y="0" width="920" height="8" rx="0" fill="#287265" stroke="none"/>
+  <text x="35" y="40" fill="#287265" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2">FIELD STUDIES   /   INDIE GAME ART</text>
+  <text x="35" y="89" fill="#263f40" font-family="Georgia,serif" font-size="40" font-weight="700">Two endings for one crossing</text>
+  <text x="36" y="121" fill="#263f40" font-family="Arial,sans-serif" font-size="17" font-weight="400">Keep the cause in the world. Let the receipt answer what carries into the next attempt.</text>
+  <text x="36" y="168" fill="#287265" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1">DELIVERED</text>
+  <rect x="36" y="178" width="272" height="132" rx="8" fill="#fffaf0" stroke="#b9ab8e"/>
+  <rect x="56" y="238" width="231" height="4" rx="0" fill="#72a8a0" stroke="none"/>
+  <g transform="translate(169 209) scale(0.9)">
+    <path d="m0 7 18-7 20 7-18 9z" fill="#f1c078" stroke="#654631"/>
+    <path d="m0 7 20 9v15L0 22z" fill="#cd8d57" stroke="#654631"/>
+    <path d="m20 16 18-9v15l-18 9z" fill="#af7149" stroke="#654631"/>
+    <path d="m9 3 19 9v8l4-2v-7L14 2z" fill="#fff2cc"/>
+  </g>
+  <g transform="translate(155 213)">
+    <path d="M0 15h61l-12 12H13z" fill="#82533f"/>
+    <path d="M9 12h39V1H25v8H9z" fill="#c7865f"/>
+  </g>
+  <text x="49" y="271" fill="#263f40" font-family="Arial,sans-serif" font-size="16" font-weight="700">Contact</text>
+  <text x="49" y="294" fill="#263f40" font-family="Arial,sans-serif" font-size="15" font-weight="400">The last parcel arrives.</text>
+  <rect x="325" y="178" width="272" height="132" rx="8" fill="#fffaf0" stroke="#b9ab8e"/>
+  <rect x="369" y="193" width="174" height="52" rx="2" fill="#efe2bb" stroke="#b9ab8e"/>
+  <path d="M382 206L436 206" stroke="#b9ab8e" stroke-width="1"/>
+  <path d="M382 216L460 216" stroke="#b9ab8e" stroke-width="1"/>
+  <path d="M382 226L425 226" stroke="#b9ab8e" stroke-width="1"/>
+  <circle cx="516" cy="218" r="16" fill="#287265"/>
+  <text x="516" y="224" fill="#fffaf0" font-family="Arial,sans-serif" font-size="20" font-weight="700" text-anchor="middle">✓</text>
+  <text x="338" y="271" fill="#263f40" font-family="Arial,sans-serif" font-size="16" font-weight="700">Record</text>
+  <text x="338" y="294" fill="#263f40" font-family="Arial,sans-serif" font-size="15" font-weight="400">One destination cleared.</text>
+  <rect x="614" y="178" width="272" height="132" rx="8" fill="#fffaf0" stroke="#b9ab8e"/>
+  <rect x="647" y="201" width="204" height="34" rx="5" fill="#287265" stroke="none"/>
+  <text x="747" y="224" fill="#fffaf0" font-family="Arial,sans-serif" font-size="16" font-weight="700" text-anchor="middle">Next route</text>
+  <text x="627" y="271" fill="#263f40" font-family="Arial,sans-serif" font-size="16" font-weight="700">Return</text>
+  <text x="627" y="294" fill="#263f40" font-family="Arial,sans-serif" font-size="15" font-weight="400">Take the next route.</text>
+  <text x="36" y="341" fill="#a94734" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1">MISSED</text>
+  <rect x="36" y="351" width="272" height="132" rx="8" fill="#fffaf0" stroke="#b9ab8e"/>
+  <rect x="56" y="411" width="231" height="4" rx="0" fill="#72a8a0" stroke="none"/>
+  <g transform="translate(70 382) scale(0.9)">
+    <path d="m0 7 18-7 20 7-18 9z" fill="#f1c078" stroke="#654631"/>
+    <path d="m0 7 20 9v15L0 22z" fill="#cd8d57" stroke="#654631"/>
+    <path d="m20 16 18-9v15l-18 9z" fill="#af7149" stroke="#654631"/>
+    <path d="m9 3 19 9v8l4-2v-7L14 2z" fill="#fff2cc"/>
+  </g>
+  <g transform="translate(206 386)">
+    <path d="M0 15h61l-12 12H13z" fill="#82533f"/>
+    <path d="M9 12h39V1H25v8H9z" fill="#c7865f"/>
+  </g>
+  <text x="49" y="444" fill="#263f40" font-family="Arial,sans-serif" font-size="16" font-weight="700">Cause</text>
+  <text x="49" y="467" fill="#263f40" font-family="Arial,sans-serif" font-size="15" font-weight="400">The ferry has left.</text>
+  <rect x="325" y="351" width="272" height="132" rx="8" fill="#fffaf0" stroke="#b9ab8e"/>
+  <rect x="369" y="366" width="174" height="52" rx="2" fill="#efe2bb" stroke="#b9ab8e"/>
+  <path d="M382 379L436 379" stroke="#b9ab8e" stroke-width="1"/>
+  <path d="M382 389L460 389" stroke="#b9ab8e" stroke-width="1"/>
+  <path d="M382 399L425 399" stroke="#b9ab8e" stroke-width="1"/>
+  <circle cx="516" cy="391" r="16" fill="#a94734"/>
+  <text x="516" y="397" fill="#fffaf0" font-family="Arial,sans-serif" font-size="20" font-weight="700" text-anchor="middle">1</text>
+  <text x="338" y="444" fill="#263f40" font-family="Arial,sans-serif" font-size="16" font-weight="700">Record</text>
+  <text x="338" y="467" fill="#263f40" font-family="Arial,sans-serif" font-size="15" font-weight="400">One parcel remains.</text>
+  <rect x="614" y="351" width="272" height="132" rx="8" fill="#fffaf0" stroke="#b9ab8e"/>
+  <rect x="647" y="374" width="204" height="34" rx="5" fill="#263f40" stroke="none"/>
+  <text x="747" y="397" fill="#fffaf0" font-family="Arial,sans-serif" font-size="16" font-weight="700" text-anchor="middle">Retry crossing</text>
+  <text x="627" y="444" fill="#263f40" font-family="Arial,sans-serif" font-size="16" font-weight="700">Return</text>
+  <text x="627" y="467" fill="#263f40" font-family="Arial,sans-serif" font-size="15" font-weight="400">Retry this crossing.</text>
+  <path d="M35 506L885 506" stroke="#b9ab8e" stroke-width="1"/>
+  <text x="36" y="530" fill="#287265" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1.3">LAST POST     /     ORIGINAL WORKING DRAWING</text>
+</svg>

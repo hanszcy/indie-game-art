@@ -28,6 +28,15 @@ Copy this into the project when a direction spans several assets or scenes. Fill
 - Type, numerals, icons and minimum reading size
 - Motion at rest, during input, at an event and at results
 
+## Atmosphere key
+
+- Place, time, weather and the emotional change across the scene
+- Three thumbnail keys with the same anchor; mark the warmest patch, sharpest edge and largest area of rest
+- One material study at actual play size; how it wears, catches light and moves when handled
+- One gesture, prop or ambient sound that gives this particular world a history
+- Which visual cue survives in the interface, and which disappears when the scene gets busy
+- Rejected key, specific difference and reason for choosing the current direction
+
 ## Representative playable moment
 
 - Objects, states and actions included

@@ -6,6 +6,16 @@
 
 [玩美食消消乐](https://indie-game-art-biscuits.vercel.app/kissaten/) · [玩肉鸽塔防](https://indie-game-art-biscuits.vercel.app/watch/lantern/?lang=zh) · [安装方法](#安装)
 
+## 美术工作台
+
+同一个港口画三次：清晨、风暴将至、雨过天晴。保留送件员和渡船，改远岸屋顶消失在哪里、人物周围留下多少水面、潮湿码头哪一条边反光。再让这些选择延续到一枚按钮、角色的一个动作和最后的告别。
+
+![原创港口气氛稿，用三个时刻对照光线、空间层次与情绪。](assets/studies/harbor-color-script.webp)
+
+[画风与气氛工作手册](references/look-development.md) · [艺术家与工作室的一手案例](references/source-notebook.md) · [原创气氛稿与可编辑图例](assets/studies/README.md)
+
+具体打磨时可以只读一处：[角色与材质](references/visual-production.md)、[交互表面](references/control-craft.md)、[姿势、特效与环境节奏](references/motion-and-mix.md)，或[从最后一个可玩画面走到胜负结算](references/scene-handoffs.md)。用[带示例的研究表](assets/study-sheet.md)记下借鉴了什么，以及实际效果怎样。
+
 ## 01 · 同一份午餐订单，两家店怎么出餐？
 
 **蛋包饭消掉的那一刻，看一眼订单。** 两版的「午间双人餐」都是同样的开局，14 步要收齐 4 份蛋包饭和 4 份三明治。按提示交换同一对餐点，基础版的订单计数增加；在小满洋食屋，还能看见一份蛋包饭从托盘飞到对应的小票上。

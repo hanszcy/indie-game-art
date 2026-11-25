@@ -6,6 +6,16 @@
 
 [マッチ3で遊ぶ](https://indie-game-art-biscuits.vercel.app/kissaten/) · [タワーディフェンスで遊ぶ](https://indie-game-art-biscuits.vercel.app/watch/lantern/?lang=ja) · [導入](#導入)
 
+## 美術の作業机
+
+同じ港を、夜明け・嵐の前・雨上がりの三通りに描きます。配達員と渡し船を残し、消える屋根の輪郭、人物を囲む水面の余白、濡れた桟橋の反射を変えてみます。その絵の判断を、ボタンの表面、仕草、見送りの場面にも引き継ぎます。
+
+![同じ港を三つの時間に描き、光と奥行き、空気感を比較するオリジナルのカラーキー。](assets/studies/harbor-color-script.webp)
+
+[画づくりの手引き](references/look-development.md) · [制作者による一次資料](references/source-notebook.md) · [オリジナルの図版](assets/studies/README.md)
+
+[キャラクターと質感](references/visual-production.md)、[操作面の素材](references/control-craft.md)、[ポーズ・演出・環境音](references/motion-and-mix.md)、[最後の一手から結果画面まで](references/scene-handoffs.md)を場面に応じて掘り下げます。[研究シート](assets/study-sheet.md)に参照元・手を入れた箇所・実際の印象を記録できます。
+
 ## 01 · 同じランチを二つの店で
 
 **オムライスが消えたら、注文票に注目。** どちらも同じ盤面から始まり、14手でオムライスとサンドイッチを4皿ずつ集めます。「提示」を押して、枠で示された料理を入れ替えてみてください。標準版では注文数が更新されます。喫茶店版では一皿がトレーから浮かび、注文票の該当する行へ飛んでいきます。こちらのゲーム内表記は中国語です。

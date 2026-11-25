@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="490" viewBox="0 0 920 490" role="img" aria-labelledby="title desc">
+  <title id="title">An ink stamp under the thumb</title>
+  <desc id="desc">The input stays in place while the material changes under the finger.</desc>
+  <rect x="0" y="0" width="920" height="490" rx="0" fill="#fcf4df" stroke="none"/>
+  <rect x="0" y="0" width="920" height="8" rx="0" fill="#287265" stroke="none"/>
+  <text x="35" y="40" fill="#287265" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2">FIELD STUDIES   /   INDIE GAME ART</text>
+  <text x="35" y="89" fill="#263f40" font-family="Georgia,serif" font-size="40" font-weight="700">An ink stamp under the thumb</text>
+  <text x="36" y="121" fill="#263f40" font-family="Arial,sans-serif" font-size="17" font-weight="400">The input stays in place while the material changes under the finger.</text>
+  <rect x="36" y="150" width="202" height="238" rx="10" fill="#fffaf0" stroke="#b9ab8e"/>
+  <text x="48" y="181" fill="#263f40" font-family="Georgia,serif" font-size="22" font-weight="700">Offered</text>
+  <rect x="52" y="213" width="170" height="72" rx="10" fill="none" stroke="#81918a" stroke-dasharray="5 3"/>
+  <rect x="59" y="222" width="156" height="55" rx="7" fill="#725d43" stroke="none"/>
+  <rect x="59" y="219" width="156" height="51" rx="7" fill="#287265" stroke="none"/>
+  <g transform="translate(83 242)">
+    <path d="M-13 8h26v5h-26z M-10 7q2-3 7-4v-5q-6-3-3-8 6-6 12 0 3 5-3 8v5q5 1 7 4z" fill="#fff5d9"/>
+  </g>
+  <text x="103" y="250" fill="#fffaf0" font-family="Arial,sans-serif" font-size="17" font-weight="700">Dispatch</text>
+  <text x="48" y="322" fill="#263f40" font-family="Arial,sans-serif" font-size="14" font-weight="400">Ink face sits proud.</text>
+  <text x="48" y="351" fill="#263f40" font-family="Arial,sans-serif" font-size="14" font-weight="400">Press inside the face.</text>
+  <rect x="250" y="150" width="202" height="238" rx="10" fill="#fffaf0" stroke="#b9ab8e"/>
+  <text x="262" y="181" fill="#263f40" font-family="Georgia,serif" font-size="22" font-weight="700">Contact</text>
+  <rect x="266" y="213" width="170" height="72" rx="10" fill="none" stroke="#81918a" stroke-dasharray="5 3"/>
+  <rect x="273" y="222" width="156" height="55" rx="7" fill="#725d43" stroke="none"/>
+  <rect x="273" y="224" width="156" height="51" rx="7" fill="#287265" stroke="none"/>
+  <g transform="translate(297 247)">
+    <path d="M-13 8h26v5h-26z M-10 7q2-3 7-4v-5q-6-3-3-8 6-6 12 0 3 5-3 8v5q5 1 7 4z" fill="#fff5d9"/>
+  </g>
+  <text x="317" y="255" fill="#fffaf0" font-family="Arial,sans-serif" font-size="17" font-weight="700">Dispatch</text>
+  <text x="262" y="322" fill="#263f40" font-family="Arial,sans-serif" font-size="14" font-weight="400">Face drops; rim stays.</text>
+  <text x="262" y="351" fill="#263f40" font-family="Arial,sans-serif" font-size="14" font-weight="400">Release outside cancels.</text>
+  <rect x="464" y="150" width="202" height="238" rx="10" fill="#fffaf0" stroke="#b9ab8e"/>
+  <text x="476" y="181" fill="#263f40" font-family="Georgia,serif" font-size="22" font-weight="700">Pending</text>
+  <rect x="480" y="213" width="170" height="72" rx="10" fill="none" stroke="#81918a" stroke-dasharray="5 3"/>
+  <rect x="487" y="222" width="156" height="55" rx="7" fill="#725d43" stroke="none"/>
+  <rect x="487" y="219" width="156" height="51" rx="7" fill="#627875" stroke="none"/>
+  <circle cx="511" cy="244" r="8" fill="none" stroke="#fff5d9" stroke-width="2.5" stroke-dasharray="34 17"/>
+  <text x="527" y="249" fill="#fffaf0" font-family="Arial,sans-serif" font-size="17" font-weight="700">Sending</text>
+  <text x="476" y="322" fill="#263f40" font-family="Arial,sans-serif" font-size="14" font-weight="400">Open ring holds focus.</text>
+  <text x="476" y="351" fill="#263f40" font-family="Arial,sans-serif" font-size="14" font-weight="400">Repeat sends no parcel.</text>
+  <rect x="678" y="150" width="202" height="238" rx="10" fill="#fffaf0" stroke="#b9ab8e"/>
+  <text x="690" y="181" fill="#263f40" font-family="Georgia,serif" font-size="22" font-weight="700">Confirmed</text>
+  <rect x="694" y="213" width="170" height="72" rx="10" fill="none" stroke="#81918a" stroke-dasharray="5 3"/>
+  <rect x="701" y="222" width="156" height="55" rx="7" fill="#725d43" stroke="none"/>
+  <rect x="701" y="219" width="156" height="51" rx="7" fill="#287265" stroke="none"/>
+  <path d="M715 244L722 251" stroke="#fffaf0" stroke-width="3"/>
+  <path d="M722 251L733 237" stroke="#fffaf0" stroke-width="3"/>
+  <text x="739" y="250" fill="#fffaf0" font-family="Arial,sans-serif" font-size="17" font-weight="700">Delivered</text>
+  <text x="690" y="322" fill="#263f40" font-family="Arial,sans-serif" font-size="14" font-weight="400">Seal replaces the verb.</text>
+  <text x="690" y="351" fill="#263f40" font-family="Arial,sans-serif" font-size="14" font-weight="400">Receipt shows delivery.</text>
+  <path d="M36 420L91 420" stroke="#81918a" stroke-width="1" stroke-dasharray="5 3"/>
+  <text x="100" y="425" fill="#263f40" font-family="Arial,sans-serif" font-size="16" font-weight="400">The outer dashed rectangle is the input area in every state.</text>
+  <path d="M35 448L885 448" stroke="#b9ab8e" stroke-width="1"/>
+  <text x="36" y="472" fill="#287265" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1.3">LAST POST     /     ORIGINAL WORKING DRAWING</text>
+</svg>

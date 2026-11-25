@@ -51,3 +51,18 @@ For a reference edit, identify the role of each input image, the subject and vie
 - Review filtering, compression, alpha and memory in the runtime. Pixel art and soft-edged illustration can require different sampling.
 
 Record the asset ID, source or generation note, usage rights, approved anchor, source and export paths, dimensions, pivot, state and consuming scenes in the project's existing inventory. Scale recordkeeping to the size of the change.
+
+## Art-direct a room and a family, not just a hero render
+
+Draw the smallest gameplay crop and a quiet wide shot. On each, group the picture into masses for background, traversable space, actors and effects. Pick one expression of the game's fantasy that changes use: a harbor wall can carry its crew and visibly withstand damage; a border decorated with unrelated anchors adds little information. For an intimate story scene, use that budget on faces, hands and the distance between speakers instead. Check what the player sees before the title names the world.
+
+| Pass | Small edit to try | Evidence to inspect |
+| --- | --- | --- |
+| Shape and scale | Make a few solid cutouts at final size. Separate a fast threat from a heavy one through posture and mass distribution; align the foot line to the same space. | Mix the family in a real crowd. Which pair still needs color or a label to tell apart? |
+| Color and value | Mark quiet, active and danger regions on the same keyframe. Reserve the sharpest edge or strongest local value separation for the current decision. | Repeat on another biome, with the warning at the edge and the selected unit on a matching hue. Inspect grayscale and color; each reveals different errors. |
+| Material and wear | Choose the surfaces a hand, wheel or tool actually touches. Put the worn edge there. Try a clean patch behind the value that changes most often. | If the button reads as chipped before it reads as pressed, remove one bevel or highlight and compare. |
+| Light, contact and layers | Set one key light for actors and their pedestals. Draw a cast shadow from the same anchor and give tall props an explicit occlusion silhouette. | Move the shortest actor behind the tallest prop, then stop on contact. Check its feet, target ring and actionable edge remain intelligible. |
+| Icons and typography | Reserve a stable silhouette for each verb; tune the negative space and optical center at final size. Set numerals in fixture strings with maximum width and a changing sign. | Switch language and input device mid-menu. A cropped descender, a wandering price or a controller glyph that still says “tap” is a concrete production defect. |
+| Place and story | Pick an object with a before/after condition tied to play: a rope goes slack when the ferry departs, or a sign turns after a sale. | Can the player infer what changed without a caption? If it reveals a secret too early, move the change to the correct narrative beat. |
+
+**Plan for retakes.** Separate the reusable frame, localized content, changing condition and one-off flourish in the source master. Compare the real export at 1×, then after one camera zoom or resolution change. For a busy scene, measure the first cold spawn and a sustained repeated spawn. A pre-rendered complex background can save runtime cost but makes changing the light or removing an occlusion expensive. Choose what to bake by what remains stable during play.

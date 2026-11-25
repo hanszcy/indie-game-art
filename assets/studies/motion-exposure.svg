@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="553" viewBox="0 0 920 553" role="img" aria-labelledby="title desc">
+  <title id="title">Score the action on separate tracks</title>
+  <desc id="desc">The same delivery can read clearly with travel animation or with two static marks.</desc>
+  <rect x="0" y="0" width="920" height="553" rx="0" fill="#fcf4df" stroke="none"/>
+  <rect x="0" y="0" width="920" height="8" rx="0" fill="#287265" stroke="none"/>
+  <text x="35" y="40" fill="#287265" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2">FIELD STUDIES   /   INDIE GAME ART</text>
+  <text x="35" y="89" fill="#263f40" font-family="Georgia,serif" font-size="40" font-weight="700">Score the action on separate tracks</text>
+  <text x="36" y="121" fill="#263f40" font-family="Arial,sans-serif" font-size="17" font-weight="400">The same delivery can read clearly with travel animation or with two static marks.</text>
+  <text x="188" y="173" fill="#287265" font-family="Arial,sans-serif" font-size="16" font-weight="700">Contact</text>
+  <path d="M179 184L179 394" stroke="#b9ab8e" stroke-width="1" stroke-dasharray="3 5"/>
+  <text x="361" y="173" fill="#287265" font-family="Arial,sans-serif" font-size="16" font-weight="700">Accept</text>
+  <path d="M352 184L352 394" stroke="#b9ab8e" stroke-width="1" stroke-dasharray="3 5"/>
+  <text x="532" y="173" fill="#287265" font-family="Arial,sans-serif" font-size="16" font-weight="700">Land</text>
+  <path d="M523 184L523 394" stroke="#b9ab8e" stroke-width="1" stroke-dasharray="3 5"/>
+  <text x="703" y="173" fill="#287265" font-family="Arial,sans-serif" font-size="16" font-weight="700">Settle</text>
+  <path d="M694 184L694 394" stroke="#b9ab8e" stroke-width="1" stroke-dasharray="3 5"/>
+  <path d="M36 234L882 234" stroke="#b9ab8e" stroke-width="1"/>
+  <text x="36" y="215" fill="#263f40" font-family="Arial,sans-serif" font-size="16" font-weight="700">Finger</text>
+  <path d="M36 285L882 285" stroke="#b9ab8e" stroke-width="1"/>
+  <text x="36" y="266" fill="#263f40" font-family="Arial,sans-serif" font-size="16" font-weight="700">Rule state</text>
+  <path d="M36 336L882 336" stroke="#b9ab8e" stroke-width="1"/>
+  <text x="36" y="317" fill="#263f40" font-family="Arial,sans-serif" font-size="16" font-weight="700">Parcel</text>
+  <path d="M36 387L882 387" stroke="#b9ab8e" stroke-width="1"/>
+  <text x="36" y="368" fill="#263f40" font-family="Arial,sans-serif" font-size="16" font-weight="700">Reduced motion</text>
+  <text x="188" y="215" fill="#263f40" font-family="Arial,sans-serif" font-size="15" font-weight="400">Down</text>
+  <text x="361" y="215" fill="#263f40" font-family="Arial,sans-serif" font-size="15" font-weight="400">Release inside</text>
+  <text x="532" y="215" fill="#263f40" font-family="Arial,sans-serif" font-size="15" font-weight="400">Free</text>
+  <text x="703" y="215" fill="#263f40" font-family="Arial,sans-serif" font-size="15" font-weight="400">Free</text>
+  <text x="188" y="266" fill="#263f40" font-family="Arial,sans-serif" font-size="15" font-weight="400">Eligible</text>
+  <text x="361" y="266" fill="#263f40" font-family="Arial,sans-serif" font-size="15" font-weight="400">Commit once</text>
+  <text x="532" y="266" fill="#263f40" font-family="Arial,sans-serif" font-size="15" font-weight="400">Already sent</text>
+  <text x="703" y="266" fill="#263f40" font-family="Arial,sans-serif" font-size="15" font-weight="400">Already sent</text>
+  <text x="188" y="317" fill="#263f40" font-family="Arial,sans-serif" font-size="15" font-weight="400">At origin</text>
+  <text x="361" y="317" fill="#263f40" font-family="Arial,sans-serif" font-size="15" font-weight="400">Lift</text>
+  <text x="532" y="317" fill="#263f40" font-family="Arial,sans-serif" font-size="15" font-weight="400">At destination</text>
+  <text x="703" y="317" fill="#263f40" font-family="Arial,sans-serif" font-size="15" font-weight="400">Mark remains</text>
+  <text x="188" y="368" fill="#263f40" font-family="Arial,sans-serif" font-size="15" font-weight="400">At origin</text>
+  <text x="361" y="368" fill="#263f40" font-family="Arial,sans-serif" font-size="15" font-weight="400">Seal appears</text>
+  <text x="532" y="368" fill="#263f40" font-family="Arial,sans-serif" font-size="15" font-weight="400">Receipt updates</text>
+  <text x="703" y="368" fill="#263f40" font-family="Arial,sans-serif" font-size="15" font-weight="400">Mark remains</text>
+  <text x="36" y="437" fill="#263f40" font-family="Arial,sans-serif" font-size="14" font-weight="700">Paper motion</text>
+  <g transform="translate(186 410) scale(0.86)">
+    <path d="m0 7 18-7 20 7-18 9z" fill="#f1c078" stroke="#654631"/>
+    <path d="m0 7 20 9v15L0 22z" fill="#cd8d57" stroke="#654631"/>
+    <path d="m20 16 18-9v15l-18 9z" fill="#af7149" stroke="#654631"/>
+    <path d="m9 3 19 9v8l4-2v-7L14 2z" fill="#fff2cc"/>
+  </g>
+  <path d="M226 427L702 427" stroke="#b9ab8e" stroke-width="1" stroke-dasharray="6 4"/>
+  <g transform="translate(535 412) scale(0.68)">
+    <path d="m0 7 18-7 20 7-18 9z" fill="#f1c078" stroke="#654631"/>
+    <path d="m0 7 20 9v15L0 22z" fill="#cd8d57" stroke="#654631"/>
+    <path d="m20 16 18-9v15l-18 9z" fill="#af7149" stroke="#654631"/>
+    <path d="m9 3 19 9v8l4-2v-7L14 2z" fill="#fff2cc"/>
+  </g>
+  <circle cx="730" cy="427" r="15" fill="#287265"/>
+  <text x="723" y="433" fill="#fffaf0" font-family="Arial,sans-serif" font-size="18" font-weight="700">✓</text>
+  <text x="36" y="486" fill="#263f40" font-family="Arial,sans-serif" font-size="15" font-weight="400">Try 0 / 80 / 220 / 360 ms as sketch positions. The rule commits on acceptance, even if the transfer is skipped.</text>
+  <path d="M35 511L885 511" stroke="#b9ab8e" stroke-width="1"/>
+  <text x="36" y="535" fill="#287265" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1.3">LAST POST     /     ORIGINAL WORKING DRAWING</text>
+</svg>
