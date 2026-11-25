@@ -5,7 +5,7 @@ description: Establish and polish an indie game's distinctive art direction, vis
 
 # Indie Game Art
 
-Start with a picture you could describe to an artist and a moment you could show a player. “A sleepy river post office, just before the last boat leaves” suggests light, space, material and rhythm. “Premium cozy UI” leaves all four undecided.
+Turn the intended mood and the player’s current action into decisions about light, composition, silhouette, material and motion. For a new look, compare studies of one scene at the intended play size. For an existing build, find the moment where the mood or the action becomes hard to read, then carry the chosen treatment into the surrounding art and interface.
 
 ## Pick the scale
 

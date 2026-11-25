@@ -2,16 +2,16 @@
 
 Copy the applicable lines into an existing brief, issue or shot list. Keep one completed example with the next iteration.
 
-| Field | Worked example for a harbor result | Your scene |
+| Field | Worked example for a landing | Your scene |
 | --- | --- | --- |
-| Player decision / previous frame | The last hit ends wave four. Player wants to recognize a clear and decide whether to replay. | |
-| Evidence and locator | Mindustry game-over dialog, wave-mode conditional row. See the source notebook. Code inspection. | |
-| What transfers / what stays specific | Show only applicable run facts. The industrial panel and its row list belong to Mindustry. | |
-| Hypothesis | Leaving the quiet harbor visible will connect the victory with the wall the player defended. | |
-| Authoritative data and perspective | Local terminal result, final wave and wall HP. No individual kill credit available in this example. | |
-| Before / contact / settle | Last enemy in frame → bell drops once → gate stays open behind the completed dispatch. | |
-| Input and interruption | Reward recorded once. Dismiss mid-tally on a fresh press; persistent record matches the visible total. | |
-| Muted / reduced motion | Open gate and “Harbor safe” communicate the outcome without the bell. | |
-| Cheapest meaningful comparison | Same seed and viewport; capture direct cut and staged result. Compare ordinary win and immediate replay. | |
-| Asset provenance | Original sketch. Record master, export, editable labels, reuse scope and any third-party source separately. | |
-| Observed outcome | Proposed study; player comprehension has not been tested. | |
+| Player decision / previous frame | The skier is above the far edge of a gap. When can the next jump be charged? | |
+| Evidence and locator | The [paired jump capture](../showcase/ski-jump.webp) shows both editions crossing the same gap. Step through the last airborne frame and the first grounded frame. | |
+| What transfers / what stays specific | Synchronize contact feedback with the game’s landing check. Snow powder belongs to this particular surface. | |
+| Hypothesis | A compressed landing pose can communicate contact even when particles are reduced. | |
+| Authoritative data and perspective | The [course](../examples/ski/course.js) sets the grounded state. The [renderer](../examples/ski/scene.js) uses the landing event to draw spray. | |
+| Before / contact / settle | Knees tucked → skis touch and knees compress → body returns to its gliding pose. | |
+| Input and interruption | Try holding before contact and pressing again just after landing. Record when the next charge actually starts. | |
+| Muted / reduced motion | Compare the pose and the edge of the skis with sound muted and reduced motion enabled. | |
+| Cheapest meaningful comparison | Replay the same release at the same gap and viewport. Compare the silhouette at contact and during recovery. | |
+| Asset provenance | Identify the captured build, art master and editable source. The paired capture comes from the playable examples. | |
+| Observed outcome | The two captures show the same jump trajectory. Whether players recognize the grounded state earlier is a question for a playtest. | |

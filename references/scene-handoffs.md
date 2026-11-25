@@ -37,7 +37,7 @@ Check a first clear and an ordinary repeat. Let the first breathe if the game ha
 | A multiplayer elimination | Who was eliminated, the team's actual status, and what the local player can do while teammates continue. | Check victim, opponent, teammate and spectator separately. Replay a capture using only information appropriate to each role. |
 | An interrupted session | Whether the run is saved, suspended, reconnecting or genuinely over. | Interrupt just before a reward, after it is credited and while a new run is loading. Re-entry must produce one coherent state. |
 
-**Example direction for a breached harbor.** Leave the broken wall in frame; fade the sea ambience down once. A paper dispatch can show “Wave 4 · wall breached” and offer retry. Show “flagship dealt the last hit” only when the run actually retained that event. On repeated attempts shorten the transition. Keep persistent upgrades separate from training lost with the run. Hades offers one example of an optional longer-term response to repeated defeat; introducing assist or changing difficulty is a separate design decision. [Developer FAQ](source-notebook.md#hades)
+**Example direction for a missed jump.** Hold the near edge of the gap in view as the skier drops out of frame. Let the retry control appear where the player can reach it on the next attempt. Compare a first fall with the fifth fall at the same gap. If the repeated pause feels long, shorten the hold and keep the takeoff point visible. For games that already offer assistance across attempts, see the [Hades developer FAQ](source-notebook.md#hades).
 
 ## Connect the quieter screens
 
@@ -53,10 +53,8 @@ Check a first clear and an ordinary repeat. Let the first breathe if the game ha
 
 A scene list can always grow. Add a scene when there is a new player decision, a change of perspective, or a new ownership of input, time, truth or progress. Otherwise a local state change on the current screen may serve better.
 
-## Field check on Harbor Hands
+## Study a handoff in First Light
 
-At revision `34fd047`, a Chrome run at a 360 × 740 emulated viewport reached a wave-two defeat after recruiting one defender, with zero wall HP and twelve enemies repelled. Recruiting and merging reached a wave-four clear with all thirty wall HP. Simulation time was advanced for the run-through. The centered report occupied roughly y=286–454; the wall meter occupied y=432–452. Both endings focused the new-watch button. This is evidence of spatial occlusion and the existing interaction path. Human interpretation and real-device timing were not measured. [Result and restart implementation](https://github.com/hanszcy/indie-game-art/blob/34fd047/examples/night-watch/ui.js#L216-L262)
+Run the same gap three ways. Land the jump, fall before the first checkpoint, then fall after a checkpoint. In the two falls, compare the last visible stretch of slope with the first frame after retry. The game records distance and cleared gaps, and its retry control uses the available checkpoint. [Course state](../examples/ski/course.js) · [Result and retry controls](../examples/ski/ski.js)
 
-**Edit to try.** Place a shallow dispatch over the crew controls that have finished their job. Leave the wall and its HP visible. A surviving pennant can distinguish a clear; a broken wall silhouette can distinguish defeat. Show wave reached and enemies repelled from the existing run. Confirm that the transition preserves a deliberate fresh press on retry and the next watch's existing start behavior. These are proposed changes. Repeat the geometric check at each aspect ratio, then ask a player to point to what ended the run.
-
-Record the lifetime of an exception such as “shorten the celebration on repeat.” Specify repeat of what (attempt, level or milestone), where the flag lives (session, save or account) and when it resets. Match a long-lived flag to an existing product convention. A page-session flag is enough to compare repeated retries in this example.
+**Edit to try.** Keep one landmark visible between the fall and the settled report. Compare two placements for the report with the camera and input held fixed. Ask a player to point to the missed edge and predict where the next attempt begins. Record the result separately from your proposed treatment.

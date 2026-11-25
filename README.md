@@ -2,7 +2,13 @@
 
 **English** · [简体中文](README.zh-CN.md) · [日本語](README.ja.md)
 
-**Indie Game Art is a Codex skill for giving a playable game its own look and atmosphere.** Try one jump and one swap. The jump shows what a pose can tell you mid-air. The swap shows how a kitchen can explain a score with a single moving plate.
+**Indie Game Art is an art direction skill for independent game developers working with Codex.** It helps you decide what the player should notice first, how a place should feel, and how that feeling carries through the controls and the characters in motion. Use it to explore a new game's look or to refine one interaction in a playable build.
+
+- **Find a visual identity.** Compare small color and lighting studies of the same scene. Choose a palette, a silhouette and a level of detail that hold up at play size.
+- **Carry the look through play.** Give characters, scenery, type, icons and control surfaces a shared vocabulary of shapes and materials. Keep interactive objects easy to pick out in a busy frame.
+- **Give actions weight and rhythm.** Work through anticipation, contact and recovery. Replay the same input on the target screen to judge the pose, effects and return of control together.
+
+## Playable comparisons
 
 | Play in your browser | Without the skill | With Indie Game Art |
 | --- | --- | --- |
@@ -11,7 +17,7 @@
 
 [Open the demo shelf](https://indie-game-art-biscuits.vercel.app/play/?lang=en) · [Install the skill](#install). Both games have Chinese controls.
 
-## First Light · Read a jump in silhouette
+### First Light · Read a jump in silhouette
 
 ![The fourth gap, captured from both playable builds. The skier charges, tucks and lands.](showcase/ski-jump.webp)
 
@@ -21,7 +27,7 @@
 
 [Play baseline](https://indie-game-art-biscuits.vercel.app/ski/classic/) · [Play First Light](https://indie-game-art-biscuits.vercel.app/ski/alpenglow/) · [Full frame](showcase/ski-alpenglow.webp) · [Course and renderer](examples/ski/)
 
-## Komaru Kissaten · Follow an omelet to the order ticket
+### Komaru Kissaten · Follow an omelet to the order ticket
 
 ![The same first swap at two counters. Three omelets clear and one serving travels up to the paper ticket in the kissaten.](showcase/lunch.gif)
 
@@ -30,8 +36,6 @@
 **Follow the dish after it clears.** In the baseline, the counter changes to 3/4. In the kissaten, an illustrated omelet lifts from its tray and shrinks into the omelet line on the paper ticket. The wooden counter and printed menu establish the café, and the path of that one dish explains which part of the order you filled.
 
 [Play baseline](https://indie-game-art-biscuits.vercel.app/classic/) · [Play Komaru Kissaten](https://indie-game-art-biscuits.vercel.app/kissaten/)
-
-Also in the collection · [Harbor Hands · portrait merge defense](examples/night-watch/).
 
 ## The art desk
 

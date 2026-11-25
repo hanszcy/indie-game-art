@@ -12,7 +12,6 @@ Find a case by the design decision. Each entry separates what the source establi
 | Which sounds should survive the busy mix | [Mini Motorways](#mini-motorways) |
 | How to produce a family of retimable animations | [Dead Cells](#dead-cells) |
 | How a story choice carries into physical play | [80 Days](#80-days) |
-| How to compare a full economy and interaction loop with a genre reference | [Random merge defense](#random-merge-defense) |
 
 ### Dead Cells environments
 
@@ -57,10 +56,6 @@ Find a case by the design decision. Each entry separates what the source establi
 ### 80 Days
 
 **Evidence.** Inkle describes a route-planning adventure that combines authored and procedural material, including opportunities for shortcuts and disasters. **Try.** Give a tempting route one visible tradeoff and one narrative uncertainty. After arrival, let a world or journal change recall the choice. **Boundary.** This source describes structure, not the measured response of readers to a particular choice UI. [Studio introduction](https://www.inklestudios.com/2014/04/01/eighty-days)
-
-### Random merge defense
-
-**Evidence.** The official beginner guide to 永远的蔚蓝星球 describes spending a shared currency on summons or randomized training and merging matching defenders on a wall. It also describes escalating costs and added spaces. **Try.** With one berth free, trace what the player can spend, combine and predict. Compare two visual treatments on the same opening draw. **Boundary.** This commercial genre reference establishes the decision loop. Character designs, economy and wave counts belong to their games. [Official guide](https://m.chuangyuejoy.com/article/7/) · [Original playable interpretation](../examples/night-watch/README.md)
 
 ## Add a case after real work
 
