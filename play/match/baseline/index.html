@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f9e6d6">
+  <title>莓果糖铺 · 糖果三消</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="../engine.js"></script>
+  <script defer src="art.js"></script>
+  <script defer src="game.js"></script>
+</head>
+<body>
+  <div class="backdrop" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <main class="shop">
+    <div class="awning" aria-hidden="true"></div>
+    <div class="inside">
+      <header class="mast">
+        <div class="shop-mark" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M12 24h24v16H12z" fill="#fff4da"/><path d="M8 19l4-10h24l4 10v4c-1 4-6 5-8 1-2 4-6 4-8 0-2 4-6 4-8 0-2 4-7 3-8-1z" fill="#fff4da" stroke="#a72f43" stroke-linejoin="round" stroke-width="2"/><path d="M17 10l-2 10m8-10v10m7-10l2 10" fill="none" stroke="#e98688" stroke-width="3"/><path d="M17 30h6v10h-6zm10 0h6v5h-6z" fill="#cb5260"/></svg></div>
+        <div class="brand"><h1>莓果糖铺</h1><span>糖果三消</span></div>
+        <button class="icon-button" id="sound" type="button" aria-label="开启音效" aria-pressed="false" title="开启音效"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10h3l5-4v12l-5-4H4z"/><path class="muted" d="m16 10 4 4m0-4-4 4"/><path class="speaker-wave" d="M16 9q3 3 0 6m2-9q6 6 0 12"/></svg></button>
+      </header>
+      <section class="order" aria-label="关卡进度">
+        <div class="level-line"><span id="levelNum"></span><h2 id="levelName"></h2><div class="level-dots" aria-hidden="true"><i></i><i></i><i></i></div></div>
+        <div class="stats">
+          <div class="moves-block"><span>剩余步数</span><strong id="moves">13</strong></div>
+          <div class="goals-block"><span class="label">本单目标</span><div id="goals"></div></div>
+        </div>
+      </section>
+      <div class="board-frame">
+        <div id="board" role="group" aria-label="七行七列糖果棋盘，使用方向键移动，回车选择">
+          <div id="slots"></div><div id="pieces" aria-hidden="true"></div>
+        </div>
+        <span id="chainFlash" aria-hidden="true"></span>
+        <div id="result" hidden role="dialog" aria-modal="true" aria-labelledby="resultTitle" aria-describedby="resultText">
+          <div class="receipt"><div id="resultIcon" aria-hidden="true"></div><h2 id="resultTitle"></h2><p id="resultText"></p><button type="button" id="advance"></button><button type="button" id="again">再玩本关</button></div>
+        </div>
+      </div>
+      <div class="toolbar">
+        <div class="score"><span>得分</span><b id="score">0</b></div>
+        <button type="button" id="hint"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 15c-.1-2.1-3.1-3-3.1-6.5a6.1 6.1 0 1112.2 0c0 3.5-3 4.4-3.1 6.5zm1 3h4m-3 3h2"/></svg>提示</button>
+        <button type="button" id="restart" aria-label="重新开始本关"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 10a7.3 7.3 0 111 8m-2-14v6h6"/></svg>重玩</button>
+      </div>
+      <p id="message" role="status" aria-live="polite">轻点或滑动交换，连成三个同类糖果。</p>
+    </div>
+  </main>
+</body>
+</html>
