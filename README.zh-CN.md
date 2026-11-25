@@ -25,7 +25,3 @@ npx skills add hanszcy/indie-game-art --skill indie-game-art
 ```
 
 手动安装时，把这个仓库复制到开发工具的技能目录中，文件夹取名为 `indie-game-art`，入口文件是 [SKILL.md](SKILL.md)。
-
-在项目里可以从这句话开始。
-
-> 请用 Indie Game Art 改我当前的游戏画面。保留玩法和主角，从最像网页的那个按钮入手，重做它的图标、按下去的样子和触发后的反馈，让我在项目里点一次试试。
