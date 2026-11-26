@@ -2,7 +2,7 @@
 name: indie-game-art
 description: Art-direct a game's playable image, interface, on-screen writing and performances. Use for a prototype seeking an identity, finished artwork that feels generic, game screens that feel like a website, or actions and endings that lack expression.
 metadata:
-  version: "3.0.0"
+  version: "3.1.0"
 ---
 
 # Indie Game Art
@@ -13,7 +13,7 @@ Keep the requested rules, point of view, input, player knowledge and approved wo
 
 ## Find the failure in the delivered work
 
-Capture a representative view at playing size. For a transition, capture the view immediately before it and the settled view after it. Mark the player's point of attention on each. Look at a reference in the **same state**. If all you have are unlike stills, describe their visible shapes and hierarchy. Use a build or a sequence for claims about timing.
+Capture a representative view at playing size. For a transition, capture the view immediately before it and the settled view after it. Mark the player's point of attention on each. When comparing a reference, use the **same state**; a targeted repair can use the project’s own before/after states without external research. If all you have are unlike stills, describe their visible shapes and hierarchy. Use a build or a sequence for claims about timing.
 
 | Complaint | Try this on the actual work | What makes another pass necessary |
 | --- | --- | --- |
@@ -22,11 +22,21 @@ Capture a representative view at playing size. For a transition, capture the vie
 | The game looks like a webpage | Trace the eye from evidence to input to consequence. Conceal the controls' paint and inspect the layout. Then hide the labels briefly and inspect their shapes and contact states. | A title, status card and generic action row still carry all the meaning. Try moving one piece of evidence or one control to its owner. Preserve the clear table or modal when comparison, safety or access benefits. |
 | Motion exists but feels weak | Watch one ordinary action twice and a consequential action once, at full speed and muted. Follow a particular part of the subject through contact, release and rest. | All three get the same pulse, the main change is hidden, or the only sign of the climax is a notice. Change the pose, spacing, held interval or persistent result before adding another effect. |
 
+## Establish a visual language, not a finish
+
+“Indie” describes neither a palette nor a rendering technique. Darker colors, richer shading, paper grain, nostalgic props and generated illustration do not establish authorship. Nor does their opposite: pale colors, flat shapes or minimalism. Choose these only when they serve this game's particular expression.
+
+When creating an identity or responding to “generic / ugly / no style”, read [visual-language.md](references/visual-language.md) before commissioning a full scene or asset family. Define a small set of drawing decisions that predict how an unfamiliar object would belong: how mass is distorted, how contours meet or break, what negative spaces recur, how detail is omitted, or how a pose changes. Color, space and rhythm may be the core language in an abstract game; do not force every identity into character silhouettes.
+
+Test those decisions on the main subject, a contrasting neighbor and an ordinary supporting object in the playable frame. A shared medium or a consistently polished surface is only consistency; identify the actual authored choices. Show the alternatives as drawings, not just names or prompt paragraphs. Do not label an unchanged structure with new surface treatment a new direction.
+
+Distinctive is not automatically beautiful, and beautiful is not automatically right for this game. Inspect appeal, coherence and readability separately. If the player rejects the picture, a rule checklist or a better animation does not settle that objection. Reopen the drawing before investing in more scenery, texture or effects.
+
 ## Decide what deserves a drawing
 
-For a new identity, make two credible treatments of **the same actor, verb or relationship** in the same playable situation. Vary something expensive to fake with a skin. A watchful animal can be a long, precarious line broken by a sudden jab, or a compact mass that stores force before releasing it. Both may read clearly. Which belongs in this game, and what pleasure does the other drawing lose? [Original silhouette and timing plate](plates/bird-study.svg)
+When a new identity is genuinely open, make two credible treatments of **the same actor, verb or relationship** in the same playable situation. Vary something expensive to fake with a skin. A watchful animal can be a long, precarious line broken by a sudden jab, or a compact mass that stores force before releasing it. Both may read clearly. Which belongs in this game, and what pleasure does the other drawing lose? [Original silhouette and timing plate](plates/bird-study.svg)
 
-Bring one specific observation from life or an art practice, and one relevant moment from a game maker's work. Identify the artistic decision, the condition that made it work there and what you will change here. Draw the result at normal scale in the busiest ordinary frame. Judge the edges, values and motion the player actually sees. For a screen where waiting, reading or looking around is the reward, give the quiet space as much attention as the object. [Source decisions and their costs](references/field-notes.md) · [Composition, characters and materials](references/picture.md)
+For that identity exploration, bring one specific observation from life or an art practice, and one relevant moment from a game maker's work. An approved direction or a small repair does not require reopening the style search. Identify the artistic decision, the condition that made it work there and what you will change here. Draw the result at normal scale in the busiest ordinary frame. Judge the edges, values and motion the player actually sees. For a screen where waiting, reading or looking around is the reward, give the quiet space as much attention as the object. [Source decisions and their costs](references/field-notes.md) · [Composition, characters and materials](references/picture.md)
 
 ## Edit the entire beat
 
@@ -38,6 +48,6 @@ Put the main accent where the event happens. Decide which part leads, which stay
 
 ## Test the judgment that could still be wrong
 
-Review the whole screen, then the action area alone, then the surrounding interface alone. For a repeatable verb, include a quick repeat or rejected attempt. Check the actual target input and a reduced-motion equivalent when motion conveys information. Name the strongest remaining defect visible in those captures and edit it while you can. Stop when the requested change works in context, or present the unresolved alternatives with the evidence that distinguishes them. A successful input test and a genuine artistic preference answer different questions.
+Review the whole screen, then the action area alone, then the surrounding interface alone. For a repeatable verb, include a quick repeat or rejected attempt. Check the actual target input and a reduced-motion equivalent when motion conveys information. Name the strongest remaining defect visible in those captures and edit it while you can. For a rejected visual identity, point to the changed subject or spatial relationship in the actual image; a longer art brief, more assets or successful functional tests are not evidence of a better-looking result. Stop when the requested change works in context, or present the unresolved alternatives with the evidence that distinguishes them. A successful input test and a genuine artistic preference answer different questions.
 
 Use the [production notes](references/production.md) when making assets, the [critique notes](references/critique.md) for evidence and the [comparison notes](references/comparison.md) for a requested paired study. Keep research, evaluation labels and art-direction explanations outside the player's screen.
