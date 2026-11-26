@@ -6,11 +6,25 @@ For one live decision, identify the thing being judged, the facts that must rema
 
 Give permanent space to what stays useful through repeated play. Attach an intention to its character when the player is comparing several actors. Put the tally at a fixed location when it must be tracked through chaotic changes. Fold nameplates or teaching into arrival where they have a reason to be read. A spare margin can make an approaching threat feel far away. A crowded market can make looking through the crowd the pleasure. Check what moving the evidence does to the activity.
 
-## Give controls a physical or graphic vocabulary
+## Draw controls as part of the game's visual language
 
-Draw the action in relation to the thing affected. A reversible selector can sit beside the alternatives. A lever can hinge at a fixed point, exposing a colored underside as it travels. A rapid abstract command can be a spare mark whose gaps close under pressure. A hollow socket may still make sense when its tool is unavailable. Find a perceptible difference between permanent navigation, a contextual verb and the exceptional onward action. They can share ink and typography while having different scale, anchors, silhouettes and behavior.
+Start from two or three visible decisions in the approved art: a heavy body with a narrow neck, blunt cut edges, interrupted lines, an offset center, or generous enclosed space. Draw those relationships into the control face and icon, not just its decoration. Look at the actual object alongside the actor or board at playing size. An illustration above an unchanged generic toolbar is still a separate visual system.
 
-Lay out resting, focused, pressed, confirmed and unavailable states together where those states exist. Use real labels and a realistic neighboring control. Keep the hit area stable while the painted face moves. Inspect contact at actual thumb size and with keyboard or controller focus. Check a failed or delayed action. A depressed face can confirm contact immediately while success waits for the rule. If a glyph hides an irreversible consequence, restore the label. A clear labeled button is a good solution for the right verb.
+Choose an appropriate owner and role. A contextual tool can live beside the object it changes. Permanent navigation should remain easy to find. A frequent retry should be quick to reach; an exceptional onward action may deserve a larger shape. Separate restart from help even if both use the same ink. For an abstract game, work with rhythm, geometry and gaps rather than inventing physical props. Do not turn every game into wooden signs, paper labels or a collection of themed objects. Rectangles and clear conventional controls can be right when they express this game's language or support a difficult comparison.
+
+Draw the real label, icon, face and nearby control together. Make the silhouette intentional, the pictogram recognizable, and the label readable without deciphering the fiction. At phone scale, remove details that collapse into dirt. A decorative shape must not make the available action look like inert scenery. If that happens, strengthen its placement, label or contact cue before adding more ornament. Preserve a name and consequence for unfamiliar or destructive actions.
+
+### Contact belongs to the drawing
+
+Show resting, focused, pressed and unavailable states where applicable. Keep the hit region stable and generous while the drawn face moves. Decide what stays anchored and what yields: a lever turns at its hinge, a stamp compresses toward the paper, a geometric gap closes. Use a small immediate contact change; confirmation belongs to the affected object once the rule succeeds. Do not substitute a generic whole-button bounce for every action. Reduced-motion input still needs a visible contact and result state.
+
+Use authored SVG, sprites or deliberately selected glyphs for the icon family. Do not rely on emoji or platform-dependent Unicode symbols for essential game controls: their color, weight and silhouette may change on a phone. Keep labels as accessible text when possible. Native semantic buttons are appropriate implementation; their default browser appearance is not an art direction. Provide explicit accessible names, visible keyboard focus, readable disabled states, and a pointer-cancel path. Decorative SVG must not add duplicate accessible names.
+
+### Review the control in use
+
+Inspect an ordinary live frame, a pressed control, a temporarily unavailable action and the result/return screen at the target viewport. Compare the control's edge weight, scale and density with the game's main objects. Test actual touch and keyboard activation, including cancellation and a delayed action. Measure the input region separately from the painted silhouette: adjoining targets must not overlap, labels must fit, and short screens must not hide the actions. Check the target browser or state what remains untested.
+
+For a repair, keep the before and after in the same game state. Explain which visible relationship changed, not just which CSS properties changed. If only the palette or a background plate changed, reopen the drawing. Functional checks establish usability; they cannot prove the new object is appealing.
 
 ## Edit the words that coexist
 

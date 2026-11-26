@@ -2,7 +2,7 @@
 name: indie-game-art
 description: Art-direct a game's playable image, interface, on-screen writing and performances. Use for a prototype seeking an identity, finished artwork that feels generic, game screens that feel like a website, or actions and endings that lack expression.
 metadata:
-  version: "3.1.0"
+  version: "3.2.0"
 ---
 
 # Indie Game Art
@@ -37,6 +37,10 @@ Distinctive is not automatically beautiful, and beautiful is not automatically r
 When a new identity is genuinely open, make two credible treatments of **the same actor, verb or relationship** in the same playable situation. Vary something expensive to fake with a skin. A watchful animal can be a long, precarious line broken by a sudden jab, or a compact mass that stores force before releasing it. Both may read clearly. Which belongs in this game, and what pleasure does the other drawing lose? [Original silhouette and timing plate](plates/bird-study.svg)
 
 For that identity exploration, bring one specific observation from life or an art practice, and one relevant moment from a game maker's work. An approved direction or a small repair does not require reopening the style search. Identify the artistic decision, the condition that made it work there and what you will change here. Draw the result at normal scale in the busiest ordinary frame. Judge the edges, values and motion the player actually sees. For a screen where waiting, reading or looking around is the reward, give the quiet space as much attention as the object. [Source decisions and their costs](references/field-notes.md) · [Composition, characters and materials](references/picture.md)
+
+## Give the controls the same authorship
+
+When buttons or menus look like a website, read [the interface guidance](references/interface.md) before editing them. Draw the actual controls in the playable frame, including a neighboring control and the pressed state. Carry the game’s decisions about mass, edges and negative space into their silhouettes, symbols and contact behavior. Changing border radius, palette, texture or the font of a standard action row does not by itself solve this complaint. A physical prop is one option; an expressive abstract mark can be just as specific. Keep clear action names and stable input targets.
 
 ## Edit the entire beat
 

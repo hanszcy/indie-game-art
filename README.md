@@ -14,7 +14,7 @@ Indie Game Art v3 works on one playable moment at a time, from the shape of a ch
 
 Portrait 2D surfing: hold to charge, release to jump. Both editions use the same 800 m course and physics. The Skill edition adds an original woodblock-style seascape and distinct crouching, airborne and landing poses. Asset effort differs; this is a playable design comparison, not a controlled experiment.
 
-## Farm Match-3 · Skill 3.1
+## Farm Match-3 · Skill 3.2
 
 [Play the two editions](https://hanszcy.github.io/indie-game-art/play/farm/)
 
