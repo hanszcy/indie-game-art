@@ -4,34 +4,22 @@
 
 Indie Game Art v3 works on one playable moment at a time, from the shape of a character to the words and motion that follow an input.
 
+## Farm Match-3 · Skill 3.1
+
+[Play the two editions](https://hanszcy.github.io/indie-game-art/play/)
+
+| [Without Skill](https://hanszcy.github.io/indie-game-art/play/farm/plain/) | [With Skill · Xiaoman Garden](https://hanszcy.github.io/indie-game-art/play/farm/skill/) |
+| :---: | :---: |
+| [![Without Skill](play/farm/previews/plain.png)](https://hanszcy.github.io/indie-game-art/play/farm/plain/) | [![With Skill · Xiaoman Garden](play/farm/previews/skill.png)](https://hanszcy.github.io/indie-game-art/play/farm/skill/) |
+
+Same portrait layout, initial board and rules. The Skill edition redraws the crops and basket, then carries each harvest into the basket. These are playable design comparisons, not a controlled experiment.
+
 | What's wrong in play? | What to try |
 | --- | --- |
 | The art is temporary or lacks character. | Draw the same character two ways in the same scene. Compare its silhouette and pose at playing size. [Two studies of a heron](skills/indie-game-art/plates/bird-study.svg) |
 | The writing feels stiff or repetitive. | Read the dialogue and HUD together. Cut a repeated fact and check that the speaker’s voice and the player’s choices still come through. |
 | The controls feel like a webpage. | Move one action onto the object it affects. Keep information side by side when players need to compare it. |
 | Every action feels alike. | Compare an ordinary move with the last move of a round. Change what moves first, what stays planted and where the motion comes to rest. |
-
-## Playable comparisons from Skill 2.1
-
-[Play all three](https://hanszcy.github.io/indie-game-art/play/?lang=en)
-
-### Sokoban
-
-| [Play baseline](https://hanszcy.github.io/indie-game-art/play/sokoban/baseline/) | [Play with Skill](https://hanszcy.github.io/indie-game-art/play/sokoban/skill/) |
-| :---: | :---: |
-| [![Sokoban · Play baseline](play/previews/sokoban-baseline-play.webp)](https://hanszcy.github.io/indie-game-art/play/sokoban/baseline/) | [![Sokoban · Play with Skill](play/previews/sokoban-skill-play.webp)](https://hanszcy.github.io/indie-game-art/play/sokoban/skill/) |
-
-### Food Match-3
-
-| [Play baseline](https://hanszcy.github.io/indie-game-art/play/match/baseline/) | [Play with Skill](https://hanszcy.github.io/indie-game-art/play/match/skill/) |
-| :---: | :---: |
-| [![Food Match-3 · Play baseline](play/previews/match-baseline-play.webp)](https://hanszcy.github.io/indie-game-art/play/match/baseline/) | [![Food Match-3 · Play with Skill](play/previews/match-skill-play.webp)](https://hanszcy.github.io/indie-game-art/play/match/skill/) |
-
-### Ski Adventure
-
-| [Play baseline](https://hanszcy.github.io/indie-game-art/play/ski/baseline/) | [Play with Skill](https://hanszcy.github.io/indie-game-art/play/ski/skill/) |
-| :---: | :---: |
-| [![Ski Adventure · Play baseline](play/previews/ski-baseline-play.webp)](https://hanszcy.github.io/indie-game-art/play/ski/baseline/) | [![Ski Adventure · Play with Skill](play/previews/ski-skill-play.webp)](https://hanszcy.github.io/indie-game-art/play/ski/skill/) |
 
 ## Install
 

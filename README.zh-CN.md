@@ -4,34 +4,22 @@
 
 Indie Game Art v3 从游戏里的一个具体瞬间入手，打磨角色的造型、屏幕上的文字和操作后的反应。
 
+## 农场消消乐 · Skill 3.1 两版对照
+
+[进入两版试玩](https://hanszcy.github.io/indie-game-art/play/)
+
+| [不用 Skill](https://hanszcy.github.io/indie-game-art/play/farm/plain/) | [使用 Skill · 小满菜园](https://hanszcy.github.io/indie-game-art/play/farm/skill/) |
+| :---: | :---: |
+| [![不用 Skill](play/farm/previews/plain.png)](https://hanszcy.github.io/indie-game-art/play/farm/plain/) | [![使用 Skill · 小满菜园](play/farm/previews/skill.png)](https://hanszcy.github.io/indie-game-art/play/farm/skill/) |
+
+两版均适配手机竖屏，使用相同初始棋盘与规则。Skill 版重绘作物和篮子，并让采摘从棋盘抵达收获篮。这是可玩的设计对照，不是严格实验。
+
 | 游玩时遇到的问题 | 可以怎么改 |
 | --- | --- |
 | 还在用占位图，或画面缺少辨识度 | 在同一场景里给同一个角色画两种造型，缩到游戏里的实际大小，比一比轮廓和姿态。[一只鹭的两种画法](skills/indie-game-art/plates/bird-study.svg) |
 | 台词生硬，提示又啰嗦 | 把台词和同屏提示连起来读。删掉重复的信息，再听听角色的口吻，看玩家是否还清楚自己能怎么选。 |
 | 操作界面像网页 | 试着让玩家直接操作画面里的物件。需要比较的信息仍然并排放。 |
 | 平时操作和收尾都一个样 | 对照普通的一步和决定胜负的一步。看哪里先动、哪里撑住不动，最后停在什么姿势。 |
-
-## Skill 2.1 版实机对照与试玩
-
-[进入试玩页](https://hanszcy.github.io/indie-game-art/play/?lang=zh)
-
-### 推箱子
-
-| [试玩基础版](https://hanszcy.github.io/indie-game-art/play/sokoban/baseline/) | [试玩 Skill 版](https://hanszcy.github.io/indie-game-art/play/sokoban/skill/) |
-| :---: | :---: |
-| [![推箱子 · 试玩基础版](play/previews/sokoban-baseline-play.webp)](https://hanszcy.github.io/indie-game-art/play/sokoban/baseline/) | [![推箱子 · 试玩 Skill 版](play/previews/sokoban-skill-play.webp)](https://hanszcy.github.io/indie-game-art/play/sokoban/skill/) |
-
-### 美食消消乐
-
-| [试玩基础版](https://hanszcy.github.io/indie-game-art/play/match/baseline/) | [试玩 Skill 版](https://hanszcy.github.io/indie-game-art/play/match/skill/) |
-| :---: | :---: |
-| [![美食消消乐 · 试玩基础版](play/previews/match-baseline-play.webp)](https://hanszcy.github.io/indie-game-art/play/match/baseline/) | [![美食消消乐 · 试玩 Skill 版](play/previews/match-skill-play.webp)](https://hanszcy.github.io/indie-game-art/play/match/skill/) |
-
-### 滑雪大冒险
-
-| [试玩基础版](https://hanszcy.github.io/indie-game-art/play/ski/baseline/) | [试玩 Skill 版](https://hanszcy.github.io/indie-game-art/play/ski/skill/) |
-| :---: | :---: |
-| [![滑雪大冒险 · 试玩基础版](play/previews/ski-baseline-play.webp)](https://hanszcy.github.io/indie-game-art/play/ski/baseline/) | [![滑雪大冒险 · 试玩 Skill 版](play/previews/ski-skill-play.webp)](https://hanszcy.github.io/indie-game-art/play/ski/skill/) |
 
 ## 安装
 

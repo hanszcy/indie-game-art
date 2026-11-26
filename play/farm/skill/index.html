@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#fbf5e6"><link rel="icon" href="data:,"><title>小满菜园 · 消消乐</title><link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<main class="atelier">
+  <nav class="navigation" aria-label="游戏导航">
+    <a class="back" href="../index.html" aria-label="返回游戏展架"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 5-7 7 7 7M7 12h13"/></svg></a>
+    <span class="edition">菜 园 · 第 一 季</span>
+    <button id="sound" class="sound" type="button" aria-label="开启声音" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 16V5l9-2v11M10 6l9-2"/><ellipse cx="7" cy="17" rx="3" ry="2"/><ellipse cx="16" cy="15" rx="3" ry="2"/><path class="sound-off" d="m3 3 18 18"/></svg></button>
+  </nav>
+  <header class="identity">
+    <div class="sun" aria-hidden="true"><svg viewBox="0 0 70 70"><path d="m35 0 4 15 12-9-3 15 17-1-12 11 17 6-17 5 10 13-16-3 1 17-12-12-7 13-3-17-15 6 7-15-17-3 15-8L4 22l17 1-1-17 11 12Z" fill="#dd7042"/><path d="M27 30v5m15-5v5m-14 7q8 6 15-2" fill="none" stroke="#fbf5e6" stroke-width="2.3" stroke-linecap="round"/></svg></div>
+    <div><h1><span>小</span><span>满</span><span>菜</span><span>园</span></h1><p class="subtitle">摘一点，满一篮。</p></div>
+    <span class="season-mark" aria-hidden="true">应<br>季<br>鲜<br>摘</span>
+  </header>
+  <section class="work" aria-label="农场菜地">
+    <div class="ledger">
+      <div class="score-ledger"><span class="ledger-label">收获</span><div class="score-line"><strong id="score">0</strong><span> / <span id="target">1800</span></span></div></div>
+      <div class="move-ledger"><strong id="moves">24</strong><span class="ledger-label">步可交换</span></div>
+    </div>
+    <div id="progress" class="progress" role="progressbar" aria-label="收获目标进度" aria-valuemin="0" aria-valuemax="1800" aria-valuenow="0"><span></span></div>
+    <div class="field-edge" aria-hidden="true"></div>
+    <div id="board" class="board" aria-busy="true"><canvas id="art" aria-hidden="true"></canvas><div id="cells" class="cells" role="group" aria-label="七行七列作物。方向键移动焦点，回车选中两件相邻作物，或手指轻扫交换。"></div></div>
+    <p id="status" class="status" role="status" aria-live="polite">正在整理菜地…</p>
+    <div class="harvest-dock" aria-label="收获篮">
+      <div class="field-sketch" aria-hidden="true"><svg viewBox="0 0 340 90"><g fill="none" stroke="#b6b89a" stroke-width="1.3"><path d="M0 76Q44 62 106 73m-106 9q48-12 111-3m121-5q51-14 108-5m-113 14q54-13 113-6M42 65V40m-1 11q-17-1-14-13 14-1 14 13m2 5q0-15 14-15 1 14-14 15m252 5V33m0 12q-14-1-13-12 14 0 13 12m1 8q1-15 14-15 0 13-14 15"/></g><g fill="#e3b05c"><path d="m13 61 2-4 2 4-2 3m307-7 2-4 2 4-2 3"/></g></svg></div>
+      <div class="basket"><div id="receiver" class="basket-crops" aria-hidden="true"></div><div class="basket-front" aria-hidden="true"></div></div>
+      <span class="basket-caption">今日鲜摘</span>
+    </div>
+    <div class="tools"><button id="hint" type="button" disabled><span aria-hidden="true">✳</span> 找一组</button><span class="tool-note" aria-hidden="true">三 个 一 起 摘</span><button id="restart" type="button" disabled><span aria-hidden="true">↻</span> 再种一季</button></div>
+    <p class="instructions">滑动交换 · 相同作物连成三个即可收获</p>
+  </section>
+  <dialog id="result" aria-labelledby="result-title"><button id="close-result" class="close-result" type="button" aria-label="关闭结果，查看菜地">×</button><div class="result-basket" aria-hidden="true"></div><p class="result-eyebrow">小 满 菜 园 · 今 日 收 成</p><h2 id="result-title"></h2><p id="result-copy"></p><div class="result-score"><strong id="result-score"></strong><span>收获积分</span></div><button id="play-again" class="play-again" type="button">再种一季</button></dialog>
+</main>
+<script type="module" src="./app.js"></script>
+</body></html>
