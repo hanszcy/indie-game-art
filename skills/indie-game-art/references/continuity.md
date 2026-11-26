@@ -20,3 +20,9 @@ The image that ends a sequence can contain its history. In *Unpacking*, an alarm
 - **No conventional result screen.** In a sandbox, room-scale experience or open-ended story, visiting again may be the payoff. Find what remains in the world and how someone can recognize their own part in it.
 
 For a full-game review, walk a player from arrival through their first meaningful action and one consequential ending. Include the branch they are likely to see when tired, unlucky or interrupted. Compare the rhythm of the whole passage before polishing individual screens. For a one-screen brief, follow only the adjoining beats needed to understand it.
+
+## Cut from the last action
+
+Stage the same finish two ways. First let its consequence grow where the hand or eye already is. A final note may still be ringing as the other musicians lower their bows. Then try a clean interruption with the same next choice. An irreversible commitment, a breakdown of rewards, or items that must be compared may genuinely deserve the whole frame. Keep the option whose first resting image tells the player what changed and whose next input arrives in the right place.
+
+Include the HUD behind a new layer when reading the cut. The object, the running total and the result can each tell a different part of the story. If all three only say “finished,” let the strongest one have the beat. A screen reader can still receive the event once.

@@ -26,3 +26,9 @@ Keep camera, actual display size, rule state and input matched between studies. 
 When someone is available to play, ask a neutral question such as “What changed?” or “What do you expect if you do that again?” A usability answer and a taste judgment can diverge. Someone can understand the scene perfectly and still find its performance shrill. In a solo review, identify your own preference and point to the frame, edge or beat that prompted it. Keep untested audience claims open.
 
 Deliver the work in the requested form. For a still, show the image at its intended scale. For motion, show the before, event and settled state in sequence. For a build, exercise the normal player entry point with the same action on both versions. State the real constraint and the tradeoff in ordinary language. Only carry a reusable art agreement into project documentation when another scene or contributor will need it.
+
+## Reopen the failed frame
+
+Return to the precise failure that initiated the work. Match the original phase, scale and action and look again before reading the implementation notes. If the original complaint was about the subject, crop it together with one neighbor. If it was about words, read every visible line at the same instant. Compare a nearby uneventful moment as well. A beautiful ending can hide a tedious ordinary action.
+
+For a second opinion, give a reviewer anonymized pairs with the same input and settled states. Ask which moment they would keep and what is lost in the alternative. Ask separately what they think happened. Record disagreements and the clearest surviving weakness. If each version has a different strength, the test supplies a decision for the next drawing. It does not establish an overall winner.

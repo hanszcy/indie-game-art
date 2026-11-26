@@ -2,15 +2,16 @@
 
 **English** · [简体中文](README.zh-CN.md) · [日本語](README.ja.md)
 
-**Indie Game Art helps indie developers replace placeholder characters, scenery, controls and animations in a playable prototype.**
+Indie Game Art v3 works on one playable moment at a time, from the shape of a character to the words and motion that follow an input.
 
-| What you're stuck on | What you can get |
+| What's wrong in play? | What to try |
 | --- | --- |
-| The mechanics work. The game still uses placeholder art. | Choose a look for one playable scene, then replace its stand-ins with a first set of characters, scenery and controls. See how they fit together in the build. |
-| The game has artwork, but its interface still feels like a website. | Rework the screen players use most. Arrange information around what they need to see and do next, then draw buttons, icons and panels using shapes and materials from the game world. |
-| The still frames look right, but the game barely reacts to input. | Tie motion to the events players trigger. Let a button respond on contact, give a hit a brief pause, and hold the final pose for an extra beat on a win. |
+| The art is temporary or lacks character. | Draw the same character two ways in the same scene. Compare its silhouette and pose at playing size. [Two studies of a heron](skills/indie-game-art/plates/bird-study.svg) |
+| The writing feels stiff or repetitive. | Read the dialogue and HUD together. Cut a repeated fact and check that the speaker’s voice and the player’s choices still come through. |
+| The controls feel like a webpage. | Move one action onto the object it affects. Keep information side by side when players need to compare it. |
+| Every action feels alike. | Compare an ordinary move with the last move of a round. Change what moves first, what stays planted and where the motion comes to rest. |
 
-## Playable comparisons
+## Playable comparisons from Skill 2.1
 
 [Play all three](https://hanszcy.github.io/indie-game-art/play/?lang=en)
 

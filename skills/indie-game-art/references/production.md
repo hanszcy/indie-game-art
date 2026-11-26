@@ -1,31 +1,21 @@
-# From direction to playable artwork
+# Take a drawing into the build
 
-## The production contract
+Start with the part the player sees most often. Set its on-screen size and put a rough version next to its most confusing neighbor on a real background. If the play takes place on a rotating camera, inspect two difficult angles. If it is a line of text, test a short and a long line in the actual typeface. A menu portrait can crop a face a moving character needs to keep visible.
 
-Before an asset batch, pin one real gameplay camera and the smallest shipped display size. Record the actor's approximate pixel height, ground contact, light direction, meaningful occlusion, HUD area and the busiest playable arrangement. The asset batch must solve this scene, not a promotional crop.
+## Agree on the part that carries the drawing
 
-For a substantial redesign, the minimal useful set is often one background or floor, one actor, one interactable, one obstacle, and one state change. It is not a universal required list. For a word game, type and selection may be the entire set.
+Make one subject recognizable through a structural decision. An opening between the arm and a narrow torso can communicate caution. An unbroken dark mass from shoulder to knuckles can suggest a heavier reach. Trace the smallest outline that still expresses the difference. Save it alongside the source for the next artist or asset generator.
 
-## Asset briefs that survive integration
+Give neighboring assets just enough shared grammar to belong together. Where do lines end? Which edge gets lost in shadow? If light picks out wet hair, leave the dry felt hood comparatively quiet. Preserve one intentional exception that someone would miss if it disappeared. A technically clean asset can still be the wrong drawing.
 
-Specify the asset's role, world, medium, camera, lighting, footprint, anchor, padding, transparency and state variants. Differentiate concept compositions from production images. A composition can include scenery and atmosphere; an actor sprite needs clean independent edges. A tile needs seamless or deliberately jointed edges. A sheet needs fixed cell dimensions, isolated subjects and an ordering manifest.
+For a generator, give it the approved shape study, actual view and one difficult variation. Inspect that variation before commissioning a cast. For hand drawing or a model, try the same difficult variation in the playable field. Keep the editable master, layout or generation inputs. Record third-party asset permissions when using them.
 
-Inspect generated results before coding against guessed coordinates. Verify actual dimensions and alpha. If a sheet's cells drift, adjust source rectangles or regenerate; do not keep cropped feet or baked checkerboards. Store the reusable source and prompt with the project. Use local assets for shipping and document third-party licenses. A photograph or generated illustration of UI is not a substitute for functional controls.
+## Dress the difficult frame first
 
-Keep a background's highest contrast away from the legal-action field. Avoid the common failure where rich scenery ends at a conspicuous rectangular gray board, or a tiny geometric actor floats over a painted world. The foreground needs the same camera, contact, lighting and level of craft.
+Put the subject against its lightest and darkest likely neighbor, under a partial occluder or beside several repeats. Compare the most forceful edge with the action the player is following. A generated highlight repeated on thirty objects can turn a single attractive sample into a noisy crowd. Take that highlight out of most of the family, change its width where it describes a different surface, or reserve it for a state the player values. Inspect the resulting group again. [Repeated subjects at play size](playfield-edit.md)
 
-## Make state visible through material
+Ship assets at the intended pivot, footprint, padding and resolution. Inspect alpha on two backgrounds and the seam of repeated surfaces. Check animation across frame boundaries for a wandering foot, shrinking silhouette or changing light source. A decorative interface illustration still needs an operable control with focus, a hit area and a readable state.
 
-Choose one material-specific behavior and carry it through:
+## Decide when to expand
 
-- Parcel / stone / machinery: contact, resistance, displacement, then a stable landing. Do not stretch every object like jelly.
-- Brittle / soft / liquid collectibles: different break, squeeze or flow. Keep category identity readable at the smallest size.
-- Snow / air / water motion: footing, edge contact, trail and recovery should explain speed and weight. A moving background alone does not give the actor movement.
-
-These are starting questions, not mandatory themes or effects. A deliberately abstract treatment may express the same relationships by line tension, spacing or rhythm.
-
-## Capture gates
-
-Before expanding: view a representative gameplay screenshot, then inspect input, peak contact and resting frames. Check the actor, interactable and ground together, including partial occlusion. Test rapid repetition and a rejected action. On mobile, verify board aspect ratio and actual target size, not only “no horizontal overflow”.
-
-Before handoff: inspect busiest gameplay, recovery and completion at minimum and typical viewports. Record a real limitation if one remains. Do not hide low-quality foreground assets behind a title screen, static concept, cinematic border, blur or particles.
+Play through one ordinary encounter and one awkward neighbor or state. Find the expensive mark the audience can actually see and the detail that vanishes at play size. Spend the next unit of production effort on the former. A whole asset family can wait while the responsible drawing is still in question.

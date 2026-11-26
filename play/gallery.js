@@ -1,7 +1,7 @@
 const languages = {
-  en: {names:['Sokoban','Food Match-3','Ski Adventure'], editions:['Play baseline','Play with Skill']},
-  zh: {names:['推箱子','美食消消乐','滑雪大冒险'], editions:['试玩基础版','试玩 Skill 版']},
-  ja: {names:['箱押しパズル','フードマッチ3','スキーアドベンチャー'], editions:['通常版を遊ぶ','Skill 版を遊ぶ']}
+  en: {names:['Sokoban','Food Match-3','Ski Adventure'], editions:['Play baseline','Play with Skill 2.1']},
+  zh: {names:['推箱子','美食消消乐','滑雪大冒险'], editions:['试玩基础版','试玩 Skill 2.1 版']},
+  ja: {names:['箱押しパズル','フードマッチ3','スキーアドベンチャー'], editions:['通常版を遊ぶ','Skill 2.1 版を遊ぶ']}
 };
 const slugs = ['sokoban','match','ski'];
 const picker = document.querySelector('#language');

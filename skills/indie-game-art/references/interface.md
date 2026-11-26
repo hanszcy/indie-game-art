@@ -1,38 +1,32 @@
-# Design the interface and its voice
+# Put information, actions and words where they belong
 
-## Start at the decision
+## Compose the screen before dressing a button
 
-Watch the eye and the hand through one real choice. Where does the player see the thing they are judging? Which values must coexist? When do they stop looking at the control and look for a consequence? An interface feels detached when it makes a player leave the action to read a receipt for something already visible in the world.
+For one live decision, identify the thing being judged, the facts that must remain visible together, the place the hand can act, and where the new truth will appear. Sketch at least one alternate arrangement when the whole screen feels like a page. Removing borders from a row of unrelated panels will leave their reading order intact.
 
-*Mini Metro* uses a transport diagram as the space where the player plans and draws routes. Its abstraction gives direct access to network relationships. In the phone adaptation of *Papers, Please*, Lucas Pope reworked a crowded desk but kept physical beats such as receiving papers and applying a stamp. The player's work includes the handling of those documents. Decide which relation or gesture would lose its pleasure if it became a generic button. Sometimes a fixed readout and a tactile action belong on the same screen. [Dinosaur Polo Club on Mini Metro](https://dinopoloclub.com/press/mini-metro/) · [Lucas Pope's mobile design notes](https://dukope.com/devlogs/papers-please/mobile/)
+Give permanent space to what stays useful through repeated play. Attach an intention to its character when the player is comparing several actors. Put the tally at a fixed location when it must be tracked through chaotic changes. Fold nameplates or teaching into arrival where they have a reason to be read. A spare margin can make an approaching threat feel far away. A crowded market can make looking through the crowd the pleasure. Check what moving the evidence does to the activity.
 
-| What the player is doing | Arrangement to try | Reason to change it |
-| --- | --- | --- |
-| Comparing many values or tracking an exact quantity | A stable axis, aligned columns, consistent units and space for the longest value. Let an accent move between entries. | A consequential change happens far from its cause. Momentarily connect the changed value to the responsible object. |
-| Working on one thing by touch or pointer | Show affordance and result near the object. Keep the target still when its painted face depresses. | The hand covers the consequence. Extend a changed edge past the thumb or echo an essential value in a fixed readout. |
-| Aiming or navigating continuously | Put an urgent cue on the line of sight. Give planning information a place that stays put. | A moving label, camera shift or repeated notice interferes with judging distance. |
-| Reading, weighing words or enjoying a voice | Give the text a measure, rhythm, hierarchy and revisit path appropriate to the writing. Keep related choices visible. | A type-on effect delays a familiar choice or a portrait interrupts a critical line. Let the player finish or skip the reveal. |
+## Give controls a physical or graphic vocabulary
 
-## Draw the control at its smallest working size
+Draw the action in relation to the thing affected. A reversible selector can sit beside the alternatives. A lever can hinge at a fixed point, exposing a colored underside as it travels. A rapid abstract command can be a spare mark whose gaps close under pressure. A hollow socket may still make sense when its tool is unavailable. Find a perceptible difference between permanent navigation, a contextual verb and the exceptional onward action. They can share ink and typography while having different scale, anchors, silhouettes and behavior.
 
-Draw the verb. Two icons with the same enclosing shape need a different interior mass or direction. Compare them in silhouette, selected, disabled and beside the neighboring icon. Use a label for a costly or ambiguous action. Reserve decorative frames for places where an edge actually defines an object or a grouping. A quiet rectangular control can be more in character than an ornate imitation of a prop.
+Lay out resting, focused, pressed, confirmed and unavailable states together where those states exist. Use real labels and a realistic neighboring control. Keep the hit area stable while the painted face moves. Inspect contact at actual thumb size and with keyboard or controller focus. Check a failed or delayed action. A depressed face can confirm contact immediately while success waits for the rule. If a glyph hides an irreversible consequence, restore the label. A clear labeled button is a good solution for the right verb.
 
-Make a recognizable resting face. Change contact, inset, ink density, occlusion or the part under tension on press. Keep keyboard focus distinguishable from selection, pending from confirmed, and unavailable from visually unimportant. The hit surface can be larger than the art. A press inside followed by a release outside should reflect the game's real cancellation policy. Draw a disabled state that still explains what the control is. If the reason matters to a decision, reveal it where the player is already looking.
+## Edit the words that coexist
 
-Treat typography as part of the world. A mechanical gauge may want even-width figures so that a counter can change without shifting its neighbors. A letter from a character may want a ragged edge and an uneven line break. Use actual language, glyphs, names and changing values in the mockup. Check wrapping and focus at the target size. When the neutral text is already doing its job, spend the illustration budget on the thing the player came to see.
+Take an ordinary frame and an outcome frame. Transcribe the visible lines, including words behind the overlay. For each, name the fact or feeling that would disappear if it were cut. Keep dialogue that reveals a speaker's desire, humor or relationship. Keep the exact quantity, consequence or unfamiliar action when removing it would force guessing. An icon can be ambiguous, and a graphic update can disappear under a finger. Retain equivalent nonvisual names and announcements.
 
-A control can also act. In *Florence*, the pieces needed for speech bubbles grow fewer as a first conversation gets easier. The hand feels an emotional change before anyone explains it. With an existing ruleset, transfer that idea through presentation. A second character might start finishing the first speaker's gesture over repeated encounters. Keep response timing truthful if timing matters to play. [Creative director Ken Wong on Florence](https://gamesbeat.com/florence-uses-clever-interactions-to-create-a-relatable-mobile-game-about-romance/)
-
-## Edit words with the same care as drawings
-
-Give each line a reader, a moment and a job. It can enable a decision, communicate a cost, teach a rule the player cannot infer, deliver a character's voice, set a rhythm or reward discovery. A screen title restated as a subtitle, a congratulation for every routine press and a tagline describing the control below it quickly turn play into a product tour.
-
-| Draft in a fictional signal room | Editorial decision |
+| Draft situation | Edit and test |
 | --- | --- |
-| “Welcome to your signal management journey.” | Cut. The lit desk, an incoming call and its unanswered signal can stage arrival. |
-| “Are you ready to proceed?” before destroying the only recording | Name the consequence and offer distinct actions, e.g. **Erase the recording?** / **Keep** / **Erase**. Use these only if there really is a single recording and erasing is irreversible. |
-| “The bridge lamp is still on.” | Keep it if a particular caller has been waiting for someone to come home. Let it land once while the player can look at the lamp. A repeated system notification would drain the line of its voice. |
+| Heading “Transmission received”, body “Your transmission reached its destination”, footer “Sent” | Let the receiver's response own delivery. Keep the destination or timestamp if later choices depend on it. Remove the duplicate notices and replay with the receiver offscreen. Restore a local acknowledgment if that view otherwise loses the fact. |
+| A button says “Continue the journey” on every exit | Write the next actual action in the player's language. “Rewind”, “Leave the hall” and “Read on” promise different things. When a familiar glyph alone is adequate, give it an accessible name. |
+| A character says a plain line everyone can already see | Ask why this person says it now. “You kept my seat” may be worth preserving when somebody feared they would be forgotten. Stage the seat and the listener. Give this line a speaker and room to land. |
+| “Continue?” would discard a unique recording | Put the cost and the choices together. “Erase the recording?” paired with “Keep” and “Erase” is proportionate to that risk. |
 
-Teach at the first safe opportunity to perform the real action. Let the player try, see a consequence, and choose without the prompt on a nearby variation. If the second choice still depends on the wording, repair the cue or keep a plain persistent reference. Controls must remain discoverable without hover and accessible with the project's supported inputs. Preserve meaningful labels for assistive technology when removing visual duplication.
+Read the final line against the actual pose. “He gave her the key” promises a transfer. If the key stays in his hand while he opens the door for her, the more elegant sentence has invented an event. Try silence, a line spoken by the person entering, or a verb the drawing supports. Keep a descriptive equivalent for people who cannot see that gesture.
 
-Mystery can be authored. In *TUNIC*, assembling a manual, inspecting its images and deciphering clues is part of playing. The maker folded and distressed a physical booklet to give the pages a past. A marginal mark is worth keeping if the player might return to reinterpret it. Obligatory actions and irreversible costs need their own dependable cues. [Andrew Shouldice on making the manual](https://blog.playstation.com/2022/09/21/the-creation-of-tunics-invaluable-in-game-manual/)
+For localized copy, write a short idiomatic line in the player's language first and check it aloud in context. Vocabulary from the world earns its place when someone there would actually use it. Preserve names and precision when shortening. Teach at the first safe use, then offer the same choice once without the prompt. Give optional help a stable home. Self-explanatory screens can be quiet.
+
+## Check the ordinary view and the paid-off view
+
+At rest, inspect the largest text block, brightest mark, widest blank interval and busiest contour. Do they lead to the intended subject? At the result, ensure the player's last action has had time and space to read. Test the same result with just the persistent visual change and one onward action. Restore a panel where the player needs a meaningful decision, record or change of tempo. Keep a visually quiet restart quick and accessible after frequent failure.
