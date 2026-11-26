@@ -4,9 +4,19 @@
 
 Indie Game Art v3 は、実際に遊べる一場面を選び、キャラクターの形、画面に出る言葉、操作したときの動きを磨くスキルです。
 
+## 浮世絵サーフィン · Skill 3.1 比較
+
+[サーフィンの二つのバージョンを遊ぶ](https://hanszcy.github.io/indie-game-art/play/surf/)
+
+| [Skill なし · 浪間の一日](https://hanszcy.github.io/indie-game-art/play/surf/plain/) | [Skill あり · 潮生](https://hanszcy.github.io/indie-game-art/play/surf/skill/) |
+| :---: | :---: |
+| [![Skill なし · 浪間の一日](play/surf/previews/plain.png)](https://hanszcy.github.io/indie-game-art/play/surf/plain/) | [![Skill あり · 潮生](play/surf/previews/skill.png)](https://hanszcy.github.io/indie-game-art/play/surf/skill/) |
+
+スマートフォン縦画面の2Dサーフィン。長押しで力をため、離すとジャンプ。両版は同じ800mのコースと物理を使用します。Skill版にはオリジナルの木版画風の海景と、沈み込み・空中・着水の姿勢を加えています。素材制作への投入量が異なるため、厳密な実験ではありません。
+
 ## 農園マッチ3 · Skill 3.1 比較
 
-[二つのバージョンを遊ぶ](https://hanszcy.github.io/indie-game-art/play/)
+[二つのバージョンを遊ぶ](https://hanszcy.github.io/indie-game-art/play/farm/)
 
 | [Skill なし](https://hanszcy.github.io/indie-game-art/play/farm/plain/) | [Skill あり · 小満菜園](https://hanszcy.github.io/indie-game-art/play/farm/skill/) |
 | :---: | :---: |

@@ -4,9 +4,19 @@
 
 Indie Game Art v3 从游戏里的一个具体瞬间入手，打磨角色的造型、屏幕上的文字和操作后的反应。
 
+## 浮世绘冲浪 · Skill 3.1 两版对照
+
+[进入冲浪两版试玩](https://hanszcy.github.io/indie-game-art/play/surf/)
+
+| [不用 Skill · 浪间一日](https://hanszcy.github.io/indie-game-art/play/surf/plain/) | [使用 Skill · 潮生](https://hanszcy.github.io/indie-game-art/play/surf/skill/) |
+| :---: | :---: |
+| [![不用 Skill · 浪间一日](play/surf/previews/plain.png)](https://hanszcy.github.io/indie-game-art/play/surf/plain/) | [![使用 Skill · 潮生](play/surf/previews/skill.png)](https://hanszcy.github.io/indie-game-art/play/surf/skill/) |
+
+2D 手机竖屏冲浪：按住蓄力，松开起跃。两版使用相同的 800 米浪道与物理；Skill 版加入原创版画海景，以及屈膝压板、腾空和落浪姿态。两版素材投入不同，这是可玩的设计对照，不是严格实验。
+
 ## 农场消消乐 · Skill 3.1 两版对照
 
-[进入两版试玩](https://hanszcy.github.io/indie-game-art/play/)
+[进入两版试玩](https://hanszcy.github.io/indie-game-art/play/farm/)
 
 | [不用 Skill](https://hanszcy.github.io/indie-game-art/play/farm/plain/) | [使用 Skill · 小满菜园](https://hanszcy.github.io/indie-game-art/play/farm/skill/) |
 | :---: | :---: |
