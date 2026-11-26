@@ -4,7 +4,7 @@
 
 Indie Game Art v3 は、実際に遊べる一場面を選び、キャラクターの形、画面に出る言葉、操作したときの動きを磨くスキルです。
 
-## 浮世絵サーフィン · Skill 3.1 比較
+## 浮世絵サーフィン · Skill 3.2 比較
 
 [サーフィンの二つのバージョンを遊ぶ](https://hanszcy.github.io/indie-game-art/play/surf/)
 

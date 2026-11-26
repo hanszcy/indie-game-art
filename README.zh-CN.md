@@ -4,7 +4,7 @@
 
 Indie Game Art v3 从游戏里的一个具体瞬间入手，打磨角色的造型、屏幕上的文字和操作后的反应。
 
-## 浮世绘冲浪 · Skill 3.1 两版对照
+## 浮世绘冲浪 · Skill 3.2 两版对照
 
 [进入冲浪两版试玩](https://hanszcy.github.io/indie-game-art/play/surf/)
 

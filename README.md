@@ -4,7 +4,7 @@
 
 Indie Game Art v3 works on one playable moment at a time, from the shape of a character to the words and motion that follow an input.
 
-## Ukiyo-e Surfing · Skill 3.1
+## Ukiyo-e Surfing · Skill 3.2
 
 [Play the two surfing editions](https://hanszcy.github.io/indie-game-art/play/surf/)
 

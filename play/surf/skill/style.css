@@ -1,5 +1,123 @@
-*{box-sizing:border-box}body{margin:0;background:#ded5bf;color:#183c50;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}button,a{touch-action:manipulation;-webkit-tap-highlight-color:transparent}button{font:inherit;cursor:pointer}button:focus-visible,a:focus-visible{outline:3px solid #b65742;outline-offset:3px}[hidden]{display:none!important}.print{position:relative;width:100%;max-width:480px;height:100svh;min-height:580px;max-height:1000px;margin:auto;isolation:isolate;overflow:hidden}canvas{position:absolute;width:100%;height:100%;touch-action:none}nav{position:absolute;top:max(16px,env(safe-area-inset-top));left:17px;right:17px;display:flex;justify-content:space-between;align-items:center;z-index:5}nav div{display:flex;gap:6px}nav a,nav button{width:44px;height:44px;display:grid;place-items:center;background:transparent;border:0;color:#183c50;padding:10px}nav svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}nav button:disabled{opacity:.35}.mute{opacity:.7}[aria-pressed=true] .mute{display:none}header{position:absolute;left:27px;right:28px;top:max(76px,calc(env(safe-area-inset-top) + 60px));display:flex;justify-content:space-between;pointer-events:none}.cartouche{position:relative;width:64px;border:1px solid #53747b;padding:10px 8px 12px;text-align:center;background:#f3e6c980;box-shadow:3px 3px 0 #b1b9a77d}.small-title{font:8px/1.5 "Songti SC",serif;letter-spacing:1px;white-space:nowrap}.cartouche h1{font:400 40px/1.15 "Kaiti SC","STKaiti","Songti SC",serif;margin:9px 0 0}.seal{position:absolute;right:-19px;bottom:-18px;background:#b65742;color:#f3e6c9;padding:5px 3px;border:1px solid #edd1af;font:12px/1.1 "Songti SC",serif;transform:rotate(-4deg)}.ledger{text-align:right;padding-top:7px}.caption{font-size:9px;letter-spacing:3px}.ledger p{margin:4px 0 12px;white-space:nowrap}.ledger p strong{font:30px Georgia,serif;font-variant-numeric:tabular-nums}.ledger p span{font-size:10px;color:#547077}.cargo{display:flex;justify-content:flex-end;align-items:center;gap:6px;font-size:10px}.cargo strong{font:20px Georgia,serif}.shell-icon{font-size:18px;color:#9b713f;transform:rotate(-20deg)}.health{display:flex;justify-content:flex-end;gap:6px;margin-top:12px}.health i{display:block;width:8px;height:8px;border:1px solid #9e604a;background:#b65742;transform:rotate(45deg)}.health i.spent{background:transparent;opacity:.5}.paper-note{position:absolute;left:28px;right:28px;bottom:150px;z-index:4;text-align:center;padding:24px 22px 18px;background:#f3e6c9;border:1px solid #8b9c8e;box-shadow:5px 6px 0 #183c5026}.chapter{font-size:10px;letter-spacing:3px;color:#8a6350;margin:0 0 10px}.paper-note h2{font:400 25px/1.5 "Kaiti SC","Songti SC",serif;margin:5px 0 12px}.paper-note>p:not(.chapter){font-size:12px;line-height:1.9;color:#5a7275;margin:0 0 18px}.primary{width:100%;min-height:46px;background:#214f64;border:1px solid #173e50;color:#f3e6c9;font:17px "Kaiti SC","Songti SC",serif;letter-spacing:4px}.secondary{background:none;border:0;color:#536d71;min-height:44px;font-size:12px;margin-top:5px}.keys{display:block;font-size:9px;color:#829085;letter-spacing:1px;margin-top:12px}.finish-seal{font:25px/48px "Kaiti SC","Songti SC",serif;width:48px;height:48px;border:2px solid #b65742;color:#b65742;margin:0 auto 15px;transform:rotate(-7deg)}footer{position:absolute;bottom:max(22px,env(safe-area-inset-bottom));left:28px;right:28px;z-index:3}.route{height:2px;background:#b9c3ad66;position:relative}.route>span{display:block;height:100%;width:0;background:#e5d5ad;position:relative}.route>span:after{content:'';position:absolute;right:-2px;top:-2px;width:6px;height:6px;transform:rotate(45deg);background:#e5d5ad}.shore-labels{display:flex;justify-content:space-between;font-size:9px;letter-spacing:2px;color:#b6c8c0;margin:9px 0 16px}#surf{position:relative;width:100%;height:66px;background:#f3e6c9;color:#214f64;border:1px solid #bcaa84;display:flex;align-items:center;justify-content:space-between;padding:10px 20px;touch-action:none;overflow:hidden}#surf:disabled{opacity:.42}#surf svg{width:44px;height:32px;fill:none;stroke:currentColor;stroke-width:1.7}.control-copy{position:relative;z-index:1;text-align:left;display:flex;align-items:baseline;gap:15px}.control-copy b{font:23px "Kaiti SC","Songti SC",serif;letter-spacing:4px}.control-copy small{font-size:10px}.charge{position:absolute;inset:0 auto 0 0;width:0;background:#d2bc87;opacity:.6;pointer-events:none}.signal{position:absolute;top:67%;left:20px;right:20px;text-align:center;color:#f3e6c9;font:12px "Songti SC",serif;letter-spacing:2px;pointer-events:none;z-index:2;min-height:18px}@media(min-width:600px){.print{height:900px;margin:20px auto;box-shadow:0 12px 50px #183c5025}}@media(max-height:700px){header{top:65px}.cartouche{width:54px;padding:6px}.cartouche h1{font-size:32px}.small-title{font-size:7px}.paper-note{bottom:126px;padding:15px 18px 12px}.paper-note h2{font-size:22px;margin-bottom:6px}.paper-note>p:not(.chapter){font-size:11px;line-height:1.7;margin-bottom:12px}.chapter{margin-bottom:5px}.keys{margin-top:8px}footer{bottom:17px}.shore-labels{margin:7px 0 10px}#surf{height:58px}.finish-seal{width:36px;height:36px;line-height:34px;font-size:21px;margin-bottom:8px}.control-copy{gap:9px}.control-copy small{font-size:9px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+*{box-sizing:border-box}
+body{margin:0;background:#ded5bf;color:#183c50;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}
+button,a{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+button{font:inherit;cursor:pointer}
+button:focus-visible,a:focus-visible{outline:3px solid #b65742;outline-offset:3px}
+[hidden]{display:none!important}
+.print{position:relative;width:100%;max-width:480px;height:100svh;min-height:580px;max-height:1000px;margin:auto;isolation:isolate;overflow:hidden}
+canvas{position:absolute;width:100%;height:100%;touch-action:none}
+nav{position:absolute;top:max(16px,env(safe-area-inset-top));left:17px;right:17px;display:flex;justify-content:space-between;align-items:center;z-index:5}
+nav div{display:flex;gap:6px}
+nav a,nav button{width:44px;height:44px;display:grid;place-items:center;background:transparent;border:0;color:#183c50;padding:10px}
+nav svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+nav button:disabled{opacity:.35}
+.mute{opacity:.7}
+[aria-pressed=true] .mute{display:none}
+header{position:absolute;left:27px;right:28px;top:max(76px,calc(env(safe-area-inset-top) + 60px));display:flex;justify-content:space-between;pointer-events:none}
+.cartouche{position:relative;width:64px;border:1px solid #53747b;padding:10px 8px 12px;text-align:center;background:#f3e6c980;box-shadow:3px 3px 0 #b1b9a77d}
+.small-title{font:8px/1.5 "Songti SC",serif;letter-spacing:1px;white-space:nowrap}
+.cartouche h1{font:400 40px/1.15 "Kaiti SC","STKaiti","Songti SC",serif;margin:9px 0 0}
+.seal{position:absolute;right:-19px;bottom:-18px;background:#b65742;color:#f3e6c9;padding:5px 3px;border:1px solid #edd1af;font:12px/1.1 "Songti SC",serif;transform:rotate(-4deg)}
+.ledger{text-align:right;padding-top:7px}
+.caption{font-size:9px;letter-spacing:3px}
+.ledger p{margin:4px 0 12px;white-space:nowrap}
+.ledger p strong{font:30px Georgia,serif;font-variant-numeric:tabular-nums}
+.ledger p span{font-size:10px;color:#547077}
+.cargo{display:flex;justify-content:flex-end;align-items:center;gap:6px;font-size:10px}
+.cargo strong{font:20px Georgia,serif}
+.shell-icon{font-size:18px;color:#9b713f;transform:rotate(-20deg)}
+.health{display:flex;justify-content:flex-end;gap:6px;margin-top:12px}
+.health i{display:block;width:8px;height:8px;border:1px solid #9e604a;background:#b65742;transform:rotate(45deg)}
+.health i.spent{background:transparent;opacity:.5}
+.paper-note{position:absolute;left:28px;right:28px;bottom:24px;z-index:4;text-align:center;padding:18px 8px 8px;color:#f3e6c9;background:none;border:0;box-shadow:none}
+.paper-note:before{content:"";position:absolute;z-index:-1;inset:-22px -30px -25px;background:linear-gradient(transparent,#193e5080 36%,#193e5090);pointer-events:none}
+.chapter{font-size:10px;letter-spacing:3px;color:#cfbc92;margin:0 0 8px}
+.chapter:before,.chapter:after{content:"";display:inline-block;width:23px;height:1px;background:#c5b891;margin:0 9px 3px}
+.paper-note h2{font:400 25px/1.5 "Kaiti SC","Songti SC",serif;margin:5px 0 10px}
+.paper-note>p:not(.chapter){font-size:12px;line-height:1.8;color:#c5d3c8;margin:0 0 12px}
+.primary{position:relative;isolation:isolate;display:block;width:156px;height:68px;margin:0 auto;padding:0;background:none;border:0;color:#f7e5c3;font:20px "Kaiti SC","Songti SC",serif;letter-spacing:2px;appearance:none}
+.seal-art{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+.primary>span{position:relative;display:block;padding-bottom:3px;transition:transform 100ms}
+.seal-face{transition:transform 100ms;transform-origin:center}
+.primary:active .seal-face,.primary:active>span{transform:translateY(3px) rotate(-1deg)}
+#start{width:112px;height:67px;font-size:23px}
+.secondary{display:flex;align-items:center;justify-content:center;gap:7px;margin:10px auto 0;min-height:44px;min-width:130px;padding:0 10px;background:none;border:0;color:#d2d7bd;font-size:12px}
+.secondary svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.6}
+.secondary span{padding:5px 0;border-bottom:1px solid #a8b9ac}
+.secondary:active svg{transform:rotate(-16deg)}
+.keys{display:block;font-size:9px;color:#a6bfb9;letter-spacing:1px;margin-top:10px}
+.finish-seal{font:25px/48px "Kaiti SC","Songti SC",serif;width:48px;height:48px;border:2px solid #e2bc8b;color:#e2bc8b;margin:0 auto 10px;transform:rotate(-7deg)}
+footer{position:absolute;bottom:max(22px,env(safe-area-inset-bottom));left:28px;right:28px;z-index:3}
+.route{height:2px;background:#b9c3ad66;position:relative}
+.route>span{display:block;height:100%;width:0;background:#e5d5ad;position:relative}
+.route>span:after{content:'';position:absolute;right:-2px;top:-2px;width:6px;height:6px;transform:rotate(45deg);background:#e5d5ad}
+.shore-labels{display:flex;justify-content:space-between;font-size:9px;letter-spacing:2px;color:#b6c8c0;margin:9px 0 5px}
+#surf{position:relative;isolation:isolate;width:100%;height:100px;background:none;color:#214f64;border:0;padding:0;touch-action:none;appearance:none;overflow:visible}
+#surf:disabled{opacity:.45}
+.wave-control{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+.wave-shadow{fill:none;stroke:#112f42;stroke-width:3;opacity:.35}
+.wave-paper{fill:#f3e6c9;stroke:#183c50;stroke-width:1}
+.wave-engraving{fill:none;stroke:#65868b;stroke-width:1.2}
+.wave-tip{fill:none;stroke:#28586a;stroke-width:.9}
+.wave-spray{fill:none;stroke:#f3e6c9;stroke-width:2;stroke-linecap:round}
+.charge{fill:#d5b56e;opacity:.8}
+.crest-face{transform-origin:150px 84px;transition:transform 120ms ease-out}
+.control-copy{position:absolute;top:45px;left:25px;right:80px;display:flex;align-items:baseline;gap:10px;white-space:nowrap;pointer-events:none;transition:transform 120ms ease-out}
+.control-copy b{font:23px "Kaiti SC","Songti SC",serif;letter-spacing:3px}
+.control-copy small{font-size:10px;letter-spacing:0}
+#surf[data-contact="holding"] .crest-face{transform:translateY(3px) scaleY(.94)}
+#surf[data-contact="holding"] .control-copy{transform:translateY(3px)}
+#surf[data-contact="air"] .wave-paper{fill:#d4dfcc}
+#surf[data-contact="air"] .wave-spray{opacity:.25}
+#surf[data-full="true"] .wave-tip{stroke:#a35239;stroke-width:1.6}
+.signal{position:absolute;top:67%;left:20px;right:20px;text-align:center;color:#f3e6c9;font:12px "Songti SC",serif;letter-spacing:2px;pointer-events:none;z-index:2;min-height:18px}
+@media(min-width:600px){.print{height:900px;margin:20px auto;box-shadow:0 12px 50px #183c5025}
+}
 
-.paper-note{bottom:28px}.print:not([data-phase="playing"]) footer{visibility:hidden}.cartouche{background:#f3e6c9c9}@media(max-height:700px){.paper-note{bottom:22px}}
+@media(max-height:700px){header{top:65px}
+.cartouche{width:54px;padding:6px}
+.cartouche h1{font-size:32px}
+.small-title{font-size:7px}
+.paper-note{bottom:17px;padding-top:10px}
+.paper-note h2{font-size:22px;margin-bottom:6px}
+.paper-note>p:not(.chapter){font-size:11px;line-height:1.7;margin-bottom:8px}
+.chapter{margin-bottom:5px}
+.keys{margin-top:6px}
+footer{bottom:12px}
+.shore-labels{margin:7px 0 4px}
+.primary{height:60px}
+#start{height:60px}
+.finish-seal{width:32px;height:32px;line-height:28px;font-size:20px;margin-bottom:8px}
+.control-copy{gap:7px;left:18px}
+.control-copy small{font-size:10px}
+.control-copy b{font-size:22px}
+}
 
-.print:not([data-phase="playing"]) .signal{visibility:hidden}
+@media(max-width:350px){footer{left:20px;right:20px}
+.control-copy{left:19px;gap:6px}
+.control-copy small{font-size:10px}
+.control-copy b{font-size:21px;letter-spacing:2px}
+.paper-note{left:20px;right:20px}
+}
+
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}
+}
+
+.print:not([data-phase="playing"]) footer,.print:not([data-phase="playing"]) .signal{visibility:hidden}
+.cartouche{background:#f3e6c9c9}
+
+nav svg{width:25px;height:25px;stroke-width:1.3;stroke-linecap:butt}
+.ink-mark{fill:currentColor;stroke:none}
+nav button:active svg,nav a:active svg{transform:translateY(2px)}
+.resume-mark{display:none}
+.print[data-phase="paused"] .resume-mark{display:block}
+.print[data-phase="paused"] .pause-mark{display:none}
+#sound[aria-pressed="false"] .sound-on{display:none}
+.shell-icon{display:block;width:22px;height:22px;transform:rotate(-12deg)}
+.health i{width:9px;height:11px;transform:rotate(-7deg);clip-path:polygon(12% 4%,94% 0,100% 93%,0 100%)}
+.health i.spent{clip-path:none;border:1px solid #9e604a;opacity:.65}
+
+#surf:focus-visible{outline:none}
+#surf:focus-visible .wave-paper{stroke:#e5a06b;stroke-width:3}
+.primary:focus-visible{outline:none}
+.primary:focus-visible .seal-face>path:first-child{stroke:#f3e6c9;stroke-width:3}
