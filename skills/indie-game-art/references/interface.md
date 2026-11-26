@@ -1,5 +1,16 @@
 # Put information, actions and words where they belong
 
+## Let the interface explain itself
+
+When designing frontend screens, menus or HUDs:
+
+- Avoid unnecessary helper labels and explanatory copy. Do not give every feature a description by default.
+- Let grouping, spacing, recognizable icons, visual hierarchy and immediate interaction feedback communicate what belongs together and what the player can do.
+- When the primary heading already makes a region clear, omit introductions or subtitles that repeat its meaning. “Settings” does not need “Adjust your settings here.”
+- Prioritize visual appeal and fluid interaction. If an ordinary action needs a paragraph to explain it, first improve its placement, affordance or feedback instead of writing more instructions.
+
+Review the screen once with redundant helper copy removed. Restore only information whose absence causes a real misunderstanding. Keep concise action names where icons are ambiguous, essential teaching for unfamiliar gestures, errors, costs and consequential choices, plus accessible names and announcements. Offer optional detail when needed rather than permanently surrounding every control with it. This applies to interface explanation; it does not call for cutting dialogue or text that is itself the game's content.
+
 ## Compose the screen before dressing a button
 
 For one live decision, identify the thing being judged, the facts that must remain visible together, the place the hand can act, and where the new truth will appear. Sketch at least one alternate arrangement when the whole screen feels like a page. Removing borders from a row of unrelated panels will leave their reading order intact.
