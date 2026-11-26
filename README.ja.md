@@ -4,15 +4,15 @@
 
 Indie Game Art v3 は、実際に遊べる一場面を選び、キャラクターの形、画面に出る言葉、操作したときの動きを磨くスキルです。
 
-## 浮世絵サーフィン · Skill 3.2 比較
+## スキー · 最初の First Light
 
-[サーフィンの二つのバージョンを遊ぶ](https://hanszcy.github.io/indie-game-art/play/surf/)
+[最初のスキー比較を遊ぶ](https://hanszcy.github.io/indie-game-art/play/ski/)
 
-| [Skill なし · 浪間の一日](https://hanszcy.github.io/indie-game-art/play/surf/plain/) | [Skill あり · 潮生](https://hanszcy.github.io/indie-game-art/play/surf/skill/) |
+| [Skill なし · Classic](https://hanszcy.github.io/indie-game-art/play/ski/classic/) | [Skill あり · First Light](https://hanszcy.github.io/indie-game-art/play/ski/alpenglow/) |
 | :---: | :---: |
-| [![Skill なし · 浪間の一日](play/surf/previews/plain.png)](https://hanszcy.github.io/indie-game-art/play/surf/plain/) | [![Skill あり · 潮生](play/surf/previews/skill.png)](https://hanszcy.github.io/indie-game-art/play/surf/skill/) |
+| [![Skill なし · Classic](play/ski/previews/classic.webp)](https://hanszcy.github.io/indie-game-art/play/ski/classic/) | [![Skill あり · First Light](play/ski/previews/alpenglow.webp)](https://hanszcy.github.io/indie-game-art/play/ski/alpenglow/) |
 
-スマートフォン縦画面の2Dサーフィン。長押しで力をため、離すとジャンプ。両版は同じ800mのコースと物理を使用します。Skill版にはオリジナルの木版画風の海景と、沈み込み・空中・着水の姿勢を加えています。素材制作への投入量が異なるため、厳密な実験ではありません。
+最初の縦画面スキー展示を復元しました。長押しで力をため、赤旗の近くで離すとジャンプ。両版は782mのコース、10の雪の切れ目、3つのチェックポイントを共有します。現行Skillによる新作ではなく、最初の美術比較の復元です。
 
 ## 農園マッチ3 · Skill 3.2 比較
 

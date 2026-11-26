@@ -4,15 +4,15 @@
 
 Indie Game Art v3 从游戏里的一个具体瞬间入手，打磨角色的造型、屏幕上的文字和操作后的反应。
 
-## 浮世绘冲浪 · Skill 3.2 两版对照
+## 滑雪 · 最初的雪线晨光
 
-[进入冲浪两版试玩](https://hanszcy.github.io/indie-game-art/play/surf/)
+[进入最初的滑雪两版试玩](https://hanszcy.github.io/indie-game-art/play/ski/)
 
-| [不用 Skill · 浪间一日](https://hanszcy.github.io/indie-game-art/play/surf/plain/) | [使用 Skill · 潮生](https://hanszcy.github.io/indie-game-art/play/surf/skill/) |
+| [不用 Skill · 滑雪跳跃](https://hanszcy.github.io/indie-game-art/play/ski/classic/) | [使用 Skill · 雪线晨光](https://hanszcy.github.io/indie-game-art/play/ski/alpenglow/) |
 | :---: | :---: |
-| [![不用 Skill · 浪间一日](play/surf/previews/plain.png)](https://hanszcy.github.io/indie-game-art/play/surf/plain/) | [![使用 Skill · 潮生](play/surf/previews/skill.png)](https://hanszcy.github.io/indie-game-art/play/surf/skill/) |
+| [![不用 Skill · 滑雪跳跃](play/ski/previews/classic.webp)](https://hanszcy.github.io/indie-game-art/play/ski/classic/) | [![使用 Skill · 雪线晨光](play/ski/previews/alpenglow.webp)](https://hanszcy.github.io/indie-game-art/play/ski/alpenglow/) |
 
-2D 手机竖屏冲浪：按住蓄力，松开起跃。两版使用相同的 800 米浪道与物理；Skill 版加入原创版画海景，以及屈膝压板、腾空和落浪姿态。两版素材投入不同，这是可玩的设计对照，不是严格实验。
+恢复最初的手机竖屏滑雪展示：按住蓄力，在红旗旁松开起跳。两版共享782米路线、十道雪沟与三个检查点。本次恢复原始美术对照，不标作最新 Skill 重新制作。
 
 ## 农场消消乐 · Skill 3.2 两版对照
 
